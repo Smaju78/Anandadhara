@@ -233,3 +233,11 @@ a.chip:hover { outline: 1px solid var(--gold); }
 .mini-btns { display: flex; gap: 6px; flex: none; }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* sub-group chips and related songs */
+.subtabs { margin: -4px 0 16px; }
+.subtabs .tab { font-size: .92rem; padding: 4px 12px; }
+.subtabs small { color: var(--muted); font-variant-numeric: tabular-nums; }
+.subtabs .tab[aria-current="page"] small { color: inherit; opacity: .8; }
+.related { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
+.related .hint { margin: -4px 0 10px; }

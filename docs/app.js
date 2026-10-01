@@ -88,18 +88,18 @@ function songRow(s) {
 }
 
 // Songs with recordings first (keeping the given order inside each part), optional "only with recordings".
-function songList(list, { limit = 120, toggle = true } = {}) {
+function songList(list, { limit = 120, toggle = true, recFirst = true } = {}) {
   const wrap = document.createElement("div");
   let shown = limit;
   const draw = () => {
     const rec = list.filter(hasRec), rest = list.filter((s) => !hasRec(s));
-    const all = prefs.recOnly ? rec : rec.concat(rest);
+    const all = prefs.recOnly ? rec : recFirst ? rec.concat(rest) : list;
     const vis = all.slice(0, shown);
-    const firstRest = vis.findIndex((s) => !hasRec(s));
+    const firstRest = recFirst ? vis.findIndex((s) => !hasRec(s)) : -1;
     const rows = vis.map((s, i) => (i === firstRest && i > 0 ? `<li class="divider">Recordings coming soon</li>` : "") + songRow(s)).join("");
     wrap.innerHTML = (toggle ? `<p><label class="toggle"><input type="checkbox" class="rec-only"${prefs.recOnly ? " checked" : ""}> Only songs with recordings (${rec.length} of ${list.length})</label></p>` : "") + `
       <ul class="songs">${rows || `<li class="divider">No songs with recordings here yet. They are added every day.</li>`}</ul>` +
-      (all.length > shown ? `<p class="more"><button class="btn small" type="button">Show ${Math.min(300, all.length - shown)} more of ${all.length - shown}</button></p>` : "");
+      (all.length > shown ? `<p class="more"><button class="btn small" type="button">${all.length - shown > 300 ? `Show 300 more of ${all.length - shown}` : `Show ${all.length - shown} more`}</button></p>` : "");
     if (toggle) $(".rec-only", wrap).onchange = (e) => { prefs.recOnly = e.target.checked; savePrefs(); draw(); };
     const b = $(".more button", wrap);
     if (b) b.onclick = () => { shown += 300; draw(); };
@@ -108,18 +108,47 @@ function songList(list, { limit = 120, toggle = true } = {}) {
   return wrap;
 }
 
-/* ---------------- views ---------------- */
+/* ---------------- spelling-tolerant search ----------------
+   Romanised Bengali is spelled many ways (Paroshmoni / Poroshmoni / Parashmoni), so titles are
+   also compared as consonant "skeletons": vowels dropped, similar sounds merged. Bengali and Latin
+   text map to the same skeleton alphabet, so "aguner poroshmoni" finds আগুনের পরশমণি. */
+const BN_SKEL = {};
+[["কখ", "k"], ["গঘ", "g"], ["ঙঞণনং", "n"], ["চছ", "c"], ["জঝয", "j"], ["টঠতথৎ", "t"], ["ডঢদধ", "d"],
+ ["রৃঋ", "r"], ["পফ", "p"], ["বভ", "b"], ["ম", "m"], ["ল", "l"], ["শষস", "s"]]
+  .forEach(([chars, v]) => [...chars].forEach((c) => { BN_SKEL[c] = v; }));
+const LAT_DIGRAPHS = [["chh", "c"], ["ch", "c"], ["sh", "s"], ["kh", "k"], ["gh", "g"], ["th", "t"], ["dh", "d"],
+  ["ph", "p"], ["bh", "b"], ["jh", "j"], ["ng", "n"], ["w", "b"], ["v", "b"], ["f", "p"], ["z", "j"], ["q", "k"],
+  ["x", "ks"], ["y", ""]];
+const dedupe = (t) => t.replace(/(.)\1+/g, "$1");
+function skelBn(t) {
+  t = (t || "").normalize("NFC").replace(/য়|য়/g, "")   // য় (ya) is a vowel glide
+    .replace(/ড়|ঢ়|ড়|ঢ়/g, "র");          // ড় ঢ় sound like r
+  return dedupe([...t].map((c) => BN_SKEL[c] || "").join(""));
+}
+function skelEn(t) {
+  t = (t || "").toLowerCase().replace(/[^a-z]/g, "");
+  for (const [a, b] of LAT_DIGRAPHS) t = t.split(a).join(b);
+  return dedupe(t.replace(/[aeiouh]/g, ""));
+}
+const isBengali = (t) => /[ঀ-৿]/.test(t);
+
 function searchSongs(q) {
   const nq = norm(q);
   if (!nq) return [];
-  const starts = [], inTitle = [], inLyrics = [];
+  const qs = isBengali(q) ? skelBn(q) : skelEn(q);
+  const fuzzy = qs.length >= 4;   // shorter skeletons match almost everything
+  const exactStart = [], exactTitle = [], skelStart = [], skelTitle = [], inLyrics = [];
   for (const s of SONGS) {
-    if (s._title.startsWith(nq)) starts.push(s);
-    else if (s._title.includes(nq)) inTitle.push(s);
-    else if (s._lyrics.includes(nq)) inLyrics.push(s);
+    if (s._title.startsWith(nq)) exactStart.push(s);
+    else if (s._title.includes(nq)) exactTitle.push(s);
+    else if (fuzzy && s._skels.some((k) => k.startsWith(qs))) skelStart.push(s);
+    else if (fuzzy && s._skels.some((k) => k.includes(qs))) skelTitle.push(s);
+    else if (s._lyrics.includes(nq) || (fuzzy && qs.length >= 5 && s._skelLyrics.includes(qs))) inLyrics.push(s);
   }
-  return starts.concat(inTitle, inLyrics);
+  return exactStart.concat(exactTitle, skelStart, skelTitle, inLyrics);
 }
+
+/* ---------------- views ---------------- */
 
 function renderHome() {
   const q = sessionGet("q");
@@ -134,7 +163,7 @@ function renderHome() {
     if (norm(input.value)) {
       const res = searchSongs(input.value);
       body.innerHTML = `<div class="section-head"><h2>${plural(res.length, "song")} found</h2></div>`;
-      body.append(songList(res));
+      body.append(songList(res, { recFirst: false }));
     } else renderListen(body);
   };
   input.addEventListener("input", run);
@@ -197,17 +226,51 @@ function renderBrowse(kind) {
     `<a class="group" href="#/list/${kind}/${enc(v)}"><span>${label(v)}</span><span class="n" title="${g.rec} with recordings">${g.n}${g.rec ? ` · ▶${g.rec}` : ""}</span></a>`).join("")}</div>`);
 }
 
-function renderList(kind, value) {
+function renderList(kind, value, sub = "") {
   if (!KINDS[kind] || !KINDS[kind].get) return renderBrowse("popular");
-  const list = SONGS.filter((s) => KINDS[kind].get(s).includes(value));
-  const playable = ["mood", "parjay", "season", "raag"].includes(kind) && list.some(hasRec);
-  view.innerHTML = `<p class="crumb"><a href="#/browse/${kind}">${KINDS[kind].label}</a></p>
-    <div class="list-head"><h1>${esc(value)}${kind === "season" ? ` <span class="bn">${SEASON_BN[value] || ""}</span>` : ""}</h1>
+  const all = SONGS.filter((s) => KINDS[kind].get(s).includes(value));
+  const list = sub ? all.filter((s) => s.sub === sub) : all;
+  const playable = ["mood", "parjay", "season", "raag"].includes(kind) && all.some(hasRec);
+  // Parjays are split into sub-groups in Gitabitan (Puja: Bondhu, Biraha, Dukkha...): offer them as chips.
+  const subs = kind === "parjay" ? groupCounts(all, (s) => s.sub) : [];
+  const subChips = subs.length > 1 ? `<nav class="tabs subtabs" aria-label="${esc(value)} sub-groups">
+      <a class="tab" href="#/list/parjay/${enc(value)}"${sub ? "" : ' aria-current="page"'}>All <small>${all.length}</small></a>
+      ${subs.map(([v, n]) => `<a class="tab" href="#/list/parjay/${enc(value)}/${enc(v)}"${v === sub ? ' aria-current="page"' : ""}>${esc(v)} <small>${n}</small></a>`).join("")}
+    </nav>` : "";
+  view.innerHTML = `<p class="crumb"><a href="#/browse/${kind}">${KINDS[kind].label}</a>${sub ? ` › <a href="#/list/parjay/${enc(value)}">${esc(value)}</a>` : ""}</p>
+    <div class="list-head"><h1>${esc(sub || value)}${kind === "season" ? ` <span class="bn">${SEASON_BN[value] || ""}</span>` : ""}</h1>
     <span class="n">${plural(list.length, "song")}</span>
     ${kind === "mood" ? `<span class="hint">${esc(META.moods[value] || "")}</span>` : ""}
-    ${playable ? `<button class="btn small primary" type="button" id="play-list">▶ Play in jukebox</button>` : ""}</div>`;
+    ${playable ? `<button class="btn small primary" type="button" id="play-list">▶ Play ${esc(value)} in jukebox</button>` : ""}</div>
+    ${subChips}`;
   view.append(songList(list));
   if (playable) $("#play-list").onclick = () => playFiltered(kind, value);
+}
+
+function groupCounts(list, keyFn) {
+  const m = new Map();
+  for (const s of list) { const k = keyFn(s); if (k) m.set(k, (m.get(k) || 0) + 1); }
+  return [...m.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+}
+
+// Songs that share moods, raag, sub-group or season with this one; playable songs ranked a little higher.
+function relatedSongs(s, n = 8) {
+  const moods = new Set(s.moods || []);
+  const scored = [];
+  for (const o of SONGS) {
+    if (o.id === s.id) continue;
+    let sc = 3 * (o.moods || []).filter((m) => moods.has(m)).length;
+    if (s.raag && o.raag === s.raag) sc += 3;
+    if (s.sub && o.sub === s.sub && o.parjay === s.parjay) sc += 2;
+    else if (s.parjay && o.parjay === s.parjay) sc += 1;
+    if (s.season && o.season === s.season) sc += 2;
+    if (s.taal && o.taal === s.taal) sc += 0.5;
+    if (sc < 4) continue;
+    sc += hasRec(o) ? 1.5 : 0;
+    sc += o.pop ? 0.5 : 0;
+    scored.push([sc, o]);
+  }
+  return scored.sort((a, b) => b[0] - a[0]).slice(0, n).map(([, o]) => o);
 }
 
 function renderSong(id) {
@@ -215,7 +278,8 @@ function renderSong(id) {
   if (!s) { view.innerHTML = `<p>Song not found. <a href="#/">Back to Listen</a></p>`; return; }
   const chip = (kind, v) => `<a class="chip" href="#/list/${kind}/${enc(v)}">${esc(v)}</a>`;
   const facts = [
-    ["Parjay", s.parjay && chip("parjay", s.parjay) + (s.sub ? ` <span class="hint">${esc(s.sub)}</span>` : "")],
+    ["Parjay", s.parjay && chip("parjay", s.parjay) + (s.sub && s.parjay
+      ? ` <a class="hint" href="#/list/parjay/${enc(s.parjay)}/${enc(s.sub)}">${esc(s.sub)}</a>` : "")],
     ["Season", s.season && chip("season", s.season)],
     ["Drama", s.drama && s.drama.split(", ").map((d) => chip("drama", d)).join(" ")],
     ["Raag", s.raag && chip("raag", s.raag) + (s.raagFull && s.raagFull !== s.raag ? ` <span class="hint">${esc(s.raagFull)}</span>` : "")],
@@ -247,7 +311,23 @@ function renderSong(id) {
         : `Source: <a href="${esc(s.source)}" target="_blank" rel="noopener">Bengali Wikisource</a>`}</p>
     </div>
     <section class="videos" aria-label="Recordings"><h2>Recordings</h2>${vids}</section>
-  </article>`;
+  </article>
+  <section class="section related" aria-labelledby="h-related">
+    <div class="section-head"><h2 id="h-related">More like this</h2>
+      ${(s.moods || []).length ? `<button class="btn small primary" type="button" id="play-like">▶ Play songs like this</button>` : ""}</div>
+    <p class="hint">Songs that share this one's mood, raag, sub-group or season.</p>
+    <div id="related"></div>
+  </section>`;
+  const rel = relatedSongs(s);
+  if (rel.length) $("#related").append(songList(rel, { limit: 8, toggle: false }));
+  else $(".related").hidden = true;
+  const likeBtn = $("#play-like");
+  if (likeBtn) {
+    const n = jb.countFor({ moods: s.moods });
+    likeBtn.disabled = !n;
+    likeBtn.title = n ? `${plural(n, "song")} with recordings share its mood` : "No songs with recordings share its mood yet";
+    likeBtn.onclick = () => { jb.setFilters({ moods: s.moods }); location.hash = "#/jukebox"; jb.start(); };
+  }
   $$("[data-vid]", view).forEach((b) => b.onclick = () => {
     jb.pause();
     const f = document.createElement("iframe");
@@ -490,13 +570,15 @@ const jb = (() => {
   }
   function clearFilters() { Object.assign(F, { ...EMPTY_FILTERS, moods: [], parjays: [], seasons: [] }); filtersChanged(); }
   function setFilter(kind, value) {
-    Object.assign(F, { ...EMPTY_FILTERS, moods: [], parjays: [], seasons: [] });
-    if (kind === "mood") F.moods = [value];
-    if (kind === "parjay") F.parjays = [value];
-    if (kind === "season") F.seasons = [value];
-    if (kind === "raag") F.raag = value;
+    const key = { mood: "moods", parjay: "parjays", season: "seasons" }[kind];
+    setFilters(key ? { [key]: [value] } : kind === "raag" ? { raag: value } : {});
+  }
+  // Replace all filters with the given ones (unspecified ones are cleared).
+  function setFilters(f) {
+    Object.assign(F, { ...EMPTY_FILTERS, moods: [], parjays: [], seasons: [] }, f);
     filtersChanged();
   }
+  const countFor = (f) => pool({ ...EMPTY_FILTERS, moods: [], parjays: [], seasons: [], ...f }).length;
 
   function prefsChanged() {
     const row = (id, list) => {
@@ -533,7 +615,7 @@ const jb = (() => {
     $("#mini-like").onclick = likeCurrent;
   }
 
-  return { init, start, setFilter, prefsChanged, updateMini, pause: () => { try { player && player.pauseVideo(); } catch { /* not ready */ } } };
+  return { init, start, setFilter, setFilters, countFor, prefsChanged, updateMini, pause: () => { try { player && player.pauseVideo(); } catch { /* not ready */ } } };
 })();
 
 function playFiltered(kind, value) {
@@ -557,6 +639,7 @@ function route() {
   if (isJb) { window.scrollTo(0, 0); return; }
   if (page === "song") renderSong(parts[1]);
   else if (page === "browse") renderBrowse(parts[1]);
+  else if (page === "list" && parts[1] === "parjay") renderList("parjay", parts[2], parts[3] || "");
   else if (page === "list") renderList(parts[1], parts.slice(2).join("/"));
   else renderHome();
   if (page !== "home") { window.scrollTo(0, 0); view.focus({ preventScroll: true }); }
@@ -568,6 +651,8 @@ fetch("songs.json").then((r) => { if (!r.ok) throw new Error(r.status); return r
     BY_ID.set(s.id, s);
     s._title = norm([s.bn, s.en, s.alias, s.id.replace(/-/g, " ")].join(" "));
     s._lyrics = norm(s.lyrics);
+    s._skels = [skelBn(s.bn), skelEn(s.en), skelEn(s.alias), skelEn(s.id)].filter(Boolean);
+    s._skelLyrics = skelBn(s.lyrics);
   }
   jb.init();
   window.addEventListener("hashchange", route);
