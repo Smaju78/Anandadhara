@@ -1,0 +1,8182 @@
+{
+ "_status": "mood list and tags approved; all songs tagged (Mantra Gaan without lyrics tagged from category)",
+ "moods": {
+  "prem": "romantic love, union, tenderness",
+  "viraha": "longing, separation, waiting for the absent one",
+  "bishad": "sorrow, grief, despair",
+  "ananda": "joy, delight, exhilaration",
+  "shanti": "peace, calm, solace",
+  "bhakti": "devotion, prayer, surrender to the divine",
+  "prakriti-bhava": "nature: rain, spring, sky, seasons",
+  "utsav": "festive, celebration, ceremony",
+  "deshprem": "love of motherland, patriotism",
+  "sahas": "courage, resolve, awakening, call to action",
+  "smriti": "memory, nostalgia, remembering the past",
+  "kautuk": "playful, humorous, whimsical"
+ },
+ "songs": {
+  "aamar-sonaar-bangla-ami": [
+   "deshprem",
+   "prakriti-bhava"
+  ],
+  "purano-sei-diner-kotha": [
+   "smriti",
+   "viraha"
+  ],
+  "phule-phule-dhole-dhole": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "pagla-hawar-badoldine": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "bhaalobashi-bhaalobashi": [
+   "prem",
+   "viraha"
+  ],
+  "megher-pore-megh-jomechhe": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "krishnokoli-aami-tarei": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "basanta-tor": [
+   "prakriti-bhava"
+  ],
+  "aakash-hote-aakash-pothe": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "jodi-prem-dile-na": [
+   "viraha",
+   "bhakti"
+  ],
+  "ichchhe-ichchhe": [
+   "kautuk"
+  ],
+  "haa-aa-a-aai": [
+   "kautuk"
+  ],
+  "buk-je-phete": [
+   "bishad"
+  ],
+  "baajao-re-mohon": [
+   "prem",
+   "viraha"
+  ],
+  "aay-re-aay-re-snaajher-baa": [
+   "shanti",
+   "prakriti-bhava"
+  ],
+  "probhat-hoilo-nishi": [
+   "viraha",
+   "bishad"
+  ],
+  "aamar-bela-je-jaay-snaajh": [
+   "bhakti",
+   "shanti"
+  ],
+  "aamake-je-bnaadhbe-dhore": [
+   "prem",
+   "kautuk"
+  ],
+  "andhojone-deho-aalo": [
+   "bhakti"
+  ],
+  "gelo-gelo-niye-gelo": [
+   "prem"
+  ],
+  "hey-bharot-aaji": [
+   "deshprem"
+  ],
+  "tomra-haasiya-bohiya": [
+   "viraha",
+   "prem"
+  ],
+  "aalo-aamar-aalo": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "ekoda-tumi-priye": [
+   "smriti",
+   "viraha"
+  ],
+  "premanonde-rakho-purno": [
+   "bhakti",
+   "ananda"
+  ],
+  "ghore-mukh-molin": [
+   "sahas",
+   "deshprem"
+  ],
+  "sei-to-basonto-phire-elo": [
+   "bishad",
+   "prakriti-bhava"
+  ],
+  "joyjaatraay-jaao-go": [
+   "prem",
+   "sahas"
+  ],
+  "aailo-shantosandhya": [
+   "shanti",
+   "bhakti"
+  ],
+  "deshe-deshe-bhromi": [
+   "deshprem",
+   "bishad"
+  ],
+  "probhu-balo-balo-kobe": [
+   "bhakti"
+  ],
+  "mone-roye-gelo-moner": [
+   "viraha",
+   "bishad"
+  ],
+  "joy-hok-joy-hok": [
+   "sahas",
+   "ananda"
+  ],
+  "debota-jene-dure": [
+   "bhakti"
+  ],
+  "gaanguli-mor-soibaleri": [
+   "ananda"
+  ],
+  "meghera-chole-chole-jaay": [
+   "kautuk",
+   "prakriti-bhava"
+  ],
+  "baajao-aamare": [
+   "bhakti",
+   "ananda"
+  ],
+  "amriter-sagore-aami-jabo": [
+   "bhakti"
+  ],
+  "ogo-snaaotaali-chhele": [
+   "prakriti-bhava"
+  ],
+  "arup-tomar-baani": [
+   "bhakti"
+  ],
+  "nayan-chhere-gele-chole": [
+   "bhakti",
+   "viraha"
+  ],
+  "more-baare-baare-phirale": [
+   "bhakti",
+   "bishad"
+  ],
+  "je-raate-mor": [
+   "bhakti"
+  ],
+  "aamar-kontho-tnaare-daake": [
+   "bhakti"
+  ],
+  "shubhodine-esechhe-dnohe": [
+   "utsav",
+   "bhakti"
+  ],
+  "bijaymala-eno": [
+   "prem",
+   "sahas"
+  ],
+  "ogo-paroshini-shuni-bonopothe": [
+   "prem"
+  ],
+  "aan-go-tora-kaar-ki-aachhe": [
+   "prakriti-bhava",
+   "utsav"
+  ],
+  "ke-janito-tumi-daakibe-2": [
+   "bhakti",
+   "ananda"
+  ],
+  "nikote-dekhibo-tomare": [
+   "bhakti"
+  ],
+  "aabar-era-ghirechhe-mor": [
+   "bhakti",
+   "viraha"
+  ],
+  "aabar-esechhe-aasar": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aabar-jodi-ichhaa-karo": [
+   "bhakti",
+   "ananda"
+  ],
+  "aabar-more-paagol-kore": [
+   "prem",
+   "viraha"
+  ],
+  "aabar-sraban-hoye-ele": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "aachhe-dukkho-aachhe-mrityu": [
+   "shanti",
+   "bhakti"
+  ],
+  "aachhe-tomar-bidye-sadhhi": [
+   "kautuk"
+  ],
+  "aachho-aakash-paane-tule": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "aachho-aapon-mohima": [
+   "bhakti"
+  ],
+  "aachho-antore-chirodin": [
+   "bhakti",
+   "bishad"
+  ],
+  "aadhek-ghume-nayan-chume": [
+   "shanti",
+   "prakriti-bhava"
+  ],
+  "aage-chol-aage-chol-bhai": [
+   "sahas",
+   "deshprem"
+  ],
+  "aaghat-kore-nile-jine": [
+   "bhakti"
+  ],
+  "aagraha-mor-adhir-ati": [
+   "sahas",
+   "prem"
+  ],
+  "aagune-holo-aagunmoy": [
+   "sahas",
+   "bhakti"
+  ],
+  "aaguner-paroshmoni-chhoao": [
+   "bhakti"
+  ],
+  "aaha-aaji-e-basonte": [
+   "bishad",
+   "viraha"
+  ],
+  "aaha-e-ki-aananda": [
+   "ananda",
+   "prem"
+  ],
+  "aaha-jaagi-pohalo-bibhabori": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "aaha-kemone-bodhilo-tore": [
+   "bishad"
+  ],
+  "aaha-mori-mori": [
+   "prem"
+  ],
+  "aaha-tomar-songe-praner": [
+   "prem",
+   "ananda"
+  ],
+  "aah-bechechhi-ekhon-1": [
+   "kautuk"
+  ],
+  "aah-kaaj-ki-golmale": [
+   "kautuk"
+  ],
+  "aahvan-aasilo-mahotsobe": [
+   "prakriti-bhava",
+   "utsav"
+  ],
+  "aailo-aaji-praanosokha": [
+   "bhakti",
+   "shanti"
+  ],
+  "aaj-aakasher-moner-kotha": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aaj-aamar-aananda-dekhe": [
+   "ananda"
+  ],
+  "aaj-aasbe-shyam-gokule": [
+   "prem",
+   "ananda"
+  ],
+  "aaj-bari-jhare-jharo-jharo": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aaj-barosar-rup-heri-mano": [
+   "prakriti-bhava",
+   "sahas"
+  ],
+  "aaj-bujhi-aailo-priyotamo": [
+   "bhakti",
+   "ananda"
+  ],
+  "aaj-buker-boson-chhire-phele": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "aaj-dakhino-batashe": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "aaj-dhaaner-khete-roudro": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aaji-aankhi-juralo": [
+   "prem",
+   "utsav"
+  ],
+  "aaji-bangladesher-hridoy": [
+   "deshprem",
+   "bhakti"
+  ],
+  "aaji-basonto-jagrata-dware": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "aaji-bijon-ghore-nishith": [
+   "bhakti",
+   "shanti"
+  ],
+  "aaji-bohiche-basanta": [
+   "bhakti",
+   "utsav"
+  ],
+  "aaji-borisonomukharita": [
+   "viraha",
+   "smriti",
+   "prakriti-bhava"
+  ],
+  "aaji-borsaraater-shese": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aaji-dokhin-duyar-khola": [
+   "prakriti-bhava",
+   "utsav"
+  ],
+  "aaji-dokhinopabone": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "aaji-e-anandasandhya": [
+   "ananda",
+   "shanti"
+  ],
+  "aaji-e-bharat-lajjito-hey": [
+   "deshprem",
+   "sahas"
+  ],
+  "aaji-ei-gondhobidhur": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "aaji-enechhe-tahari-aashirbaad": [
+   "bhakti",
+   "ananda"
+  ],
+  "aaji-e-nirala-kunje": [
+   "prem"
+  ],
+  "aaji-godhuli-lagone-ei": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aaji-heri-songsar-amrito": [
+   "ananda",
+   "bhakti"
+  ],
+  "aaji-hridoy-aamar": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aaji-jato-taara-tabo-aakashe": [
+   "bhakti",
+   "ananda"
+  ],
+  "aaji-je-rajoni-jaay": [
+   "viraha",
+   "bishad"
+  ],
+  "aaji-jharo-jharo-mukhoro": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "aaji-jhorer-raate": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aaji-kamolmukuldol-khulilo": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aajike-ei-sakal-belate": [
+   "shanti",
+   "prakriti-bhava"
+  ],
+  "aaji-knaade-kaara": [
+   "bishad",
+   "bhakti"
+  ],
+  "aaji-kon-dhon-hote": [
+   "bhakti",
+   "shanti"
+  ],
+  "aaji-kon-sure-badhibo": [
+   "viraha",
+   "smriti"
+  ],
+  "aaji-mamo-jibone-naamichhe": [
+   "bhakti",
+   "shanti"
+  ],
+  "aaji-mamo-mon-chaahe": [
+   "bhakti",
+   "viraha"
+  ],
+  "aaji-marmardhwani-keno": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "aaji-megh-kete-gechhe": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aaji-mor-dware-kahar": [
+   "prem",
+   "ananda"
+  ],
+  "aaji-naahi-naahi-nidra": [
+   "bhakti",
+   "viraha"
+  ],
+  "aaji-nirbhoynidrito": [
+   "bhakti",
+   "shanti"
+  ],
+  "aaji-oi-aakash-pore": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aaji-pallibalika-alakaguchchha": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aaji-pronomi-tomare": [
+   "bhakti"
+  ],
+  "aaji-raaj-aasone-tomare": [
+   "bhakti"
+  ],
+  "aaji-sharototapone-probhat": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aaji-shrabano-ghano-gahan": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aaji-shubhodine-pitaar-bhabone": [
+   "utsav",
+   "bhakti"
+  ],
+  "aaji-shubho-shubro-praate": [
+   "bhakti",
+   "shanti"
+  ],
+  "aaji-snaajher-jomunay-go": [
+   "viraha",
+   "smriti"
+  ],
+  "aaji-tomay-abar-chai-shunabare": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aaji-unmad-modhunishi-ogo": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aaj-jemon-kore-gaichhe": [
+   "prem",
+   "viraha"
+  ],
+  "aaj-jyotsnaraate-sobai": [
+   "viraha",
+   "bhakti"
+  ],
+  "aajke-more-bolona": [
+   "shanti",
+   "bhakti"
+  ],
+  "aajke-tobe-mile-sobe": [
+   "kautuk"
+  ],
+  "aaj-khela-bhangar-khela": [
+   "sahas",
+   "prakriti-bhava"
+  ],
+  "aaj-kichhutei-jaay-na": [
+   "viraha",
+   "prakriti-bhava",
+   "bishad"
+  ],
+  "aaj-ki-taahar-barota-pelo": [
+   "prakriti-bhava",
+   "utsav"
+  ],
+  "aaj-nobin-megher-sur": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "aaj-prathom-phuler-paabo": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aaj-shraboner-aamontrone": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aaj-shraboner-purnimate": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "aaj-sobaai-jute-aasuk": [
+   "deshprem",
+   "sahas"
+  ],
+  "aaj-sobar-ronge-rong": [
+   "prem",
+   "utsav"
+  ],
+  "aaj-taaler-boner-karotaali": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aaj-taaray-taaray-dipto": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aaj-tomare-dekhte-elem": [
+   "viraha",
+   "smriti"
+  ],
+  "aaju-sokhi-muhu-muhu": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "aakash-aamay-bhorlo-aaloy": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aakash-bhora-surja-taara": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "aakashe-aaj-kon-charoner": [
+   "smriti",
+   "viraha"
+  ],
+  "aakashe-dui-haate-prem-bilaye": [
+   "bhakti",
+   "ananda"
+  ],
+  "aakashe-tor-temni-aachhe": [
+   "sahas"
+  ],
+  "aakash-hote-khoslo-taara": [
+   "bishad",
+   "shanti"
+  ],
+  "aakash-jure-shuninu-oi": [
+   "bhakti",
+   "shanti"
+  ],
+  "aakashtole-dole-dole": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aakash-tomay-kon-rupe": [
+   "prakriti-bhava"
+  ],
+  "aakul-keshe-aase-chai": [
+   "viraha",
+   "prem"
+  ],
+  "aalo-je-aaj-gaan-kore": [
+   "ananda",
+   "bhakti"
+  ],
+  "aalo-je-jaay-re-dekha": [
+   "bhakti",
+   "shanti"
+  ],
+  "aalok-chora-lukiye-elo": [
+   "sahas"
+  ],
+  "aaloker-ei-jhorna-dharay": [
+   "bhakti",
+   "ananda"
+  ],
+  "aaloker-pothe-probhu": [
+   "bhakti"
+  ],
+  "aalor-amol-komolkhani": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aaloy-aalokmoy-kore-hey": [
+   "ananda",
+   "bhakti"
+  ],
+  "aamader-bhoy-kaahare": [
+   "sahas",
+   "kautuk"
+  ],
+  "aamader-jaatra-holo-shuru": [
+   "sahas",
+   "bhakti"
+  ],
+  "aamader-khepiye-beray": [
+   "sahas",
+   "ananda"
+  ],
+  "aamader-paakbe-na-chul": [
+   "ananda",
+   "sahas"
+  ],
+  "aamader-shantiniketan": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "aamader-sokhire-ke-niye-jabe": [
+   "utsav",
+   "kautuk"
+  ],
+  "aamar-aandhar-bhalo": [
+   "bhakti"
+  ],
+  "aamar-aapon-gaan-aamar": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aamar-aar-hobe-na-deri": [
+   "bhakti",
+   "shanti"
+  ],
+  "aamar-abhimaner-badale": [
+   "bhakti",
+   "prem"
+  ],
+  "aamar-andho-prodip": [
+   "viraha",
+   "bhakti"
+  ],
+  "aamar-ange-ange-ke-baajay": [
+   "prem",
+   "ananda"
+  ],
+  "aamar-bani-aamar-prane": [
+   "bhakti",
+   "sahas"
+  ],
+  "aamar-bhanga-pother-ranga": [
+   "viraha",
+   "smriti"
+  ],
+  "aamar-bhubon-to-aaj-holo": [
+   "bishad",
+   "prem"
+  ],
+  "aamar-bichar-tumi-karo": [
+   "bhakti"
+  ],
+  "aamar-bone-bone-dhorlo": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aamar-byatha-jakhon-aane": [
+   "bhakti",
+   "viraha"
+  ],
+  "aamar-dhala-gaaner-dhaara": [
+   "smriti",
+   "bhakti"
+  ],
+  "aamar-din-phuralo": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aamar-dosor-jejon-ogo": [
+   "viraha",
+   "prem"
+  ],
+  "aamare-bnaadhbi-tora": [
+   "ananda",
+   "sahas"
+  ],
+  "aamare-daak-dilo-ke": [
+   "prakriti-bhava",
+   "shanti"
+  ],
+  "aamare-diyi-tomar-haate": [
+   "bhakti",
+   "shanti"
+  ],
+  "aamar-e-ghore-aaponar": [
+   "bhakti"
+  ],
+  "aamar-ei-poth-chawatei": [
+   "ananda",
+   "viraha"
+  ],
+  "aamar-ei-ricto-dali": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "aamare-jodi-jaagale-aaji": [
+   "bhakti",
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aamare-karo-jibon-daan": [
+   "bhakti",
+   "sahas"
+  ],
+  "aamare-karo-tomar-beena": [
+   "prem",
+   "bhakti"
+  ],
+  "aamare-ke-nibi-bhai": [
+   "bhakti",
+   "viraha"
+  ],
+  "aamar-ekti-kotha": [
+   "viraha",
+   "prem"
+  ],
+  "aamareo-karo-maarjona": [
+   "bhakti",
+   "bishad"
+  ],
+  "aamare-paaray-paaray": [
+   "viraha",
+   "bhakti"
+  ],
+  "aamar-e-poth-tomar-poth": [
+   "viraha",
+   "bishad"
+  ],
+  "aamare-tumi-ashes-korechho": [
+   "bhakti",
+   "ananda"
+  ],
+  "aamare-tumi-kiser-chhole": [
+   "bhakti"
+  ],
+  "aamar-ghur-legechhe": [
+   "ananda",
+   "kautuk"
+  ],
+  "aamar-godhuli-lagon-elo": [
+   "bhakti",
+   "shanti"
+  ],
+  "aamar-haariye-jawa-din": [
+   "smriti",
+   "viraha"
+  ],
+  "aamar-hiyar-majhe-lukiye": [
+   "bhakti"
+  ],
+  "aamar-hridoysomudrotire": [
+   "bhakti",
+   "ananda"
+  ],
+  "aamar-hridoy-tomar-apon": [
+   "bhakti",
+   "smriti"
+  ],
+  "aamar-ja-aachhe": [
+   "bhakti",
+   "bishad"
+  ],
+  "aamar-jaabar-belaate": [
+   "ananda",
+   "bhakti"
+  ],
+  "aamar-jaabar-belaay": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aamar-jabar-samay-holo": [
+   "bishad"
+  ],
+  "aamar-je-aashe-kaachhe": [
+   "bhakti",
+   "shanti"
+  ],
+  "aamar-je-din-bhese-gechhe": [
+   "smriti",
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aamar-je-gaan-tomar-parosh": [
+   "bhakti",
+   "viraha"
+  ],
+  "aamar-je-sob-dite-hobe": [
+   "bhakti"
+  ],
+  "aamar-jete-sore-na-mon": [
+   "viraha"
+  ],
+  "aamar-jibonpatro-uchchholia": [
+   "prem",
+   "viraha"
+  ],
+  "aamar-jirnopaata-jaabar": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aamar-jodi-bela-jaay-go": [
+   "prem",
+   "viraha"
+  ],
+  "aamar-jwaleni-aalo-andhokare": [
+   "viraha",
+   "bishad"
+  ],
+  "aamar-khela-jakhon-chhillo": [
+   "smriti",
+   "bhakti"
+  ],
+  "aamar-ki-bedona-se-ki": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aamar-kontho-hote": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aamar-lotar-prothom-mukul": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "aamar-maajhe-tomari-maya": [
+   "bhakti"
+  ],
+  "aamar-maalar-phuler-dole": [
+   "prakriti-bhava",
+   "utsav"
+  ],
+  "aamar-matha-nato-kore-dao": [
+   "bhakti"
+  ],
+  "aamar-milon-laagi-tumi": [
+   "bhakti",
+   "ananda"
+  ],
+  "aamar-mollikabone-jakhon": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aamar-mon-bole-chai-chai": [
+   "viraha"
+  ],
+  "aamar-mon-cheye-roy-mone": [
+   "prem",
+   "shanti"
+  ],
+  "aamar-moner-bnadhon": [
+   "shanti"
+  ],
+  "aamar-moner-koner-baire": [
+   "viraha"
+  ],
+  "aamar-moner-maajhe-je-gaan": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "o-aamar-mon-jakhan": [
+   "viraha",
+   "bishad"
+  ],
+  "aamar-mon-kemon-kore": [
+   "viraha"
+  ],
+  "aamar-mon-maane-na": [
+   "prem",
+   "viraha"
+  ],
+  "aamar-mon-tumi-nath": [
+   "bhakti",
+   "viraha"
+  ],
+  "aamar-mukher-kotha-tomar": [
+   "bhakti"
+  ],
+  "aamar-mukti-aaloy-aaloy": [
+   "ananda",
+   "sahas"
+  ],
+  "aamar-na-bola-baanir": [
+   "bhakti",
+   "viraha"
+  ],
+  "aamar-naiba-holo-paare": [
+   "shanti",
+   "ananda"
+  ],
+  "aamar-nayan-bhulano-ele": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aamar-nayan-tabo-nayaner": [
+   "prem",
+   "viraha"
+  ],
+  "aamar-nayan-tomar-nayantale": [
+   "prem",
+   "viraha"
+  ],
+  "aamar-nikhil-bhubon-haralem": [
+   "bishad",
+   "prem"
+  ],
+  "aamar-nikoriya-roser-rosik": [
+   "bhakti",
+   "ananda"
+  ],
+  "aamar-nisitho-raater-badoldhara": [
+   "viraha",
+   "prem"
+  ],
+  "aamar-poran-jaaha-chaay": [
+   "prem",
+   "viraha"
+  ],
+  "aamar-poran-loye-ki-khela": [
+   "prem",
+   "viraha"
+  ],
+  "aamar-pothe-pothe-pathor": [
+   "bhakti"
+  ],
+  "aamar-prane-gobhir-gopon": [
+   "bhakti"
+  ],
+  "aamar-praner-maajhe-sudha": [
+   "prem",
+   "viraha"
+  ],
+  "aamar-praner-maanus-aachhe": [
+   "bhakti",
+   "ananda"
+  ],
+  "aamar-praner-pore-chole": [
+   "viraha",
+   "prem"
+  ],
+  "aamar-pran-je-byakul-hoyechhe": [
+   "bishad"
+  ],
+  "aamar-priyar-chhaya-akashe": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aamar-raat-pohalo-sharod": [
+   "bishad",
+   "prakriti-bhava"
+  ],
+  "aamar-sakol-dukher-prodip": [
+   "bhakti",
+   "bishad"
+  ],
+  "aamar-sakol-knaata-dhanyo": [
+   "bhakti",
+   "ananda"
+  ],
+  "aamar-sakol-niye-bose-aachhi": [
+   "prem",
+   "viraha"
+  ],
+  "aamar-sakol-rosher-dhaara": [
+   "bhakti",
+   "ananda"
+  ],
+  "aamar-satya-mithya-sakoli": [
+   "bhakti",
+   "shanti"
+  ],
+  "aamar-shesh-paranir-kori": [
+   "bhakti",
+   "sahas"
+  ],
+  "aamar-shesh-raginir-pratham": [
+   "bishad",
+   "prem"
+  ],
+  "aamar-sure-laage-tomar": [
+   "bhakti",
+   "ananda"
+  ],
+  "aama-tore-akarone": [
+   "shanti"
+  ],
+  "aamay-bhulte-dite-naiko": [
+   "bhakti"
+  ],
+  "aamay-bnaadhbe-jodi-kaajer": [
+   "bhakti",
+   "ananda"
+  ],
+  "aamay-bolo-na-gaahite": [
+   "deshprem",
+   "bishad"
+  ],
+  "aamay-chhajonaye-meele": [
+   "bhakti",
+   "bishad"
+  ],
+  "aamay-dao-go-bole": [
+   "bhakti",
+   "bishad"
+  ],
+  "aamay-dosi-karo": [
+   "bhakti",
+   "bishad"
+  ],
+  "aamay-kshamo-hey-kshamo": [
+   "bhakti",
+   "ananda"
+  ],
+  "aamay-mukti-jodi-dao": [
+   "bhakti"
+  ],
+  "aamay-thakte-de-na-aapon": [
+   "viraha",
+   "smriti"
+  ],
+  "aami-aachhi-tomar-sobhaar": [
+   "bhakti",
+   "bishad"
+  ],
+  "aami-aashay-aashay-thaki": [
+   "viraha"
+  ],
+  "aami-bhoy-korbo-na-bhoy": [
+   "sahas"
+  ],
+  "aami-bohu-basonay": [
+   "bhakti"
+  ],
+  "aami-chaahite-esechhi": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "aami-chaai-tnaare": [
+   "prem",
+   "bhakti"
+  ],
+  "aami-chanchal-hey": [
+   "viraha"
+  ],
+  "aami-chini-go-chini-tomare": [
+   "prem",
+   "viraha"
+  ],
+  "aami-chitrangada": [
+   "sahas",
+   "prem"
+  ],
+  "aami-deen-oti-deen": [
+   "bhakti"
+  ],
+  "aami-dekhbo-na": [
+   "bishad"
+  ],
+  "aami-ekla-cholechhi": [
+   "sahas"
+  ],
+  "aami-elem-taari-dwaare": [
+   "viraha",
+   "bishad"
+  ],
+  "aami-hethay-thaaki-shudhu": [
+   "bhakti"
+  ],
+  "aami-hridayer-kotha": [
+   "viraha",
+   "bishad"
+  ],
+  "aami-hridayete-poth-ketechhi": [
+   "bhakti",
+   "bishad"
+  ],
+  "aamii-shudhu-rohinu-baaki": [
+   "bishad"
+  ],
+  "aami-jaabo-na-go-omni": [
+   "prem",
+   "viraha"
+  ],
+  "aami-jakhan-chhilem-andho": [
+   "bhakti",
+   "ananda"
+  ],
+  "aami-jakhon-taar-duyare": [
+   "bhakti"
+  ],
+  "aami-je-aar-soite-paari-ne": [
+   "prem",
+   "viraha"
+  ],
+  "aami-je-gaan-gai-jaani": [
+   "viraha",
+   "smriti"
+  ],
+  "aami-jene-shune-bish": [
+   "prem",
+   "bishad"
+  ],
+  "aami-jene-shune-tobu-1": [
+   "bhakti"
+  ],
+  "aami-jene-shune-tobu-2": [
+   "bhakti"
+  ],
+  "aami-je-sob-nite-chaai": [
+   "sahas",
+   "ananda"
+  ],
+  "aami-jwalbo-na-mor": [
+   "bhakti",
+   "shanti"
+  ],
+  "aami-kaan-pete-roi": [
+   "bhakti"
+  ],
+  "aami-kaare-daaki-go": [
+   "bhakti",
+   "viraha"
+  ],
+  "aami-kaareo-bujhi-ne": [
+   "prem"
+  ],
+  "aami-keboli-swapon-korechhi-bapon": [
+   "bishad"
+  ],
+  "aami-kebol-phul-jogabo": [
+   "kautuk"
+  ],
+  "aami-kebol-tomar-dasi": [
+   "prem",
+   "bhakti"
+  ],
+  "aami-kemon-koriya-janabo": [
+   "bhakti",
+   "ananda"
+  ],
+  "aami-ki-bole-koribo-nibedan": [
+   "bhakti"
+  ],
+  "aami-ki-gaan-gaabo-je": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aami-maarer-sagor-paari": [
+   "sahas",
+   "bhakti"
+  ],
+  "michhe-ghuri-e-jagote": [
+   "bishad"
+  ],
+  "aami-nishidin-tomay": [
+   "prem",
+   "viraha"
+  ],
+  "aami-nishi-nishi-kato": [
+   "viraha",
+   "bishad"
+  ],
+  "aami-phirbo-na-re": [
+   "sahas"
+  ],
+  "aami-phul-tulite-alem": [
+   "viraha"
+  ],
+  "aami-poth-bhola-ek-pothik-esechhi": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aami-rupe-tomaay-bholabo-na": [
+   "prem"
+  ],
+  "aami-sandhyadiper-shikha": [
+   "prem",
+   "bishad"
+  ],
+  "aami-shrabon-aakashe-oi-1": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aami-shrabon-aakashe-oi-2": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aami-songsare-mon-diyechhinu-1": [
+   "bhakti"
+  ],
+  "aami-songsare-mon-diyechhinu-2": [
+   "bhakti",
+   "ananda"
+  ],
+  "aami-swapone-royechhi-bhor": [
+   "prem",
+   "viraha"
+  ],
+  "aami-taarei-jaani": [
+   "bhakti",
+   "ananda"
+  ],
+  "aami-taarei-khnuje-berai": [
+   "bhakti"
+  ],
+  "aami-takhon-chhilem-magon": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "aami-to-bujhechhi-sob": [
+   "viraha"
+  ],
+  "aami-tomare-koribo-nibedon": [
+   "prem"
+  ],
+  "aami-tomari-maatir-konya": [
+   "prakriti-bhava",
+   "bishad"
+  ],
+  "aami-tomar-preme-habo": [
+   "prem"
+  ],
+  "aami-tomar-songe-bedhechhi": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "aami-tomay-jato-shuniyechhilem": [
+   "bhakti",
+   "smriti"
+  ],
+  "aamra-bnedhechhi-kaasher-guchho": [
+   "prakriti-bhava",
+   "utsav"
+  ],
+  "aamra-bosbo-tomar-sone": [
+   "bhakti",
+   "sahas"
+  ],
+  "aamra-chaas-kori-anande": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "aamra-chitra-ati-bichitra": [
+   "kautuk"
+  ],
+  "aamra-dujona-swargo-khelna": [
+   "prem",
+   "sahas"
+  ],
+  "aamra-dur-aakasher": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "aamra-je-shissu-oti": [
+   "bhakti"
+  ],
+  "aamra-jhore-pora-phulodol": [
+   "prakriti-bhava",
+   "bishad"
+  ],
+  "aamra-khuji-khelar-saathi": [
+   "ananda",
+   "kautuk"
+  ],
+  "aamra-lakkhichharar-dol": [
+   "kautuk",
+   "sahas"
+  ],
+  "aamra-milechhi-aaj-maayer": [
+   "deshprem",
+   "ananda"
+  ],
+  "aamra-na-gaan-gawar-dol": [
+   "kautuk"
+  ],
+  "aamra-nuton-jouboneri-dut": [
+   "sahas",
+   "ananda"
+  ],
+  "aamra-nuton-praner-char": [
+   "prakriti-bhava",
+   "kautuk"
+  ],
+  "aamra-pothe-pothe-jaabo": [
+   "deshprem"
+  ],
+  "aamra-sobai-raaja": [
+   "deshprem",
+   "ananda"
+  ],
+  "aamra-taarei-jaani-taarei": [
+   "bhakti",
+   "ananda"
+  ],
+  "aanandadhaara-bohichhe-bhubone": [
+   "ananda",
+   "bhakti"
+  ],
+  "aanandadhwani-jaagao-gagone": [
+   "sahas",
+   "ananda"
+  ],
+  "aananda-gaan-utthuk-tobe": [
+   "ananda",
+   "bishad"
+  ],
+  "aanandaloke-mangolaloke": [
+   "bhakti",
+   "ananda"
+  ],
+  "aananda-royechhe-jaagi": [
+   "bhakti",
+   "shanti"
+  ],
+  "aananda-tumi-swami": [
+   "bhakti",
+   "shanti"
+  ],
+  "aananderi-sagor-hote-esechhe": [
+   "sahas",
+   "ananda"
+  ],
+  "aandhar-ambore-prochando": [
+   "prakriti-bhava"
+  ],
+  "aandhar-elo-bole-tai": [
+   "bhakti",
+   "shanti"
+  ],
+  "aandharer-lilaa-aakashe": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "aandhar-kurir-badhon": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "aandhar-raate-ekla-pagol": [
+   "bishad",
+   "bhakti"
+  ],
+  "aandhar-rajoni-pohalo": [
+   "ananda",
+   "bhakti"
+  ],
+  "aandhar-sakoli-dekhi": [
+   "bhakti",
+   "viraha"
+  ],
+  "aandhar-shakha-ujol-kori": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "aankhijol-muchaile-janoni": [
+   "bhakti",
+   "shanti"
+  ],
+  "aanmona-aanmona": [
+   "prem",
+   "shanti"
+  ],
+  "aapnake-ei-jaana-amar-phurabe": [
+   "bhakti"
+  ],
+  "aaponare-diye-rochili-re-ki": [
+   "bhakti",
+   "sahas"
+  ],
+  "aaponhaara-maatoyara": [
+   "prem",
+   "ananda"
+  ],
+  "aapon-hote-baahir-hoye": [
+   "ananda",
+   "sahas"
+  ],
+  "aaponi-aamar-konkhane": [
+   "bhakti",
+   "viraha"
+  ],
+  "aaponi-abosh-holi-tobe": [
+   "sahas"
+  ],
+  "aapon-mone-gopon-kone": [
+   "ananda",
+   "kautuk"
+  ],
+  "aaram-bhanga-udar-sure": [
+   "viraha"
+  ],
+  "aare-ki-eto-bhabona": [
+   "kautuk"
+  ],
+  "aar-kato-dure-aachhe": [
+   "bhakti",
+   "shanti"
+  ],
+  "aar-keno-aar-keno": [
+   "bishad"
+  ],
+  "aar-ki-aami-chharbo-tore": [
+   "prem"
+  ],
+  "aar-na-aar-na": [
+   "kautuk"
+  ],
+  "aar-nai-je-deri": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aar-nai-re-bela-namlo": [
+   "viraha",
+   "prem"
+  ],
+  "aar-nohe-aar-nohe": [
+   "bishad",
+   "viraha"
+  ],
+  "aar-nohe-aar-noy": [
+   "sahas",
+   "ananda"
+  ],
+  "aaro-aaghat-soibe-aamar": [
+   "sahas",
+   "bhakti"
+  ],
+  "aaro-aaro-probhu": [
+   "bhakti",
+   "sahas"
+  ],
+  "aaro-chai-je-aaro-chai": [
+   "bhakti",
+   "ananda"
+  ],
+  "aaro-ektu-boso": [
+   "prem"
+  ],
+  "aaro-kichhukhon-na-hoy": [
+   "prem",
+   "viraha"
+  ],
+  "aar-rekho-na-aandhare": [
+   "bhakti",
+   "bishad"
+  ],
+  "aasa-jawar-maajhkhane": [
+   "bishad",
+   "prakriti-bhava"
+  ],
+  "aasa-jawar-pother-dhaare": [
+   "smriti",
+   "prem"
+  ],
+  "aashar-kotha-hote-aaj": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "aasharsondhya-ghoniye-elo": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "aay-aay-aay-aamader-angone": [
+   "utsav",
+   "prakriti-bhava"
+  ],
+  "aay-aay-re-paagol-bhulbi": [
+   "sahas",
+   "ananda"
+  ],
+  "aay-lo-sajoni-sobe-mile": [
+   "prakriti-bhava",
+   "utsav"
+  ],
+  "aay-maa-aamar-saathe": [
+   "shanti"
+  ],
+  "aay-re-mora-phasal-kaati": [
+   "utsav",
+   "ananda"
+  ],
+  "aay-tobe-sahochori": [
+   "ananda",
+   "utsav"
+  ],
+  "aay-tora-aay-aay": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "abelay-jodi-esechho-aamar-bone": [
+   "bishad",
+   "prem"
+  ],
+  "abhishap-noy-noy": [
+   "prem",
+   "bhakti"
+  ],
+  "abhoy-dao-to-boli": [
+   "kautuk"
+  ],
+  "achchha-bada-tabasang": [
+   "bhakti"
+  ],
+  "achenake-bhoy-ki-aamar-ore": [
+   "sahas",
+   "bhakti"
+  ],
+  "adhora-madhuri-dhorechhi": [
+   "prem",
+   "smriti"
+  ],
+  "agnibina-baajao-tumi-kemon-kore": [
+   "bhakti"
+  ],
+  "agnisikha-esho-esho": [
+   "utsav",
+   "shanti"
+  ],
+  "agyane-karo-hey-kshoma": [
+   "bishad"
+  ],
+  "aho-aaspordha-eki": [
+   "bishad"
+  ],
+  "aho-ki-duhsaha-spordha": [
+   "sahas",
+   "kautuk"
+  ],
+  "ajana-khonir-nuton-monir": [
+   "prem",
+   "ananda"
+  ],
+  "ajana-sur-ke-diye-jaay": [
+   "smriti",
+   "viraha"
+  ],
+  "akarone-akale-mor-porlo": [
+   "sahas",
+   "bhakti"
+  ],
+  "aloke-kusum-naa-diyo": [
+   "prem"
+  ],
+  "alpo-loiya-thaki-tai": [
+   "bhakti",
+   "shanti"
+  ],
+  "amoldhabolo-paale-legechhe": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "amol-kamol-sahoje-joler": [
+   "bhakti",
+   "ananda"
+  ],
+  "amon-aaral-diye-lukiye": [
+   "bhakti",
+   "viraha"
+  ],
+  "ananta-sagar-majhe": [
+   "shanti",
+   "bishad"
+  ],
+  "ananter-baani-tumi": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "andhakarer-maajhe-aamay": [
+   "bhakti",
+   "shanti"
+  ],
+  "andhokarer-utsho-hotye-utsarito": [
+   "bhakti"
+  ],
+  "anek-diner-aamar-je-gaan": [
+   "smriti",
+   "viraha"
+  ],
+  "anek-diner-moner-manush": [
+   "smriti",
+   "prakriti-bhava"
+  ],
+  "anek-diner-shunyota-mor": [
+   "bhakti"
+  ],
+  "anek-diyechho-nath": [
+   "bhakti",
+   "viraha"
+  ],
+  "anek-kotha-bolechhilem": [
+   "smriti",
+   "viraha"
+  ],
+  "anek-kotha-jao-jey-bole": [
+   "prem",
+   "bishad"
+  ],
+  "anek-pawar-majhe-majhe": [
+   "smriti",
+   "ananda"
+  ],
+  "animesh-aankhi-sei-ke": [
+   "bhakti",
+   "shanti"
+  ],
+  "antore-jagichho-antorjami": [
+   "bhakti"
+  ],
+  "antor-mamo-bikoshito-kar": [
+   "bhakti",
+   "shanti"
+  ],
+  "arupbina-ruper-aarale": [
+   "bhakti",
+   "ananda"
+  ],
+  "ashanti-aj-haanlo-e-ki": [
+   "prem",
+   "bishad"
+  ],
+  "ashrubhora-bedona-dike-dike": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "ashrunodir-sudur-paare": [
+   "bhakti",
+   "shanti"
+  ],
+  "asim-aakashe-agonyo": [
+   "bhakti"
+  ],
+  "asim-dhon-to-aachhe-tomar": [
+   "bhakti",
+   "ananda"
+  ],
+  "asim-kaalsagore": [
+   "bhakti",
+   "shanti"
+  ],
+  "asim-sangsare-jar-keho": [
+   "bishad"
+  ],
+  "asundorer-parom-bedonay": [
+   "prem"
+  ],
+  "ayi-bhubanmon-mohini": [
+   "deshprem",
+   "prakriti-bhava"
+  ],
+  "ayi-bishadini-bina": [
+   "deshprem",
+   "bishad"
+  ],
+  "baachha-sahoj-kore": [
+   "prem"
+  ],
+  "baachha-tui-je": [
+   "bishad",
+   "bhakti"
+  ],
+  "baadha-dile": [
+   "sahas"
+  ],
+  "baadol-baul": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "baadol-dhaara": [
+   "prakriti-bhava",
+   "smriti"
+  ],
+  "baadol-diner": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "baadol-meghe": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "baadorbarkhon": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "baahire-bhul": [
+   "bhakti",
+   "bishad"
+  ],
+  "baahir-holem": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "baahir-pothe": [
+   "smriti",
+   "shanti"
+  ],
+  "baajao-tumi-kobi": [
+   "bhakti",
+   "ananda"
+  ],
+  "baaje-baaje": [
+   "bhakti",
+   "ananda"
+  ],
+  "baaje-guru-guru": [
+   "sahas"
+  ],
+  "baaje-korun-sure": [
+   "viraha"
+  ],
+  "baaje-re-baaje": [
+   "sahas",
+   "ananda"
+  ],
+  "baaje-re-baaje-re": [
+   "sahas"
+  ],
+  "baajibe-sokhi": [
+   "prem"
+  ],
+  "baajilo-kaahar": [
+   "prem",
+   "ananda"
+  ],
+  "baajo-re-baashori": [
+   "prem",
+   "utsav"
+  ],
+  "baaki-aami": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "baanglar-maati": [
+   "deshprem",
+   "bhakti"
+  ],
+  "baani-binapani": [
+   "bhakti",
+   "viraha"
+  ],
+  "baani-mor-naahi": [
+   "viraha"
+  ],
+  "baani-tabo": [
+   "bhakti",
+   "shanti"
+  ],
+  "baar-baar-sokhi": [
+   "viraha",
+   "bishad"
+  ],
+  "baare-baare-peyechhi": [
+   "bhakti",
+   "ananda"
+  ],
+  "baare-baare-phire": [
+   "prem",
+   "ananda"
+  ],
+  "hey-sakha-barota": [
+   "viraha",
+   "prem"
+  ],
+  "baasonti-he": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "bahe-nirantor": [
+   "bhakti",
+   "ananda"
+  ],
+  "baishakher-ei": [
+   "prakriti-bhava",
+   "smriti"
+  ],
+  "baishakh-he": [
+   "prakriti-bhava",
+   "sahas"
+  ],
+  "bajramanik-diye": [
+   "prakriti-bhava",
+   "utsav"
+  ],
+  "bajre-tomaar-baaje": [
+   "bhakti",
+   "sahas"
+  ],
+  "bande-mataram": [
+   "deshprem"
+  ],
+  "bandhu-kiser": [
+   "sahas",
+   "kautuk"
+  ],
+  "banna-gandha-gunopetang": [
+   "bhakti"
+  ],
+  "baro-asha-kore": [
+   "bhakti",
+   "bishad"
+  ],
+  "baro-bedonar": [
+   "prem",
+   "viraha"
+  ],
+  "baro-bishmoy": [
+   "prem"
+  ],
+  "baro-thaaki": [
+   "prem"
+  ],
+  "barsanmondrito": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "basanta-aaol-re": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "basantaprobhate-ek": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "basanta-se-jaay": [
+   "viraha",
+   "smriti"
+  ],
+  "basanta-taar-gaan": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "basante-aaj": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "basante-basante": [
+   "prakriti-bhava",
+   "smriti"
+  ],
+  "basante-ki-shudhu": [
+   "prakriti-bhava",
+   "bhakti"
+  ],
+  "basante-phul": [
+   "sahas",
+   "prakriti-bhava"
+  ],
+  "bedonaay-bhore": [
+   "prem",
+   "bishad"
+  ],
+  "bedona-ki": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "beena-bajao": [
+   "bhakti",
+   "ananda"
+  ],
+  "bela-gelo-tomar": [
+   "bhakti",
+   "viraha"
+  ],
+  "bela-jaay-bohia": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "bela-je-chole": [
+   "viraha",
+   "bishad"
+  ],
+  "besura-baaje-re": [
+   "bhakti",
+   "shanti"
+  ],
+  "bhaalobasile-jodi": [
+   "viraha",
+   "bishad"
+  ],
+  "bhaalobese-dukh-seo": [
+   "prem"
+  ],
+  "bhaalobese-jodi-sukh": [
+   "bishad",
+   "prem"
+  ],
+  "bhaalobese-sokhi": [
+   "prem"
+  ],
+  "bhaalo-bhaalo-tumi": [
+   "kautuk"
+  ],
+  "bhaalo-jodi-baso": [
+   "prem"
+  ],
+  "bhaalo-maanush-noi": [
+   "kautuk",
+   "sahas"
+  ],
+  "bhaanga-deuler": [
+   "bishad",
+   "bhakti"
+  ],
+  "bhaanglo-hasir-badh": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "bhaarot-re-tor": [
+   "deshprem",
+   "bishad"
+  ],
+  "bhaasiye-de": [
+   "viraha",
+   "bhakti"
+  ],
+  "bhabakolahal-chhariye": [
+   "bhakti",
+   "shanti"
+  ],
+  "bhabechhilem-aasbe": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "bhabna-korisne": [
+   "sahas"
+  ],
+  "bhagyabati-se": [
+   "prem",
+   "ananda"
+  ],
+  "bhaktahridibikash": [
+   "bhakti"
+  ],
+  "bhakto-korichhe": [
+   "bhakti",
+   "shanti"
+  ],
+  "bhango-bandh": [
+   "sahas",
+   "ananda"
+  ],
+  "bhara-badara-mah-bhadara": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "bhengechho-duyar": [
+   "sahas",
+   "bhakti"
+  ],
+  "bhenge-mor": [
+   "viraha",
+   "bhakti"
+  ],
+  "bhikshe-de": [
+   "bishad"
+  ],
+  "bhora-thaak": [
+   "viraha",
+   "smriti"
+  ],
+  "bhorer-belaay-kokhon": [
+   "bhakti",
+   "ananda"
+  ],
+  "bhor-holo": [
+   "ananda",
+   "bhakti"
+  ],
+  "bhor-holo-jei": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "bhor-theke": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "bhoshme-dhake-klanta": [
+   "bishad"
+  ],
+  "bhoyere-mor-aaghaat": [
+   "bhakti",
+   "sahas"
+  ],
+  "bhoy-hote-tabo": [
+   "bhakti"
+  ],
+  "bhoy-hoy-paachhe": [
+   "bhakti"
+  ],
+  "bhoy-nei-re": [
+   "sahas"
+  ],
+  "bhuboneswar-hey": [
+   "bhakti"
+  ],
+  "bhubon-hoite-bhubonbasi": [
+   "bhakti",
+   "shanti"
+  ],
+  "bhubonjora-aasonkhani": [
+   "bhakti"
+  ],
+  "bhule-bhule-aaj": [
+   "kautuk",
+   "ananda"
+  ],
+  "bhule-jai-theke": [
+   "bhakti"
+  ],
+  "bhul-korechhinu": [
+   "prem"
+  ],
+  "bidaay-jakhon": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "bidaay-karecho": [
+   "viraha",
+   "smriti"
+  ],
+  "bidaay-niye": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "bidhi-daagor-aankhi": [
+   "prem",
+   "viraha"
+  ],
+  "bidhir-bahdon-kaatbe": [
+   "deshprem",
+   "sahas"
+  ],
+  "bimol-anonde-jaago": [
+   "bhakti",
+   "ananda"
+  ],
+  "bina-saje-saji": [
+   "prem"
+  ],
+  "bipashar-tire": [
+   "prem"
+  ],
+  "bipode-more-rokshaa": [
+   "bhakti",
+   "sahas"
+  ],
+  "bipul-tarongo-re": [
+   "ananda",
+   "bhakti"
+  ],
+  "biraho-modhur-holo": [
+   "viraha"
+  ],
+  "biraso-din-birolo": [
+   "prem",
+   "ananda"
+  ],
+  "birohe-moribo": [
+   "prem",
+   "viraha"
+  ],
+  "biswabidyathirthaprangon": [
+   "utsav"
+  ],
+  "biswabinarobe-biswajon": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "biswa-jakhon": [
+   "viraha",
+   "bhakti"
+  ],
+  "biswajora-phand-petecho": [
+   "bhakti"
+  ],
+  "biswarajaloye-biswabina": [
+   "prakriti-bhava",
+   "bhakti",
+   "ananda"
+  ],
+  "biswasathe-joge": [
+   "bhakti",
+   "ananda"
+  ],
+  "bnaachaan-bnaachi": [
+   "bhakti"
+  ],
+  "bnaadhan-kena": [
+   "bishad"
+  ],
+  "bnaadhon-chherar": [
+   "sahas",
+   "bhakti"
+  ],
+  "bnaashi-aami": [
+   "bhakti",
+   "viraha"
+  ],
+  "bnaashori-bajate": [
+   "viraha",
+   "prem"
+  ],
+  "bnedhechha-premer": [
+   "bhakti"
+  ],
+  "bnodhu-kon-aalo": [
+   "prem",
+   "ananda"
+  ],
+  "bnodhu-michhe": [
+   "prem",
+   "bishad"
+  ],
+  "bnodhur-laagi": [
+   "prem"
+  ],
+  "bnodhu-tomay": [
+   "prem"
+  ],
+  "bnodhuya-asomaye": [
+   "prem",
+   "ananda"
+  ],
+  "bnodhuya-hiya": [
+   "prem",
+   "viraha"
+  ],
+  "bohu-juger": [
+   "prakriti-bhava",
+   "smriti",
+   "viraha"
+  ],
+  "bokulgondhe-bonya": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "bolbo-ki-aar": [
+   "bishad",
+   "prem"
+  ],
+  "bol-dao-more": [
+   "bhakti",
+   "sahas"
+  ],
+  "bolechhilo-dhora": [
+   "kautuk"
+  ],
+  "bole-dao-jol": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "bol-golap-more": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "boli-go-sajoni": [
+   "bishad",
+   "prem"
+  ],
+  "boli-o-aamar": [
+   "prem"
+  ],
+  "bolo-bolo-bondhu": [
+   "bhakti",
+   "sahas"
+  ],
+  "bolo-bolo-pita": [
+   "viraha",
+   "bishad"
+  ],
+  "bolo-na-bolo": [
+   "bishad"
+  ],
+  "bolo-sakhi-bolo": [
+   "prem"
+  ],
+  "bol-to-ei": [
+   "bhakti",
+   "shanti"
+  ],
+  "bondhu-raho-raho": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "bone-bone": [
+   "ananda",
+   "sahas"
+  ],
+  "bone-emon-phul": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "bone-jodi-phutlo": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "borisho-dhoramaajhe": [
+   "bhakti",
+   "shanti"
+  ],
+  "borso-gelo": [
+   "bhakti",
+   "shanti"
+  ],
+  "borso-oi-gelo": [
+   "bhakti"
+  ],
+  "bose-achhi": [
+   "bhakti",
+   "viraha"
+  ],
+  "bristi-sheser": [
+   "prakriti-bhava",
+   "smriti"
+  ],
+  "brithaa-geyechhi": [
+   "bishad"
+  ],
+  "buddhang-saranang-gachhami": [
+   "bhakti"
+  ],
+  "buddha-susuddha-karunamahannabo": [
+   "bhakti"
+  ],
+  "bujhechhi-bujhechhi": [
+   "bishad",
+   "prem"
+  ],
+  "bujhechhi-ki": [
+   "bhakti",
+   "ananda"
+  ],
+  "bujhi-bela": [
+   "viraha"
+  ],
+  "bujhi-elo": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "bujhi-oi": [
+   "viraha",
+   "bhakti"
+  ],
+  "buk-bedhe": [
+   "sahas",
+   "deshprem"
+  ],
+  "buker-bason": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "byakul-bokuler": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "byakul-hoye": [
+   "viraha"
+  ],
+  "byakul-praan": [
+   "bhakti",
+   "viraha"
+  ],
+  "byartho-praner": [
+   "sahas"
+  ],
+  "chaahina-sukhe-thakite": [
+   "bhakti",
+   "bishad"
+  ],
+  "chaahiya-dekho-rosher": [
+   "ananda",
+   "shanti"
+  ],
+  "chaitropabone-mamo-chittabone": [
+   "viraha",
+   "prem"
+  ],
+  "chale-chhalo-chhalo": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "chalo-niyam-mote": [
+   "kautuk"
+  ],
+  "chapal-taba-nobin": [
+   "prem",
+   "ananda"
+  ],
+  "charaachar-sakoli-michhe": [
+   "bishad"
+  ],
+  "charano-dhorite-diyogo": [
+   "bhakti"
+  ],
+  "charanodhwani-shuni-tabo": [
+   "bhakti",
+   "shanti"
+  ],
+  "charanorekha-tabo-je-1": [
+   "prakriti-bhava",
+   "smriti",
+   "bishad"
+  ],
+  "charanorekha-tabo-je-2": [
+   "prakriti-bhava",
+   "smriti",
+   "bishad"
+  ],
+  "chena-phuler-gondhosrote": [
+   "smriti",
+   "viraha"
+  ],
+  "chharbo-na-bhaai": [
+   "sahas",
+   "kautuk"
+  ],
+  "chhar-go-tora": [
+   "prakriti-bhava",
+   "kautuk"
+  ],
+  "chhaya-ghonaichhe-bonye": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "chhi-chhi-chokher": [
+   "sahas",
+   "deshprem"
+  ],
+  "chhi-chhi-kutsit": [
+   "bishad"
+  ],
+  "chhi-chhi-mori": [
+   "bishad"
+  ],
+  "chhi-chhi-sokha": [
+   "bishad",
+   "prakriti-bhava"
+  ],
+  "chhile-kotha-balo": [
+   "kautuk",
+   "prem"
+  ],
+  "chhilo-je-poraner": [
+   "prem",
+   "ananda"
+  ],
+  "chhinno-paatar-saajai": [
+   "shanti",
+   "ananda"
+  ],
+  "chhinno-shikol-paye": [
+   "sahas",
+   "bishad"
+  ],
+  "chhutir-bashi-baajlo": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "chinile-na-aamare": [
+   "viraha",
+   "bishad"
+  ],
+  "chirobondhu-chironirbhor": [
+   "bhakti",
+   "shanti"
+  ],
+  "chirodibos-nabo-madhuri": [
+   "bhakti",
+   "ananda"
+  ],
+  "chiro-purano-chnaad": [
+   "prem",
+   "kautuk"
+  ],
+  "chirosakha-chhero-na": [
+   "bhakti"
+  ],
+  "chitrangada-rajkumari": [
+   "prem"
+  ],
+  "chitto-aamar-haaralo": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "chitto-pipasito-re": [
+   "viraha"
+  ],
+  "chnaader-haashir-bnaadh": [
+   "prakriti-bhava",
+   "ananda",
+   "prem"
+  ],
+  "chnaad-haso-haso": [
+   "prem",
+   "ananda"
+  ],
+  "chniriton-haraton-iskabon": [
+   "kautuk"
+  ],
+  "chokher-aaloy-dekhechilem": [
+   "bhakti",
+   "bishad"
+  ],
+  "chokh-je-oder": [
+   "bhakti"
+  ],
+  "chokshe-aamar-trisna": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "chol-chol-bhaai": [
+   "kautuk"
+  ],
+  "cholechhe-chutiya-polataka": [
+   "kautuk"
+  ],
+  "cholechhe-taroni-prosadopabone": [
+   "bhakti",
+   "shanti"
+  ],
+  "chole-jaabi-ei": [
+   "viraha"
+  ],
+  "chole-jaay-mori": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "choli-go-choli": [
+   "ananda",
+   "sahas"
+  ],
+  "choliyachhi-grihopaane": [
+   "bhakti",
+   "bishad"
+  ],
+  "cholo-cholo-cholo": [
+   "kautuk"
+  ],
+  "cholo-jai-cholo": [
+   "sahas",
+   "deshprem"
+  ],
+  "churi-hoye-gechhe": [
+   "bishad"
+  ],
+  "daake-baar-baar": [
+   "bhakti",
+   "sahas"
+  ],
+  "daakichho-ke-tumi": [
+   "bhakti",
+   "shanti"
+  ],
+  "daakichho-shuni-jaaginu": [
+   "bhakti",
+   "ananda"
+  ],
+  "daakilo-more-jaagar": [
+   "bhakti",
+   "ananda"
+  ],
+  "daako-more-aaji": [
+   "bhakti",
+   "shanti"
+  ],
+  "daao-hey-aamar": [
+   "bhakti"
+  ],
+  "daao-hey-hridoy": [
+   "bhakti",
+   "ananda"
+  ],
+  "daariye-aachho-tumi": [
+   "bhakti",
+   "viraha"
+  ],
+  "daarun-agnibane": [
+   "prakriti-bhava",
+   "sahas"
+  ],
+  "daibe-tumi-kakhon": [
+   "prem",
+   "ananda"
+  ],
+  "ddhaako-re-mukh": [
+   "deshprem",
+   "bishad"
+  ],
+  "debadhideb-mohadeb": [
+   "bhakti"
+  ],
+  "dekechhen-priyatamo": [
+   "bhakti",
+   "ananda"
+  ],
+  "dekha-jodi-dile": [
+   "bhakti"
+  ],
+  "dekha-na-dekhaay": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "dekhaye-de-kotha": [
+   "bishad"
+  ],
+  "dekhbo-ke-tor": [
+   "prem"
+  ],
+  "dekh-cheye-dekh": [
+   "ananda",
+   "bhakti"
+  ],
+  "dekh-dekh-duto": [
+   "kautuk"
+  ],
+  "dekhe-ja-dekhe": [
+   "ananda",
+   "prem"
+  ],
+  "dekho-cheye-dekho": [
+   "prem",
+   "ananda"
+  ],
+  "dekho-dekho-dekho": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "dekho-he-thakur": [
+   "kautuk"
+  ],
+  "dekho-oi-ke": [
+   "prem"
+  ],
+  "dekho-sokha-bhul": [
+   "bishad",
+   "viraha"
+  ],
+  "deko-na-aamare": [
+   "bishad",
+   "viraha"
+  ],
+  "de-pore-de": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "desh-desh-nondito": [
+   "deshprem",
+   "sahas"
+  ],
+  "de-tora-aamay": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "dewa-newa-phiriye": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "dey-lo-sokhi": [
+   "prem",
+   "ananda"
+  ],
+  "dhaay-jeno-mor": [
+   "bhakti"
+  ],
+  "dhik-dhik-ore": [
+   "sahas",
+   "bishad"
+  ],
+  "dhire-bondhu-go": [
+   "bhakti",
+   "shanti"
+  ],
+  "dhire-dhire-dhire": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "dhire-dhire-prane": [
+   "prem"
+  ],
+  "dhone-jone-aachhi": [
+   "bhakti"
+  ],
+  "dhora-diyechhi-go": [
+   "prem",
+   "ananda"
+  ],
+  "dhora-se-je": [
+   "viraha",
+   "prem"
+  ],
+  "dhor-dhor-oi": [
+   "bishad"
+  ],
+  "dhoroni-dure-cheye": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "dhoronir-gogoner-miloner": [
+   "prakriti-bhava",
+   "ananda",
+   "utsav"
+  ],
+  "dhusor-jiboner-godhulite-klanto-aaloi": [
+   "smriti",
+   "viraha"
+  ],
+  "dhusor-jiboner-godhulite-klanto-molin": [
+   "smriti",
+   "prem"
+  ],
+  "dhwanilo-aahwan-modhur": [
+   "bhakti",
+   "utsav",
+   "shanti"
+  ],
+  "dibanishi-koriya-jaton": [
+   "bhakti",
+   "shanti"
+  ],
+  "dibaso-rajoni-aami": [
+   "viraha",
+   "prem"
+  ],
+  "din-abosan-holo": [
+   "bhakti",
+   "shanti"
+  ],
+  "dinantobelay-sesher-phosol": [
+   "shanti",
+   "prakriti-bhava"
+  ],
+  "diner-belay-bnaashi": [
+   "bhakti",
+   "viraha"
+  ],
+  "diner-bichar-karo": [
+   "bhakti"
+  ],
+  "diner-porye-din": [
+   "viraha"
+  ],
+  "diner-sheshe-ghumer-deshe": [
+   "viraha",
+   "shanti"
+  ],
+  "dinguli-mor-sonar": [
+   "smriti",
+   "bishad"
+  ],
+  "din-jaay-re": [
+   "bishad",
+   "bhakti"
+  ],
+  "din-jodi-holo": [
+   "bhakti",
+   "shanti"
+  ],
+  "dinoshese-bosonto-ja": [
+   "smriti",
+   "prakriti-bhava"
+  ],
+  "din-phuralo-hey": [
+   "bhakti",
+   "shanti"
+  ],
+  "din-pore-jay": [
+   "viraha"
+  ],
+  "din-sheser-ranga": [
+   "prem"
+  ],
+  "din-to-choli": [
+   "bhakti",
+   "bishad"
+  ],
+  "dip-nibe-gechhe": [
+   "viraha"
+  ],
+  "dirgho-jibanpoth": [
+   "bhakti",
+   "shanti"
+  ],
+  "diye-genu-basanter": [
+   "smriti",
+   "viraha"
+  ],
+  "dnaarao-aamar-aankhir": [
+   "bhakti"
+  ],
+  "dnaarao-kotha-chalo": [
+   "kautuk"
+  ],
+  "dnaarao-maatha-khaao": [
+   "viraha",
+   "prem"
+  ],
+  "dnaarao-mon-anonto": [
+   "bhakti",
+   "ananda"
+  ],
+  "doi-chai-go": [
+   "kautuk",
+   "ananda"
+  ],
+  "dokhin-hawa-jaago": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "dole-dole-dole": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "doshi-koribo-na": [
+   "bishad",
+   "viraha"
+  ],
+  "doya-diye-hobe": [
+   "bhakti"
+  ],
+  "doya-karo-doya": [
+   "bhakti",
+   "bishad"
+  ],
+  "duare-dao-more": [
+   "bhakti",
+   "sahas"
+  ],
+  "duar-mor-pathapase": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "dubi-amritapathaare": [
+   "bhakti",
+   "ananda"
+  ],
+  "duihate-kaler-mondira": [
+   "ananda",
+   "sahas"
+  ],
+  "dui-hridoyer-nodi": [
+   "utsav",
+   "bhakti"
+  ],
+  "duiti-hridoye-ekti": [
+   "utsav",
+   "bhakti"
+  ],
+  "dujone-dekha-holo": [
+   "viraha",
+   "bishad"
+  ],
+  "dujone-ek-hoye": [
+   "utsav",
+   "bhakti"
+  ],
+  "dujone-jethai-milichhe": [
+   "utsav",
+   "bhakti"
+  ],
+  "dukh-diyechho-diyechho": [
+   "bhakti",
+   "bishad"
+  ],
+  "dukh-dur-korile": [
+   "bhakti",
+   "ananda"
+  ],
+  "dukher-beshe-esechho": [
+   "bhakti",
+   "bishad"
+  ],
+  "dukher-kotha-tomai": [
+   "bhakti",
+   "ananda"
+  ],
+  "dukher-milon-tutibar": [
+   "prem",
+   "shanti"
+  ],
+  "dukkha-jodi-na": [
+   "sahas",
+   "bhakti"
+  ],
+  "dukkher-barosaay-chokshe": [
+   "bhakti",
+   "ananda"
+  ],
+  "dukkher-joggo-anol-1": [
+   "prem",
+   "viraha"
+  ],
+  "dukkher-timire-jodi": [
+   "bhakti",
+   "bishad"
+  ],
+  "dukkho-diye-metabo": [
+   "bishad",
+   "prem"
+  ],
+  "dukkho-e-noy": [
+   "shanti",
+   "bhakti"
+  ],
+  "dukkho-je-tor": [
+   "shanti",
+   "bhakti"
+  ],
+  "dukkhoraate-hey-naath": [
+   "bhakti",
+   "ananda"
+  ],
+  "durdeshi-sei-rakhal": [
+   "viraha",
+   "smriti"
+  ],
+  "dure-daaraye-aachhe": [
+   "prem",
+   "kautuk"
+  ],
+  "dure-kothay-dure": [
+   "viraha"
+  ],
+  "durer-bondhu-surer": [
+   "prem",
+   "utsav"
+  ],
+  "dur-rojonir-swapon": [
+   "smriti",
+   "ananda"
+  ],
+  "duti-pran-ek": [
+   "utsav",
+   "bhakti"
+  ],
+  "duware-bose-aachhi": [
+   "bhakti",
+   "bishad"
+  ],
+  "dware-keno-dile": [
+   "viraha",
+   "bishad"
+  ],
+  "e-aaboron-kshoy": [
+   "bhakti",
+   "ananda"
+  ],
+  "e-andhokar-dubao": [
+   "bhakti"
+  ],
+  "ebaar-aamaye-daakle": [
+   "bhakti",
+   "shanti"
+  ],
+  "ebaar-abogunthon-kholo": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "ebaar-bhasiye-dite-hobe-1": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "ebaar-bidaybelar-sur": [
+   "prakriti-bhava",
+   "bishad"
+  ],
+  "ebaar-bujhechi-sokha": [
+   "bhakti",
+   "bishad"
+  ],
+  "ebaar-bujhi-bholar": [
+   "viraha",
+   "smriti"
+  ],
+  "ebaar-cholinu-tobe": [
+   "viraha",
+   "sahas"
+  ],
+  "ebaar-dukkho-aamar": [
+   "bhakti",
+   "ananda"
+  ],
+  "ebaar-elo-samay-re": [
+   "prakriti-bhava",
+   "bishad"
+  ],
+  "ebaar-jomer-duyor": [
+   "kautuk"
+  ],
+  "ebaar-milon-haaway": [
+   "prem",
+   "ananda"
+  ],
+  "ebaar-nirob-kore-dao": [
+   "bhakti",
+   "shanti"
+  ],
+  "ebaar-rongiye-gelo": [
+   "shanti",
+   "viraha"
+  ],
+  "ebaar-sokhi-sonaar": [
+   "kautuk",
+   "prem"
+  ],
+  "ebaar-to-jouboner": [
+   "sahas",
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "ebaar-tor-mora": [
+   "deshprem",
+   "sahas"
+  ],
+  "ebaar-ujaar-kore": [
+   "viraha",
+   "prem"
+  ],
+  "e-bela-daak-porechhe": [
+   "smriti",
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "e-bhalobasaar-jodi": [
+   "viraha",
+   "bishad"
+  ],
+  "e-bhanga-sukher": [
+   "bishad"
+  ],
+  "e-bharote-raakho": [
+   "deshprem",
+   "bhakti"
+  ],
+  "e-din-aaji-kon": [
+   "ananda",
+   "utsav"
+  ],
+  "e-horisundor": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "ei-aasa-jaoyar": [
+   "viraha"
+  ],
+  "ei-bela-sobe-mile": [
+   "sahas",
+   "ananda"
+  ],
+  "ei-bujhi-mor-bhorer": [
+   "prem",
+   "smriti"
+  ],
+  "ei-ekla-moder": [
+   "ananda",
+   "kautuk"
+  ],
+  "ei-je-heri-go": [
+   "ananda",
+   "bhakti"
+  ],
+  "ei-je-kaalo-maatir": [
+   "bhakti",
+   "viraha"
+  ],
+  "ei-je-tomar-prem": [
+   "bhakti",
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "ei-korechho-bhaalo": [
+   "bhakti",
+   "sahas"
+  ],
+  "ei-kothata-dhore": [
+   "sahas"
+  ],
+  "ei-kothatai-chhilem": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "ei-kothati-mone-rekho": [
+   "smriti",
+   "viraha"
+  ],
+  "ei-lobhinu-songo": [
+   "bhakti",
+   "ananda"
+  ],
+  "ei-molin-bastro": [
+   "bhakti",
+   "sahas"
+  ],
+  "ei-moumaachhider-ghorchhara": [
+   "prakriti-bhava",
+   "kautuk"
+  ],
+  "ei-petika-aamar": [
+   "bishad"
+  ],
+  "ei-shrabon-bela": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "ei-shraboner-buker": [
+   "prakriti-bhava",
+   "sahas"
+  ],
+  "ei-sokaal-belar": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "ei-to-bhalo-leghchhilo": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "ei-to-bhora-holo": [
+   "utsav",
+   "prakriti-bhava"
+  ],
+  "ei-to-tomar-aalok": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "ei-udasi-haoar": [
+   "prem",
+   "smriti"
+  ],
+  "e-je-mor-aabaron": [
+   "bhakti",
+   "viraha"
+  ],
+  "e-jonmero-laagi": [
+   "bishad",
+   "prem"
+  ],
+  "ek-baar-bolo-sakhi": [
+   "prem",
+   "viraha"
+  ],
+  "ek-baar-tora-maa": [
+   "deshprem",
+   "sahas"
+  ],
+  "ek-din-chine": [
+   "sahas",
+   "viraha"
+  ],
+  "ekdin-jaara-merechhilo": [
+   "bishad",
+   "bhakti"
+  ],
+  "ek-dore-bnaadha": [
+   "sahas",
+   "kautuk"
+  ],
+  "e-kemon-holo-mon": [
+   "bishad"
+  ],
+  "ek-haate-or-kripaan": [
+   "bhakti",
+   "sahas"
+  ],
+  "ekhon-aamar-samay": [
+   "viraha",
+   "shanti"
+  ],
+  "ekhon-aar-deri": [
+   "deshprem",
+   "sahas"
+  ],
+  "ekhon-karbo-ki-bol": [
+   "sahas",
+   "kautuk"
+  ],
+  "ekhono-anaadhar-royechhe": [
+   "bhakti",
+   "bishad"
+  ],
+  "ekhono-gelo-na": [
+   "bhakti",
+   "bishad"
+  ],
+  "ekhono-ghor-bhange": [
+   "sahas",
+   "bhakti"
+  ],
+  "ekhono-keno-samay": [
+   "viraha"
+  ],
+  "ekhono-taare-chokhe": [
+   "prem",
+   "viraha"
+  ],
+  "e-ki-akulota-bhubone": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "e-ki-andhokar": [
+   "deshprem",
+   "bishad",
+   "bhakti"
+  ],
+  "e-ki-e-e-ki-e": [
+   "ananda",
+   "prem"
+  ],
+  "e-ki-e-ghor-bon": [
+   "bishad"
+  ],
+  "e-ki-e-sundor-sobha": [
+   "bhakti",
+   "ananda"
+  ],
+  "e-ki-gobhir-baani": [
+   "prakriti-bhava",
+   "bhakti"
+  ],
+  "e-ki-harosh-heri": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "e-ki-khela-he": [
+   "bishad",
+   "prem"
+  ],
+  "e-ki-koruna-korunamoy": [
+   "bhakti",
+   "ananda"
+  ],
+  "e-ki-labonye": [
+   "bhakti",
+   "ananda"
+  ],
+  "e-ki-maaya-lukao": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "e-ki-satya-sakoli": [
+   "prem",
+   "ananda"
+  ],
+  "e-ki-sudharos": [
+   "prem",
+   "ananda"
+  ],
+  "e-ki-sugondhohillol": [
+   "bhakti",
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "e-ki-swapno": [
+   "prem",
+   "viraha"
+  ],
+  "ekla-boshe-badolseshe": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "ekla-boshe-eke-eke": [
+   "viraha",
+   "bishad"
+  ],
+  "ekla-boshe-hero-tomar": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "ekmone-tor-ektaarate": [
+   "bhakti",
+   "shanti"
+  ],
+  "ekoda-prate-kunjotole": [
+   "prem"
+  ],
+  "ek-phaguner-gaan": [
+   "smriti",
+   "prakriti-bhava"
+  ],
+  "ek-sutre-baadhiyachhi": [
+   "deshprem",
+   "sahas"
+  ],
+  "ekti-namoskare-probhu": [
+   "bhakti"
+  ],
+  "ektuku-chhnoa-laage": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "elem-natun-deshe": [
+   "prem",
+   "ananda"
+  ],
+  "elo-je-shitero-bela": [
+   "prakriti-bhava",
+   "shanti"
+  ],
+  "emni-kore-ghuribo": [
+   "bhakti",
+   "viraha"
+  ],
+  "emni-korei-jaay-jodi": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "e-moho-aabaron-khule": [
+   "bhakti"
+  ],
+  "emon-aar-katodin": [
+   "bishad"
+  ],
+  "emon-dine-taare": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "e-monihaar-aamar": [
+   "bhakti"
+  ],
+  "enechhi-mora-enechhi-mora-1": [
+   "sahas",
+   "kautuk"
+  ],
+  "enechhi-mora-enechhi-mora-2": [
+   "sahas",
+   "ananda"
+  ],
+  "enechho-oi-sirish-bokul": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "e-paare-mukhor-holo": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "e-porobashe-robe": [
+   "bishad"
+  ],
+  "e-pothe-aami-je": [
+   "smriti",
+   "prem"
+  ],
+  "e-poth-gechhe-konkhane": [
+   "viraha"
+  ],
+  "era-porke-aapon": [
+   "prem"
+  ],
+  "era-sukher-laagi": [
+   "prem",
+   "bishad"
+  ],
+  "ere-bhikhari-saajaye": [
+   "bhakti",
+   "ananda"
+  ],
+  "ere-khama-karo": [
+   "prem"
+  ],
+  "esechhe-sokole-kato": [
+   "bhakti",
+   "utsav"
+  ],
+  "esechhi-go-esechhi": [
+   "prem"
+  ],
+  "esechhile-tobu-aaso": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "esechhinu-dware-tabo": [
+   "viraha",
+   "bishad",
+   "prakriti-bhava"
+  ],
+  "esechhi-priatamo-kshamo": [
+   "prem",
+   "bishad"
+  ],
+  "eshechhe-hawa-baanite": [
+   "ananda",
+   "utsav"
+  ],
+  "eso-aamar-ghore": [
+   "prem"
+  ],
+  "eso-hey-grihodebota": [
+   "bhakti",
+   "utsav"
+  ],
+  "eso-eso-basonto-dhoratol-1": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "eso-eso-eso-priye": [
+   "prem",
+   "viraha"
+  ],
+  "eso-eso-he-trishnaro": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "eso-eso-ogo-shyamchhayaghana": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "eso-eso-phire-eso": [
+   "viraha",
+   "prem"
+  ],
+  "eso-eso-praner": [
+   "utsav",
+   "sahas",
+   "prakriti-bhava"
+  ],
+  "eso-eso-purushottom": [
+   "prem",
+   "sahas"
+  ],
+  "eso-go-eso-bon": [
+   "prakriti-bhava",
+   "bhakti"
+  ],
+  "eso-go-jwele-diye": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "eso-go-nuton-jibon": [
+   "sahas"
+  ],
+  "eso-he-boishakh-eso-eso": [
+   "prakriti-bhava",
+   "sahas"
+  ],
+  "eso-hey-eso-sajalo": [
+   "prakriti-bhava",
+   "bhakti"
+  ],
+  "eso-nipobonye-chhayabithi": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "eso-shoroter-amolmohima": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "eso-shyamalosundaro": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "e-sudhu-alosh-maaya": [
+   "viraha",
+   "bishad"
+  ],
+  "eto-aalo-jaliyechho": [
+   "bhakti",
+   "prem"
+  ],
+  "eto-anandadhwani-utthilo": [
+   "ananda",
+   "bhakti"
+  ],
+  "etodin-bujhi-nai": [
+   "prem",
+   "viraha"
+  ],
+  "eto-din-je-bose": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "eto-din-pore-more": [
+   "ananda",
+   "sahas"
+  ],
+  "eto-din-pore-sokhi": [
+   "bishad",
+   "viraha"
+  ],
+  "etodin-tumi-sokha": [
+   "prem"
+  ],
+  "e-to-khela-noy": [
+   "viraha",
+   "prem"
+  ],
+  "etokhone-bujhi-eli-re": [
+   "bishad",
+   "viraha"
+  ],
+  "eto-phul-ke-photale": [
+   "utsav",
+   "kautuk"
+  ],
+  "eto-rango-shikhechho": [
+   "bhakti"
+  ],
+  "gaabo-tomar-sure": [
+   "bhakti",
+   "sahas"
+  ],
+  "gaan-aamar-jaay-bhese": [
+   "smriti",
+   "prakriti-bhava"
+  ],
+  "gaane-gaane-tabo": [
+   "bhakti",
+   "sahas"
+  ],
+  "gaaner-bhelaay-bela": [
+   "shanti"
+  ],
+  "gaaner-bhitor-diye": [
+   "bhakti",
+   "ananda"
+  ],
+  "gaaner-daali-bhore": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "gaaner-jhornatolai": [
+   "bhakti",
+   "ananda"
+  ],
+  "gaaner-surer-asonkhaani": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "gaa-sokhi-gaili-jodi": [
+   "smriti",
+   "bishad"
+  ],
+  "gaaye-aamar-pulok-laage": [
+   "ananda",
+   "bhakti"
+  ],
+  "gagone-gagone-aaponar": [
+   "prakriti-bhava"
+  ],
+  "gagone-gagone-dhaay": [
+   "prakriti-bhava",
+   "sahas"
+  ],
+  "gagoner-thale-robi": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "gahano-ghano-bone": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "gahone-gahone-ja": [
+   "sahas"
+  ],
+  "gahono-ghano-chhailo": [
+   "prakriti-bhava"
+  ],
+  "gahono-kusumkunjo-majhe": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "gahonraate-shrabondhara": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "gandhorekhar-ponthe": [
+   "kautuk",
+   "prakriti-bhava"
+  ],
+  "gao-bina-bina-gao": [
+   "bhakti",
+   "ananda"
+  ],
+  "garob-mamo-horechho": [
+   "bhakti",
+   "bishad"
+  ],
+  "gelo-go-phirilo": [
+   "bishad",
+   "viraha"
+  ],
+  "ghana-kalo-megh": [
+   "bishad"
+  ],
+  "gharete-bhromor-elo": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "ghate-boshe-achhi": [
+   "viraha",
+   "bhakti"
+  ],
+  "ghora-rajoni-e": [
+   "bishad",
+   "bhakti"
+  ],
+  "ghor-dukkhe-jaginu": [
+   "bishad",
+   "bhakti"
+  ],
+  "ghumer-ghano-gahon": [
+   "viraha",
+   "prem"
+  ],
+  "giyachhe-se-din": [
+   "smriti",
+   "bishad"
+  ],
+  "gobhir-raate-bhoktibhore": [
+   "bhakti",
+   "utsav"
+  ],
+  "gobhir-rajoni-namilo": [
+   "shanti",
+   "bhakti"
+  ],
+  "godhuli-gagone-meghe": [
+   "viraha",
+   "bishad"
+  ],
+  "golap-phul-phutiye": [
+   "prem",
+   "kautuk"
+  ],
+  "gopono-kathati-rabe": [
+   "prem",
+   "ananda"
+  ],
+  "gopon-prane-ekla": [
+   "shanti"
+  ],
+  "gram-chhara-oi-rangamatir": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "guru-guru-guru": [
+   "prakriti-bhava",
+   "sahas"
+  ],
+  "gurupode-mon-karo": [
+   "kautuk",
+   "bhakti"
+  ],
+  "haa-hatobhagini": [
+   "bishad"
+  ],
+  "haar-maana-haar": [
+   "bhakti",
+   "prem"
+  ],
+  "haar-maanale-go": [
+   "bhakti",
+   "bishad"
+  ],
+  "haasi-keno-naai": [
+   "viraha",
+   "bishad"
+  ],
+  "haasire-ki-lukabi": [
+   "prem",
+   "kautuk"
+  ],
+  "haa-sokhi-o-aadore": [
+   "bishad",
+   "prem"
+  ],
+  "haate-loye-deep": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "haatter-dhula-saye-na": [
+   "bhakti",
+   "shanti"
+  ],
+  "haawa-laage-gaaner-paale": [
+   "bhakti",
+   "ananda"
+  ],
+  "haay-atithi-ekhoni": [
+   "viraha",
+   "bishad"
+  ],
+  "haay-e-ki-somapon": [
+   "bishad"
+  ],
+  "haay-go-byathaay-kotha": [
+   "viraha",
+   "bishad"
+  ],
+  "haay-haay-haay-din": [
+   "kautuk",
+   "prakriti-bhava"
+  ],
+  "haay-haay-re-haay-parobase": [
+   "bishad"
+  ],
+  "haay-hatobhagini": [
+   "bishad",
+   "viraha"
+  ],
+  "haay-hemantalaksmi": [
+   "prakriti-bhava",
+   "bishad"
+  ],
+  "haay-ke-dibe-aar": [
+   "bhakti",
+   "bishad"
+  ],
+  "ha-ki-dasha-holo": [
+   "bishad",
+   "bhakti"
+  ],
+  "haay-re-haay-re-nupur": [
+   "bishad",
+   "smriti"
+  ],
+  "haay-re-ore-jaay-na": [
+   "viraha"
+  ],
+  "ha-ke-bole-debe": [
+   "prem",
+   "viraha"
+  ],
+  "ham-job-na-rabo-sajani": [
+   "bishad",
+   "prem"
+  ],
+  "ham-sokhi-daarid-naari": [
+   "prem",
+   "bishad"
+  ],
+  "ha-re-re-re-re": [
+   "ananda",
+   "sahas"
+  ],
+  "hari-tomay-daaki": [
+   "bhakti",
+   "bishad"
+  ],
+  "haroshe-jaago-aaji": [
+   "bhakti",
+   "ananda"
+  ],
+  "hatas-hayo-na": [
+   "sahas",
+   "prem"
+  ],
+  "hede-go-nandoraani": [
+   "kautuk",
+   "ananda"
+  ],
+  "helaphela-saarabela": [
+   "viraha",
+   "smriti"
+  ],
+  "hemonte-kon-basonteri": [
+   "prakriti-bhava",
+   "smriti"
+  ],
+  "heri-ahoraho-tomari": [
+   "viraha",
+   "bhakti"
+  ],
+  "heri-tabo-bimalomukhobhati": [
+   "bhakti",
+   "ananda"
+  ],
+  "heriya-shymalo-ghano": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "hetha-je-gaan-gaite": [
+   "viraha",
+   "bhakti"
+  ],
+  "hey-aakashbihari": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "hey-anadi-asim": [
+   "bhakti",
+   "shanti"
+  ],
+  "hey-antorer-dhon": [
+   "viraha",
+   "bhakti"
+  ],
+  "hey-bidesi-eso-eso": [
+   "prem"
+  ],
+  "hey-birohi-haay-chanchol-1": [
+   "viraha"
+  ],
+  "hey-birohi-haay-chanchol-2": [
+   "viraha"
+  ],
+  "hey-chironuton-aaji": [
+   "bhakti",
+   "ananda"
+  ],
+  "hey-kounteyo": [
+   "prem"
+  ],
+  "hey-kshaniker-atithi": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "kshoma-karo-nath": [
+   "bhakti",
+   "bishad"
+  ],
+  "hey-madhobi-deedha": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "hey-mohadukkho-hey": [
+   "bhakti",
+   "sahas"
+  ],
+  "hey-mohajibon": [
+   "bhakti"
+  ],
+  "hey-mohaprobol-boli": [
+   "bhakti"
+  ],
+  "hey-mon-taare-dekho": [
+   "bhakti"
+  ],
+  "hey-mor-chitto-punyo": [
+   "deshprem",
+   "bhakti"
+  ],
+  "hey-mor-debota": [
+   "bhakti",
+   "ananda"
+  ],
+  "hey-nikhilbhardharon": [
+   "bhakti"
+  ],
+  "hey-nirupoma-gaane": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "hey-nobina": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "hey-nuton-dekha-dik": [
+   "utsav",
+   "sahas"
+  ],
+  "hey-sakha-mamo": [
+   "bhakti",
+   "shanti"
+  ],
+  "hey-tapas-tabo-suska": [
+   "prakriti-bhava"
+  ],
+  "himer-ratye-oi": [
+   "prakriti-bhava",
+   "utsav"
+  ],
+  "himgiri-phele-niche": [
+   "prakriti-bhava",
+   "bishad"
+  ],
+  "hingsaay-unmatto": [
+   "bhakti",
+   "shanti"
+  ],
+  "hiya-knaapichhe-sukhe": [
+   "prem"
+  ],
+  "hiya-maajhe-gopone": [
+   "prem"
+  ],
+  "hnaachho-bhoy-ki": [
+   "kautuk"
+  ],
+  "hna-go-maa-sei-kothai": [
+   "sahas"
+  ],
+  "hobe-joy-hobe-joy": [
+   "sahas",
+   "ananda"
+  ],
+  "ho-elo-elo-elo-re": [
+   "sahas"
+  ],
+  "holo-na-lo-holo-na": [
+   "viraha",
+   "bishad"
+  ],
+  "hridayak-saddh-mishol": [
+   "viraha",
+   "bishad"
+  ],
+  "hridaye-mandrilo-domaru": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "hridayobasontobone-je": [
+   "prem",
+   "utsav"
+  ],
+  "hridimondirdware-baje": [
+   "utsav",
+   "bhakti"
+  ],
+  "hridoy-aabaran-khule": [
+   "bhakti",
+   "ananda"
+  ],
+  "hridoy-aamar-naachere": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "hridoy-aamar-oi-bujhi": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "hridoy-aamar-prokash-holo": [
+   "bhakti",
+   "viraha"
+  ],
+  "hridoybasona-purno-holo": [
+   "bhakti",
+   "ananda"
+  ],
+  "hridoybedona-bohiya-probhu": [
+   "bhakti",
+   "bishad"
+  ],
+  "hridoye-chhile-jege": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "hridoye-hridoy-aasi": [
+   "bhakti",
+   "shanti"
+  ],
+  "hridoye-raakho-go": [
+   "bhakti",
+   "viraha"
+  ],
+  "hridoyer-e-kul-o-kul": [
+   "prem",
+   "viraha"
+  ],
+  "hridoyer-moni-aadorini": [
+   "prem"
+  ],
+  "hridoye-tomar-daya": [
+   "bhakti",
+   "shanti"
+  ],
+  "hridoymandire-pranadhish": [
+   "bhakti",
+   "viraha"
+  ],
+  "hridoy-mor-komol": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "hridoynandonbonye-nibhrito": [
+   "bhakti",
+   "viraha"
+  ],
+  "hridoyososhi-hridigagoney": [
+   "shanti",
+   "bhakti"
+  ],
+  "ichha-jobe-hobe": [
+   "bhakti",
+   "shanti"
+  ],
+  "ihaader-karo-aashirbad": [
+   "utsav",
+   "ananda"
+  ],
+  "jaabar-bela-sesh": [
+   "viraha",
+   "prem"
+  ],
+  "jaaboi-aami-jaaboi": [
+   "sahas"
+  ],
+  "jaa-chhilo-kaalo": [
+   "prem",
+   "ananda"
+  ],
+  "jaader-chahia-tomare": [
+   "bhakti",
+   "bishad"
+  ],
+  "jaage-naath-jochhna": [
+   "bhakti",
+   "shanti"
+  ],
+  "jaageni-ekhono-jaageni": [
+   "sahas"
+  ],
+  "jaagite-hobe-re": [
+   "sahas",
+   "bhakti"
+  ],
+  "jaag-jaag-re-jaag": [
+   "ananda",
+   "bhakti"
+  ],
+  "jaago-aaloshyanbilogno": [
+   "sahas"
+  ],
+  "jaago-hey-rudro": [
+   "bhakti",
+   "sahas"
+  ],
+  "jaago-nirmalo-netre": [
+   "sahas",
+   "bhakti"
+  ],
+  "jaagorane-jai-bibhabori": [
+   "viraha"
+  ],
+  "jaagrato-bishwakolahol": [
+   "bhakti",
+   "shanti"
+  ],
+  "jaa-haariye-jaay": [
+   "bhakti",
+   "bishad"
+  ],
+  "jaaha-paao-taai-lao": [
+   "shanti",
+   "bishad"
+  ],
+  "jaa-hobaar-ta-hobe": [
+   "bhakti",
+   "shanti"
+  ],
+  "jaai-jaai-chhere": [
+   "bishad"
+  ],
+  "jaak-chhire-jaak": [
+   "sahas",
+   "viraha"
+  ],
+  "jaani-go-din-jaabe": [
+   "bhakti",
+   "smriti"
+  ],
+  "jaani-hey-jobe": [
+   "bhakti",
+   "shanti"
+  ],
+  "jaani-jaani-esechho": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "jaani-jaani-holo": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "jaani-jaani-kon": [
+   "bhakti",
+   "smriti"
+  ],
+  "jaani-jaani-tomar": [
+   "bhakti",
+   "shanti"
+  ],
+  "jaani-jaani-tumi": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "jaani-nai-go": [
+   "bhakti"
+  ],
+  "jaani-tomar-ajaana": [
+   "prem"
+  ],
+  "jaani-tumi-phire": [
+   "viraha",
+   "prem"
+  ],
+  "jaao-jaao-jodi": [
+   "sahas",
+   "prem"
+  ],
+  "jaao-re-anontodhame": [
+   "shanti",
+   "bhakti"
+  ],
+  "jaaowa-aasari-ei": [
+   "bhakti",
+   "bishad"
+  ],
+  "jaa-peyechhi-prothom": [
+   "bhakti",
+   "shanti"
+  ],
+  "jaara-bihan-belay": [
+   "smriti",
+   "bishad"
+  ],
+  "jaara-kaachhe-aachhe": [
+   "bhakti"
+  ],
+  "jaara-kotha-diye": [
+   "bhakti"
+  ],
+  "jaare-marondoshay-dhore": [
+   "bishad"
+  ],
+  "jaare-nije-tumi": [
+   "bhakti",
+   "bishad"
+  ],
+  "ja-atmada-balada": [
+   "bhakti"
+  ],
+  "jaatrabelaay-rudro-rabe": [
+   "sahas",
+   "bhakti"
+  ],
+  "jaatri-aami-ore": [
+   "sahas",
+   "bhakti"
+  ],
+  "jaay-din-shrabanodin": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "jaay-jodi-jak": [
+   "viraha"
+  ],
+  "jaay-niye-jaay": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "jademi-prasphuranniba": [
+   "bhakti"
+  ],
+  "jagate-anandajoggye": [
+   "ananda",
+   "bhakti"
+  ],
+  "jagate-tumi-raja": [
+   "bhakti"
+  ],
+  "jagat-jure-udar": [
+   "bhakti",
+   "ananda"
+  ],
+  "jagoter-purohit-tumi": [
+   "utsav",
+   "prem"
+  ],
+  "jakhon-bhanglo-milon": [
+   "smriti",
+   "bishad"
+  ],
+  "jakhon-dekha-dao-ni": [
+   "prem",
+   "ananda"
+  ],
+  "jakhon-esechhile-andhokare": [
+   "smriti",
+   "viraha"
+  ],
+  "jakhon-porbe-na": [
+   "smriti",
+   "shanti"
+  ],
+  "jakhon-tomay-aaghat": [
+   "bhakti"
+  ],
+  "jakhon-tumi-badhchhile": [
+   "bhakti",
+   "bishad"
+  ],
+  "janoganomano-adhinayaka": [
+   "deshprem"
+  ],
+  "janonir-dware-aaji": [
+   "deshprem",
+   "utsav"
+  ],
+  "janoni-tomar-korun": [
+   "bhakti"
+  ],
+  "jaraye-aachhe-baadha": [
+   "bhakti",
+   "bishad"
+  ],
+  "jarojaro-praane-nath": [
+   "bhakti",
+   "bishad"
+  ],
+  "jatobar-aalo-jalate": [
+   "bhakti",
+   "bishad"
+  ],
+  "jatokhan-tumi-aamay": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "je-aamare-diyechhe": [
+   "prem",
+   "viraha"
+  ],
+  "je-aamare-pathalo": [
+   "bishad",
+   "sahas"
+  ],
+  "je-aami-oi-bhese": [
+   "shanti"
+  ],
+  "je-bhalobasuk-se": [
+   "kautuk",
+   "bishad"
+  ],
+  "je-chhayare-dharbo": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "je-chhilo-aamar": [
+   "prem"
+  ],
+  "je-dhrubopado-diyechho": [
+   "shanti",
+   "bhakti"
+  ],
+  "je-din-phutlo": [
+   "viraha",
+   "bhakti"
+  ],
+  "je-din-sakol-mukul": [
+   "viraha",
+   "bishad"
+  ],
+  "je-kebol-paliye": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "je-keho-more": [
+   "bhakti",
+   "shanti"
+  ],
+  "jekhaane-ruper-probha": [
+   "kautuk"
+  ],
+  "je-knaadone-hiya": [
+   "prem",
+   "viraha"
+  ],
+  "jeno-kon-bhuler": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "jeno-prem-chirorini": [
+   "prem"
+  ],
+  "je-phul-jhore-sei": [
+   "bishad",
+   "prem"
+  ],
+  "je-taronikhani-bhasale": [
+   "utsav",
+   "bhakti"
+  ],
+  "jete-dao-gelo-jaara": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "jete-jete-chaay-na": [
+   "viraha",
+   "bhakti"
+  ],
+  "jete-jete-ekla-pothe": [
+   "sahas",
+   "bhakti"
+  ],
+  "jete-jodi-hoy-hobe": [
+   "shanti",
+   "smriti"
+  ],
+  "je-thaake-thaak-na": [
+   "sahas",
+   "bhakti"
+  ],
+  "jethay-thaake-sobar": [
+   "bhakti"
+  ],
+  "jethay-tomar-lut": [
+   "bhakti",
+   "ananda"
+  ],
+  "je-tomay-chhare": [
+   "deshprem",
+   "bhakti"
+  ],
+  "je-tore-pagol-bole": [
+   "sahas",
+   "deshprem"
+  ],
+  "jeyo-na-jeyo-na": [
+   "prem",
+   "viraha"
+  ],
+  "jham-jham-ghano-ghano": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "jhare-jharo-jharo-bhadorbadar": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "jharo-jharo-borishe": [
+   "prakriti-bhava",
+   "bishad"
+  ],
+  "jharo-jharo-jharo-jharo": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "jharojharo-rakto-jhare": [
+   "bhakti"
+  ],
+  "jhnaakra-chuler-meyer-kotha": [
+   "smriti",
+   "kautuk"
+  ],
+  "jhora-paata-go": [
+   "prakriti-bhava",
+   "bishad"
+  ],
+  "jhore-jaay-ure-jaay": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "jibon-aamar-cholchhe-jemon": [
+   "shanti",
+   "ananda"
+  ],
+  "jibone-aaj-ki-prothom": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "jibone-aamar-jato-aananda": [
+   "bhakti",
+   "ananda"
+  ],
+  "jibone-e-ki-prothom": [
+   "prem",
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "jibone-jato-puja-halo": [
+   "bhakti",
+   "shanti"
+  ],
+  "jibone-kichhu-holo-na": [
+   "bishad"
+  ],
+  "jibone-parom-lagon": [
+   "prem",
+   "viraha"
+  ],
+  "jibon-jakhon-chhilo": [
+   "shanti",
+   "bhakti"
+  ],
+  "jibon-jakhon-shukaye": [
+   "bhakti"
+  ],
+  "jibon-maroner-simana": [
+   "bhakti",
+   "viraha"
+  ],
+  "jini-sakol-kaajer": [
+   "bhakti",
+   "ananda"
+  ],
+  "jodi-aamay-tumi-bachao": [
+   "bhakti"
+  ],
+  "jodi-aase-tobe-keno": [
+   "viraha",
+   "prem"
+  ],
+  "jodi-baron-karo": [
+   "prem"
+  ],
+  "jodi-bhoriya-loibe": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "jodi-e-aamar-hridoyduar": [
+   "bhakti"
+  ],
+  "jodi-haay-jibon": [
+   "prem",
+   "viraha"
+  ],
+  "jodi-holo-jaabar": [
+   "viraha",
+   "smriti"
+  ],
+  "jodi-jaantem-aamar": [
+   "viraha",
+   "bishad"
+  ],
+  "jodi-jhorer-megher": [
+   "bhakti"
+  ],
+  "jodi-jote-roj": [
+   "kautuk"
+  ],
+  "jodi-keho-naahi": [
+   "prem"
+  ],
+  "jodi-mile-dekha-tobe": [
+   "sahas"
+  ],
+  "jodi-taare-naai-chini": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "jodi-tomar-dekha-na-pai": [
+   "bhakti",
+   "viraha"
+  ],
+  "jodi-tor-bhaabna": [
+   "sahas"
+  ],
+  "jodi-tor-daak-shune": [
+   "sahas",
+   "deshprem"
+  ],
+  "jogi-hey-ke-tumi": [
+   "bhakti",
+   "ananda"
+  ],
+  "jol-daao-aamay-jol": [
+   "bishad"
+  ],
+  "jole-doba-chikon": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "jol-ene-de-re": [
+   "bishad"
+  ],
+  "jo-sannisinno-barabodhimule": [
+   "bhakti"
+  ],
+  "jouban-sarosinire-milon": [
+   "prem"
+  ],
+  "joy-bhairob-joy": [
+   "bhakti",
+   "sahas"
+  ],
+  "joy-joy-joy-he-joy": [
+   "bhakti",
+   "sahas"
+  ],
+  "joy-joy-paroma": [
+   "bhakti",
+   "shanti"
+  ],
+  "joy-joy-tasbansa": [
+   "kautuk"
+  ],
+  "joy-kore-tobu-bhoy": [
+   "prem",
+   "bishad"
+  ],
+  "joyoti-joy-joy": [
+   "utsav"
+  ],
+  "joy-rajrajweswar": [
+   "bhakti"
+  ],
+  "joy-tabo-bichitro": [
+   "bhakti",
+   "ananda"
+  ],
+  "joy-tabo-hok-joy": [
+   "deshprem",
+   "utsav"
+  ],
+  "juddha-jakhan-baadhilo": [
+   "sahas",
+   "prakriti-bhava"
+  ],
+  "juge-juge-bujhi-aamay": [
+   "prem",
+   "viraha"
+  ],
+  "jwalo-jwalo-chita": [
+   "sahas",
+   "bishad"
+  ],
+  "kaachhe-aachhe-dekhite": [
+   "prem",
+   "viraha"
+  ],
+  "kaachhe-chhile-dure-1": [
+   "viraha",
+   "prem"
+  ],
+  "kaachhe-jobe-chhilo": [
+   "smriti",
+   "viraha"
+  ],
+  "kaachhe-taar-jaai": [
+   "prem",
+   "kautuk"
+  ],
+  "kaachhe-theke-dur": [
+   "viraha"
+  ],
+  "kaahare-herilam": [
+   "prem",
+   "ananda"
+  ],
+  "kaahar-golaay-porabi": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "kaaj-bholaabar-ke-go": [
+   "kautuk",
+   "ananda"
+  ],
+  "kaaj-nei-kaaj-nei": [
+   "viraha"
+  ],
+  "kaali-kaali-balo-re": [
+   "bhakti",
+   "sahas"
+  ],
+  "kaalo-megher-ghota": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "kaal-raater-belaa": [
+   "viraha",
+   "prem"
+  ],
+  "kaal-sokale-utthbo": [
+   "ananda",
+   "kautuk"
+  ],
+  "kaamona-kori-ekante": [
+   "bhakti",
+   "shanti"
+  ],
+  "kaanna-hasir-dol": [
+   "bhakti",
+   "bishad"
+  ],
+  "mori-lo-kaar-bnaashi": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "kaar-chokher-chaoar": [
+   "prem"
+  ],
+  "kaar-haate-ei-maala": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "kaar-haate-je-dhora-debo-hay": [
+   "kautuk",
+   "prem"
+  ],
+  "kaar-haate-je-dhora-debo-pran": [
+   "kautuk",
+   "prem"
+  ],
+  "kaar-jeno-ei-moner": [
+   "smriti",
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "kaar-milon-chao": [
+   "bhakti"
+  ],
+  "kadamberi-kanon-gheri": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "kaho-kaho-more": [
+   "prem",
+   "bishad"
+  ],
+  "kakhon-baadol-choya": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "kakhon-dile-paraye": [
+   "viraha",
+   "bishad"
+  ],
+  "kakhon-je-basonto": [
+   "bishad",
+   "prakriti-bhava"
+  ],
+  "kamolboner-modhuparaaji": [
+   "bhakti",
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "katha-kos-ne-lo": [
+   "kautuk",
+   "prem"
+  ],
+  "kato-ajanare-janaile": [
+   "bhakti",
+   "shanti"
+  ],
+  "katobar-bhebechhinu": [
+   "prem"
+  ],
+  "kato-deke-deke": [
+   "bhakti"
+  ],
+  "kato-din-ek-saathe": [
+   "prem",
+   "smriti",
+   "viraha"
+  ],
+  "kato-je-tumi": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "kato-kaal-robe": [
+   "kautuk"
+  ],
+  "kato-kotha-taare": [
+   "prem",
+   "viraha"
+  ],
+  "ke-aamare-jeno": [
+   "smriti",
+   "viraha"
+  ],
+  "ke-bolechhe-tomay": [
+   "prem"
+  ],
+  "ke-bole-jao-jao": [
+   "prem"
+  ],
+  "ke-bosile-aaji": [
+   "bhakti",
+   "ananda"
+  ],
+  "ke-daake-aami-kobhu-2": [
+   "kautuk",
+   "prem"
+  ],
+  "ke-dilo-aabar": [
+   "viraha",
+   "smriti",
+   "prakriti-bhava"
+  ],
+  "ke-elo-aaji": [
+   "bishad",
+   "prakriti-bhava"
+  ],
+  "ke-ese-jaye-phire": [
+   "deshprem",
+   "bishad"
+  ],
+  "ke-go-antartara": [
+   "bhakti",
+   "ananda"
+  ],
+  "keho-karo-mon": [
+   "viraha",
+   "bishad"
+  ],
+  "ke-jaane-kotha": [
+   "viraha",
+   "bishad"
+  ],
+  "ke-jaay-amritadhamjatri": [
+   "bhakti",
+   "sahas"
+  ],
+  "ke-janito-tumi-daakibe-1": [
+   "bhakti",
+   "ananda"
+  ],
+  "ke-jetechhis-aaye": [
+   "prem",
+   "kautuk"
+  ],
+  "kemone-phiriya-jaao": [
+   "bhakti"
+  ],
+  "kemone-raakhibi-tora": [
+   "bhakti"
+  ],
+  "kemone-shudhibo-balo": [
+   "prem"
+  ],
+  "keno-aamay-paagol": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "keno-aar-mithye-aasha": [
+   "sahas"
+  ],
+  "keno-baajao-kakon": [
+   "prem",
+   "kautuk"
+  ],
+  "keno-baani-tabo": [
+   "bhakti",
+   "viraha"
+  ],
+  "keno-cheye-aachho": [
+   "deshprem",
+   "bishad"
+  ],
+  "keno-chokher-jole": [
+   "bhakti",
+   "bishad"
+  ],
+  "keno-dhore-rakha": [
+   "viraha",
+   "prem"
+  ],
+  "keno-eli-re": [
+   "bishad"
+  ],
+  "keno-go-aapon-mone": [
+   "ananda"
+  ],
+  "keno-go-se-more": [
+   "prem",
+   "bishad"
+  ],
+  "keno-jaage-na": [
+   "bhakti"
+  ],
+  "keno-jaamini-na-jete": [
+   "prem",
+   "kautuk"
+  ],
+  "keno-je-mon-bhole": [
+   "kautuk"
+  ],
+  "keno-nayan-aapni": [
+   "viraha",
+   "smriti"
+  ],
+  "keno-nibe-gelo-baati": [
+   "bishad",
+   "prem"
+  ],
+  "keno-pantho-e-chancholota": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "keno-raaja-daakis": [
+   "kautuk"
+  ],
+  "keno-re-chaas-phire": [
+   "bishad",
+   "viraha"
+  ],
+  "keno-re-ei-duwartuku": [
+   "sahas",
+   "bhakti"
+  ],
+  "keno-re-etoi-jaabar": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "keno-re-klanti-aase": [
+   "sahas"
+  ],
+  "keno-saradin-dhire": [
+   "sahas"
+  ],
+  "keno-tomra-aamay": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "ke-re-oi-daakichhe": [
+   "bhakti",
+   "ananda"
+  ],
+  "ke-rong-laagale": [
+   "prakriti-bhava",
+   "utsav"
+  ],
+  "ketechhe-ekela-biroher": [
+   "prem",
+   "ananda"
+  ],
+  "ke-tumi-go-khuliyachho": [
+   "prem",
+   "ananda"
+  ],
+  "ke-utthe-daki": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "kharo-bayu-boy-bege": [
+   "sahas"
+  ],
+  "khelaghor-baadhte-legechhi": [
+   "kautuk",
+   "smriti"
+  ],
+  "khela-kor-khela-kor": [
+   "prakriti-bhava",
+   "kautuk"
+  ],
+  "khelar-chhole-sajiye": [
+   "bhakti",
+   "shanti"
+  ],
+  "khelar-saathi-bidaay": [
+   "bishad",
+   "bhakti"
+  ],
+  "khnaachar-paakhi-chhilo": [
+   "bishad",
+   "viraha"
+  ],
+  "kholo-kholo-dwar": [
+   "prem",
+   "viraha"
+  ],
+  "khule-de-taroni": [
+   "ananda",
+   "sahas"
+  ],
+  "khyapa-tui-aachhis": [
+   "sahas"
+  ],
+  "ki-asim-sahas": [
+   "sahas",
+   "bhakti"
+  ],
+  "ki-bedona-mor": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "ki-bhoy-abhoydhame": [
+   "bhakti",
+   "sahas"
+  ],
+  "ki-bolile-ki-shunilaam": [
+   "bishad"
+  ],
+  "ki-bolinu-aami": [
+   "ananda",
+   "bhakti"
+  ],
+  "kichhu-bolbo-bole": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "kichhui-to-holo-na": [
+   "bishad",
+   "viraha"
+  ],
+  "ki-dhwani-baaje": [
+   "ananda"
+  ],
+  "ki-dibo-tomay": [
+   "bhakti",
+   "bishad"
+  ],
+  "ki-dose-bnaadhile": [
+   "bishad"
+  ],
+  "ki-dosh-korechhi-tomar": [
+   "bishad"
+  ],
+  "ki-gaabo-aami": [
+   "bhakti",
+   "utsav"
+  ],
+  "ki-ghor-nisitha": [
+   "bishad"
+  ],
+  "ki-holo-amar-bujhi": [
+   "prem",
+   "kautuk"
+  ],
+  "ki-jaani-ki": [
+   "prem"
+  ],
+  "ki-je-bhabis-tui": [
+   "kautuk"
+  ],
+  "ki-koribo-balo-sokha": [
+   "prem",
+   "bishad"
+  ],
+  "ki-korili-moher": [
+   "bhakti",
+   "bishad"
+  ],
+  "ki-korinu-haay": [
+   "bishad"
+  ],
+  "ki-koriya-sadhile": [
+   "prem",
+   "bishad"
+  ],
+  "ki-kotha-bolis-tui": [
+   "bishad"
+  ],
+  "ki-pai-ni-taari": [
+   "smriti",
+   "shanti"
+  ],
+  "ki-phul-jharilo": [
+   "bishad",
+   "viraha"
+  ],
+  "ki-raagini-bajale": [
+   "prem"
+  ],
+  "kiser-dak-tor": [
+   "bishad"
+  ],
+  "kiser-tore-ashru-jhore": [
+   "sahas",
+   "kautuk"
+  ],
+  "ki-sur-baaje-aamar": [
+   "viraha",
+   "prem"
+  ],
+  "klanti-aamar-kshoma-karo": [
+   "bhakti"
+  ],
+  "klanto-bnaashir-sesh": [
+   "viraha",
+   "bishad"
+  ],
+  "klanto-jakhon-aamrokolir": [
+   "prakriti-bhava",
+   "shanti"
+  ],
+  "ko-tuhu-bolbi-moy": [
+   "prem",
+   "bhakti"
+  ],
+  "knaadale-tumi-more": [
+   "prem",
+   "viraha"
+  ],
+  "knaadar-samay-alpo": [
+   "sahas",
+   "prakriti-bhava"
+  ],
+  "knaadite-hobe-re-1": [
+   "bishad"
+  ],
+  "knaapiche-deholota": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "knaatabonbiharini-sur-kana": [
+   "kautuk"
+  ],
+  "kobe-aami-baahir-holem": [
+   "bhakti",
+   "viraha"
+  ],
+  "kobe-tumi-aasbe-bole": [
+   "sahas",
+   "viraha"
+  ],
+  "koborite-phul-shukalo": [
+   "viraha",
+   "bishad"
+  ],
+  "kolahol-to-baaron": [
+   "bhakti",
+   "shanti"
+  ],
+  "kon-aalote-praaner-pradip": [
+   "bhakti",
+   "sahas"
+  ],
+  "kon-ajaachito-aashar": [
+   "shanti",
+   "prem"
+  ],
+  "kon-aparup-swarger": [
+   "sahas",
+   "bishad"
+  ],
+  "kon-bhiruke-bhoy": [
+   "sahas",
+   "bhakti"
+  ],
+  "kon-bnaadhoner-granthi": [
+   "prem",
+   "viraha"
+  ],
+  "kon-chhalona-e-je": [
+   "bishad"
+  ],
+  "kon-debota-se-ki": [
+   "prem",
+   "kautuk"
+  ],
+  "kon-gahon-aranye": [
+   "viraha",
+   "smriti"
+  ],
+  "kon-khela-je-khelbo": [
+   "bhakti",
+   "sahas"
+  ],
+  "kon-khepa-shrabon": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "kon-puraton-praner": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "kon-se-jhorer-bhul-1": [
+   "bishad"
+  ],
+  "kon-se-jhorer-bhul-2": [
+   "bishad"
+  ],
+  "kon-shubhokhhone-udibe": [
+   "bhakti",
+   "viraha"
+  ],
+  "kon-sudur-hote": [
+   "bhakti",
+   "shanti"
+  ],
+  "kotha-aachho-probhu": [
+   "bhakti",
+   "bishad"
+  ],
+  "kothaao-aamar-hariye": [
+   "ananda",
+   "kautuk"
+  ],
+  "kothaay-aalo-kothaay": [
+   "viraha",
+   "bhakti"
+  ],
+  "kothaay-jurate-aachhe": [
+   "bishad"
+  ],
+  "kothaay-phiris-param": [
+   "bhakti",
+   "shanti"
+  ],
+  "kothaay-se-usamoyee": [
+   "bhakti"
+  ],
+  "kothaay-tumi-aami": [
+   "bhakti",
+   "bishad"
+  ],
+  "kotha-baire-dure-jaay": [
+   "prem",
+   "kautuk"
+  ],
+  "kotha-chhili-sajoni": [
+   "ananda",
+   "utsav"
+  ],
+  "kotha-hote-baaje": [
+   "bhakti",
+   "viraha"
+  ],
+  "kotha-hote-shunte-jeno": [
+   "viraha",
+   "smriti"
+  ],
+  "kotha-je-udhao-holo": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "kotha-lukaile": [
+   "bishad"
+  ],
+  "kotthin-bedonar-tapos": [
+   "viraha",
+   "shanti"
+  ],
+  "kotthin-loha-kotthin": [
+   "sahas",
+   "ananda"
+  ],
+  "kshato-joto-kshoti": [
+   "ananda",
+   "shanti"
+  ],
+  "kshoma-karo-aamay": [
+   "prem"
+  ],
+  "kshoma-karo-more-sokhi": [
+   "prem",
+   "viraha"
+  ],
+  "kshoma-karo-more-taato": [
+   "bishad",
+   "bhakti"
+  ],
+  "kshoma-karo-prabhu": [
+   "bhakti"
+  ],
+  "kshomite-parilam-na-je": [
+   "bishad",
+   "bhakti"
+  ],
+  "kshudharto-prem-taar": [
+   "prem",
+   "sahas"
+  ],
+  "kul-theke-mor-gaaner": [
+   "bhakti"
+  ],
+  "kusume-kusume-charano": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "laho-laho-phire-laho": [
+   "bishad"
+  ],
+  "laho-laho-tule-laho": [
+   "bhakti"
+  ],
+  "laho-laho-tuli-lao": [
+   "bhakti"
+  ],
+  "lajja-chhi-chhi-lajja": [
+   "bishad"
+  ],
+  "likhon-tomar-dhulay": [
+   "smriti",
+   "viraha"
+  ],
+  "lokshmi-jakhon-aasbe": [
+   "bishad",
+   "bhakti"
+  ],
+  "lukale-bolei-khunje": [
+   "prem"
+  ],
+  "lukiye-aaso-aandhar": [
+   "bhakti",
+   "sahas"
+  ],
+  "maa-aamar-keno-tore": [
+   "bishad"
+  ],
+  "maa-aami-tor-ki": [
+   "bishad"
+  ],
+  "maadhobi-hotthath-kotha": [
+   "prakriti-bhava",
+   "kautuk"
+  ],
+  "maadhob-naa-kaho": [
+   "prem"
+  ],
+  "maa-ekbar-dara": [
+   "bishad",
+   "viraha"
+  ],
+  "maa-go-eto-dine": [
+   "viraha",
+   "ananda"
+  ],
+  "maajhe-majhe-tabo-dekha-1": [
+   "bhakti",
+   "viraha"
+  ],
+  "maajhe-majhe-tabo-dekha-2": [
+   "bhakti",
+   "viraha"
+  ],
+  "maa-ki-tui-porer": [
+   "deshprem",
+   "sahas"
+  ],
+  "maala-hote-khose-pora": [
+   "bhakti"
+  ],
+  "maa-mit-kil-tang": [
+   "prem"
+  ],
+  "maan-abhiman-bhasiye": [
+   "prem",
+   "viraha"
+  ],
+  "maana-na-maanili": [
+   "bishad"
+  ],
+  "maa-oi-je-tini": [
+   "bishad",
+   "viraha"
+  ],
+  "maatir-buker-majhe": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "maatir-pradip-khani": [
+   "shanti",
+   "prakriti-bhava"
+  ],
+  "maati-toder-daak-diyechhe": [
+   "utsav",
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "maayabonobiharini-horini": [
+   "prem",
+   "viraha"
+  ],
+  "madhugondhe-bhora": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "madhur-basonto-esechhe": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "madhuritu-nityo-hoye": [
+   "viraha",
+   "smriti"
+  ],
+  "madhur-madhur-dhwani": [
+   "bhakti",
+   "ananda"
+  ],
+  "madhur-milon": [
+   "prem",
+   "ananda"
+  ],
+  "madhur-rupe-birajo": [
+   "bhakti",
+   "shanti"
+  ],
+  "madhur-tomar-shesh-je": [
+   "shanti",
+   "ananda"
+  ],
+  "madhya-dine-jobe-gaan": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "madhyadiner-bijon": [
+   "smriti",
+   "prakriti-bhava"
+  ],
+  "mahabishwe-mahakashe-1": [
+   "bhakti",
+   "shanti"
+  ],
+  "mahabishwe-mahakashe-2": [
+   "bhakti"
+  ],
+  "mahanande-hero-go-sobe": [
+   "bhakti",
+   "ananda"
+  ],
+  "maharaj-eki-saaje": [
+   "bhakti",
+   "ananda"
+  ],
+  "mahasinghasone-bosi": [
+   "bhakti"
+  ],
+  "malin-mukhe-phutuk": [
+   "ananda"
+  ],
+  "mamo-angane-swami": [
+   "ananda",
+   "bhakti"
+  ],
+  "mamo-antar-udashe": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "mamo-chitte-niti-nritte": [
+   "ananda"
+  ],
+  "mamo-dukkher-sadhon": [
+   "viraha",
+   "bishad"
+  ],
+  "mamo-joubanonikunje-gaahe": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "mamo-mon-upobone": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "mamo-ruddhamukulodole": [
+   "prem"
+  ],
+  "mandire-mamo-ke": [
+   "bhakti",
+   "ananda"
+  ],
+  "manipur-nripaduhita": [
+   "prem"
+  ],
+  "manomandirsundori": [
+   "prem",
+   "kautuk"
+  ],
+  "maransagaropare-tomra-amar": [
+   "smriti"
+  ],
+  "maroner-mukhe-rekhe": [
+   "bhakti",
+   "viraha"
+  ],
+  "maron-re-tuhu-mamo": [
+   "viraha",
+   "bishad"
+  ],
+  "marubijoyer-keton-urao": [
+   "prakriti-bhava",
+   "utsav"
+  ],
+  "matri-mondir-punyo": [
+   "deshprem",
+   "sahas"
+  ],
+  "megh-bolechhe-jaabo": [
+   "shanti",
+   "bhakti"
+  ],
+  "megher-kole-kole-jaay": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "megher-kole-rode-hesechhe": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "megho-chhaaye-sajol": [
+   "smriti",
+   "viraha"
+  ],
+  "milonrati-pohalo": [
+   "viraha",
+   "smriti"
+  ],
+  "mitilo-sob-khudha": [
+   "bhakti",
+   "shanti"
+  ],
+  "moder-jemon-khela-temni": [
+   "sahas",
+   "ananda"
+  ],
+  "moder-kichhu-nai-re": [
+   "kautuk",
+   "ananda"
+  ],
+  "mohinimaya-elo": [
+   "prem"
+  ],
+  "mone-holo-jeno-periye": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "mone-holo-periye-elem": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "mone-je-aasha-loye": [
+   "bishad",
+   "viraha"
+  ],
+  "mone-ki-dwidha-rekhe": [
+   "viraha",
+   "smriti"
+  ],
+  "moner-modhye-nirobodhi": [
+   "sahas"
+  ],
+  "mone-robe-ki-na-robe": [
+   "prem",
+   "viraha"
+  ],
+  "mon-hote-prem-jetechhe": [
+   "bishad"
+  ],
+  "mon-jaago-mangalaloke": [
+   "bhakti",
+   "shanti"
+  ],
+  "mon-jaane-manomohon": [
+   "prem",
+   "ananda"
+  ],
+  "mon-je-bole-chini-chini": [
+   "smriti",
+   "prakriti-bhava"
+  ],
+  "mon-mor-megher-songi": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "monomohon-gohono-jamini": [
+   "bhakti",
+   "shanti"
+  ],
+  "mon-praan-kariya-lao": [
+   "bhakti"
+  ],
+  "mon-re-ore-mon": [
+   "bhakti",
+   "viraha"
+  ],
+  "mora-bhangbo-tapos": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "mora-cholbo-na": [
+   "kautuk"
+  ],
+  "mora-jole-sthole-kato": [
+   "prem",
+   "kautuk"
+  ],
+  "mora-satyer-pore-mon": [
+   "sahas",
+   "bhakti"
+  ],
+  "mor-bhaabonare-ki-haway": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "mor-binaa-otthe-kon": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "more-daaki-loye-jao": [
+   "bhakti",
+   "sahas"
+  ],
+  "mor-hridoyer-gopon-bijon": [
+   "bhakti",
+   "viraha"
+  ],
+  "mori-lo-mori-aamay": [
+   "prem",
+   "viraha"
+  ],
+  "mori-o-kaahar-baachha": [
+   "bishad"
+  ],
+  "mor-marone-tomar-hobe": [
+   "bhakti",
+   "sahas"
+  ],
+  "mor-pothikere-bujhi": [
+   "viraha",
+   "ananda"
+  ],
+  "mor-probhater-ei-prothom": [
+   "bhakti"
+  ],
+  "mor-sondhay-tumi-sundor": [
+   "bhakti",
+   "shanti"
+  ],
+  "mor-swopon-torir-ke": [
+   "prem",
+   "ananda"
+  ],
+  "mukhkhani-karo-molin": [
+   "prem"
+  ],
+  "mukhopane-cheye-dekhi": [
+   "viraha"
+  ],
+  "naa-bachabe-aamay-jodi": [
+   "bhakti",
+   "bishad"
+  ],
+  "naa-bole-jaay-pachhe-se": [
+   "viraha",
+   "prem"
+  ],
+  "naa-bole-jeyo-naa-chole": [
+   "prem",
+   "viraha"
+  ],
+  "naa-bujhe-kaare-tumi": [
+   "bishad",
+   "viraha"
+  ],
+  "naa-chahile-jaare-pawa": [
+   "viraha",
+   "shanti"
+  ],
+  "naach-shyama-taale-taale": [
+   "ananda",
+   "kautuk"
+  ],
+  "naa-dekhbo-na": [
+   "viraha"
+  ],
+  "naa-go-ei-je-dhula": [
+   "bhakti",
+   "shanti"
+  ],
+  "naa-jaani-kotha-elum": [
+   "sahas"
+  ],
+  "naa-jeyo-naa-jeyo-nako": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "naa-kichhui-thhakbe-na": [
+   "sahas",
+   "prem"
+  ],
+  "naam-laho-debotaar": [
+   "sahas"
+  ],
+  "naa-naa-bhul-koro-naa": [
+   "viraha",
+   "bishad"
+  ],
+  "naa-naa-go-na": [
+   "prem",
+   "viraha"
+  ],
+  "naa-naa-kaaj-nai": [
+   "bishad"
+  ],
+  "naa-naa-naa-bondhu": [
+   "prem"
+  ],
+  "naa-naa-naa-daakbo-naa": [
+   "viraha",
+   "prem"
+  ],
+  "naa-naa-sakhi-bhoy-nei": [
+   "sahas",
+   "prem"
+  ],
+  "naa-re-naa-re-bhoy": [
+   "viraha",
+   "shanti"
+  ],
+  "naa-re-naa-re-hobe-naa": [
+   "bhakti",
+   "sahas"
+  ],
+  "naa-sajoni-naa-aami-jaani": [
+   "viraha",
+   "bishad"
+  ],
+  "naa-sokha-moner-byatha": [
+   "prem",
+   "bishad"
+  ],
+  "nabo-anonde-jaago-aaji": [
+   "ananda",
+   "bhakti"
+  ],
+  "nabo-basonter-daaner-daali": [
+   "prakriti-bhava",
+   "utsav"
+  ],
+  "nabobatsare-korilam-pon": [
+   "deshprem",
+   "sahas"
+  ],
+  "nabojiboner-jaatrapothe": [
+   "utsav",
+   "bhakti"
+  ],
+  "nabokundodhaboldalosushitala": [
+   "prakriti-bhava",
+   "shanti"
+  ],
+  "nabo-nabo-pallaboraaji": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "nahe-nahe-e-nahe-kautuk": [
+   "prem"
+  ],
+  "naho-maata-naho-konya": [
+   "prem",
+   "ananda"
+  ],
+  "nahoy-tomar-ja-hoyechhe": [
+   "sahas",
+   "shanti"
+  ],
+  "nai-ba-daako-roibo-tomar": [
+   "bhakti",
+   "viraha"
+  ],
+  "nai-ba-ele-jodi-samay-nai": [
+   "prem",
+   "viraha"
+  ],
+  "nai-bhoy-nai-bhoy-nai": [
+   "sahas",
+   "ananda"
+  ],
+  "nai-jodi-ba-ele-tumi": [
+   "viraha",
+   "prem"
+  ],
+  "nai-nai-bhoy-hobe-hobe": [
+   "sahas",
+   "deshprem"
+  ],
+  "nai-nai-nai-je-baaki": [
+   "bhakti",
+   "shanti"
+  ],
+  "nai-rosh-nai": [
+   "prakriti-bhava",
+   "bhakti"
+  ],
+  "namo-jantro-namo-jantro": [
+   "sahas"
+  ],
+  "namo-namo-buddha-dibakaraya": [
+   "bhakti",
+   "shanti"
+  ],
+  "namo-namo-hey-boiragi": [
+   "prakriti-bhava",
+   "bhakti"
+  ],
+  "namo-namo-namo-korunaghana": [
+   "prakriti-bhava",
+   "bhakti"
+  ],
+  "namo-namo-namo-namo-nirday": [
+   "prakriti-bhava",
+   "sahas"
+  ],
+  "namo-namo-namo-namo-tumi": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "namo-namo-namo-tumi-khud": [
+   "prakriti-bhava",
+   "bhakti"
+  ],
+  "namo-namo-shachichitoranjan": [
+   "bhakti"
+  ],
+  "narir-lolit-lobhon-lilay": [
+   "prem",
+   "bishad"
+  ],
+  "nath-he-prempothe-sob": [
+   "bhakti"
+  ],
+  "natthi-me-saranang": [
+   "bhakti"
+  ],
+  "nayaan-bhasilo-jole": [
+   "bhakti",
+   "ananda"
+  ],
+  "nayan-mele-dekhi-aamay": [
+   "prem",
+   "viraha"
+  ],
+  "nayan-tomare-paay-na-1": [
+   "bhakti",
+   "shanti"
+  ],
+  "nayan-tomare-paay-na-2": [
+   "bhakti",
+   "shanti"
+  ],
+  "neharo-lo-sahochori": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "nibhrito-praner-debota": [
+   "bhakti"
+  ],
+  "nibiro-ama-timiro-hote": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "nibiro-antartaro-basonto": [
+   "prakriti-bhava",
+   "utsav"
+  ],
+  "nibiro-ghano-andhare": [
+   "sahas",
+   "bhakti"
+  ],
+  "nibiro-megher-chhayay": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "nidrahara-raater-e-gaan": [
+   "viraha",
+   "smriti"
+  ],
+  "nil-aakasher-kone-kone": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "nilanjanchhaya": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "nil-anjanghano-punjochhayay": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "nil-digonte-oi-phuler": [
+   "prakriti-bhava",
+   "smriti"
+  ],
+  "nil-naboghone-aasarogago": [
+   "prakriti-bhava"
+  ],
+  "nimeser-tore-sharome-1": [
+   "viraha",
+   "bishad"
+  ],
+  "nimeser-tore-sharome-2": [
+   "viraha",
+   "bishad"
+  ],
+  "nirabo-rajoni-dekho": [
+   "shanti",
+   "prakriti-bhava"
+  ],
+  "nirjon-raate-nihshabdo": [
+   "viraha",
+   "prem"
+  ],
+  "nirmol-kanto-namo-hey": [
+   "prakriti-bhava",
+   "bhakti"
+  ],
+  "nirobe-aachho-keno": [
+   "bhakti",
+   "viraha"
+  ],
+  "nirobe-thakis-sokhi": [
+   "bishad",
+   "prem"
+  ],
+  "nisha-aboshane-ke-dilo": [
+   "viraha",
+   "bhakti"
+  ],
+  "nishar-swapon-chhutlo-re": [
+   "ananda",
+   "bhakti"
+  ],
+  "nishidin-bharosa-raakhis": [
+   "sahas",
+   "deshprem"
+  ],
+  "nishidin-chaaho-re-taar": [
+   "bhakti"
+  ],
+  "nishidin-mor-porane": [
+   "bhakti",
+   "viraha"
+  ],
+  "nishi-na-pohaate": [
+   "viraha",
+   "prem"
+  ],
+  "nishithe-ki-koye-gelo": [
+   "viraha"
+  ],
+  "nishithorater-praan": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "nishithoshayone-bhebe": [
+   "bhakti",
+   "shanti"
+  ],
+  "nityo-nabo-satyo-tabo": [
+   "bhakti"
+  ],
+  "nityo-satye-chinton-karo": [
+   "bhakti",
+   "shanti"
+  ],
+  "nityo-tomar-je-phul": [
+   "bhakti"
+  ],
+  "niye-aaye-kripaan": [
+   "sahas"
+  ],
+  "nodipaarer-ei-aasarer": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "nomi-nomi-bharoti-tabo": [
+   "bhakti",
+   "ananda"
+  ],
+  "nomi-nomi-chorone": [
+   "bhakti"
+  ],
+  "noy-noy-e-modhur-khela": [
+   "bhakti",
+   "bishad"
+  ],
+  "nrityer-taale-taale-hey": [
+   "ananda",
+   "sahas"
+  ],
+  "nupur-beje-jaay": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "nuton-pother-pothik-hoye": [
+   "prem",
+   "ananda"
+  ],
+  "nuton-pran-dao-pransokha": [
+   "bhakti",
+   "ananda"
+  ],
+  "nyay-anyay-jaanine": [
+   "prem"
+  ],
+  "o-aamar-chnaader-aalo": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "o-aamar-desher-maati": [
+   "deshprem",
+   "bhakti"
+  ],
+  "o-aamar-dhyaneri-dhon": [
+   "viraha",
+   "prem"
+  ],
+  "o-aasarer-purnima-aamar": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "o-akuler-kul-o-agotir-gati": [
+   "bhakti"
+  ],
+  "o-bhai-dekhe-ja": [
+   "ananda",
+   "kautuk"
+  ],
+  "o-bhai-kanai": [
+   "kautuk"
+  ],
+  "obhishap-noy-noy": [
+   "prem",
+   "sahas"
+  ],
+  "o-chnaad-chokher-joler": [
+   "viraha",
+   "bishad"
+  ],
+  "o-chnaad-tomay-dola": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "o-dekha-diye-je-chole-gelo": [
+   "viraha",
+   "prem"
+  ],
+  "o-dekhbi-re-bhai": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "oder-bnaadhon-jatoi-shakta": [
+   "sahas",
+   "deshprem"
+  ],
+  "oder-kothay-dhnaada-laage": [
+   "bhakti",
+   "ananda"
+  ],
+  "oder-saathe-melao-jaara": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "o-gaan-aar-gaas-ne": [
+   "smriti",
+   "bishad"
+  ],
+  "ogo-aamar-chiro-achena": [
+   "viraha"
+  ],
+  "ogo-aamar-praner-thakur": [
+   "bhakti",
+   "bishad"
+  ],
+  "ogo-aamar-shrabon-megher": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "ogo-bhagyodebi-pitaamohi": [
+   "kautuk"
+  ],
+  "ogo-bodhu-sundori": [
+   "prakriti-bhava",
+   "utsav"
+  ],
+  "ogo-debota-aamar": [
+   "bhakti",
+   "bishad"
+  ],
+  "ogo-dekhi-aankhi-tule": [
+   "kautuk",
+   "prem"
+  ],
+  "ogo-deko-naa-more-deko": [
+   "viraha",
+   "bishad"
+  ],
+  "ogo-dokhino-hawa-o-poth": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "ogo-doyamoyee-chor": [
+   "prem",
+   "kautuk"
+  ],
+  "ogo-eto-prem-aasha": [
+   "viraha",
+   "bishad"
+  ],
+  "ogo-hridoyboner-shikaari": [
+   "prem",
+   "kautuk"
+  ],
+  "ogo-joler-raani": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "ogo-kangal-aamare-kangal": [
+   "prem"
+  ],
+  "ogo-ke-jaay-bnaashori": [
+   "viraha"
+  ],
+  "ogo-kishor-aaji-tomar-dware": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "ogo-maa-oi-kothai-to": [
+   "prem"
+  ],
+  "ogo-nodi-aapon-bege": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "ogo-pother-saathi-nomi": [
+   "bhakti",
+   "shanti"
+  ],
+  "ogo-purobasi": [
+   "bishad"
+  ],
+  "ogo-santo-pashanmurty": [
+   "prem",
+   "viraha"
+  ],
+  "ogo-shephaliboner-moner": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "ogo-shono-ke-bajay": [
+   "prem",
+   "ananda"
+  ],
+  "ogo-sokhi-dekhi-dekhi": [
+   "viraha",
+   "prem"
+  ],
+  "ogo-sundar-ekada-ki-jaani": [
+   "bhakti",
+   "smriti"
+  ],
+  "ogo-swapnosarupini": [
+   "smriti",
+   "viraha"
+  ],
+  "ogo-tomar-chokkhu-diye": [
+   "prem",
+   "bhakti"
+  ],
+  "ogo-tomra-jato-paarar": [
+   "kautuk"
+  ],
+  "ogo-tomra-sabai-bhalo": [
+   "kautuk",
+   "prem"
+  ],
+  "ogo-tora-ke-jaabi-paare": [
+   "bhakti"
+  ],
+  "ogo-tumi-panchodosi": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "ohe-doyamoy-nikhilo-aashroy": [
+   "bhakti"
+  ],
+  "ohe-jibanoballobh-1": [
+   "bhakti"
+  ],
+  "ohe-jibanoballobh-2": [
+   "bhakti"
+  ],
+  "ohe-nobin-otithi": [
+   "utsav",
+   "ananda"
+  ],
+  "ohe-sundor-mamo-grihe": [
+   "prem",
+   "utsav"
+  ],
+  "ohe-sundor-mori-mori": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "oi-aankhi-re": [
+   "prem",
+   "bishad"
+  ],
+  "oi-aashe-oi-oti-bhairabo": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "oi-aasontoler-maatir-pore": [
+   "bhakti"
+  ],
+  "oi-amol-haate-rajoni": [
+   "bhakti",
+   "ananda"
+  ],
+  "sokhi-oi-bujhi-bnaashi": [
+   "prem",
+   "viraha"
+  ],
+  "oi-bujhi-kalbaishakhi": [
+   "sahas",
+   "prakriti-bhava"
+  ],
+  "oi-dekh-poshchime-megh": [
+   "prem"
+  ],
+  "oi-jaanalar-kachhe-boshe": [
+   "prem"
+  ],
+  "oi-je-jhorer-megher-kole": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "oi-jhanjhar-jhankare": [
+   "sahas",
+   "bhakti"
+  ],
+  "oi-ke-aamay-phire-daake": [
+   "viraha",
+   "bishad"
+  ],
+  "oi-ke-go-heshe-chaai": [
+   "prem",
+   "ananda"
+  ],
+  "oi-ki-ele-aakashpare": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "oi-kotha-balo-sokhi": [
+   "prem"
+  ],
+  "oi-maalotilota-dole": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "oi-megh-kore-bujhi-gagon": [
+   "prakriti-bhava"
+  ],
+  "oi-modhur-mukh-jaage": [
+   "prem",
+   "smriti"
+  ],
+  "oi-mohamanob-aase": [
+   "sahas",
+   "utsav"
+  ],
+  "oi-moroner-sagorpaare": [
+   "bhakti",
+   "ananda"
+  ],
+  "oi-pohailo-timirorati": [
+   "ananda",
+   "bhakti"
+  ],
+  "oi-re-tori-dilo-khule": [
+   "bhakti",
+   "shanti"
+  ],
+  "oi-saagorer-dheuye-dheuye": [
+   "sahas",
+   "bhakti"
+  ],
+  "oi-shuni-jeno-charonadhwoni": [
+   "bhakti",
+   "viraha"
+  ],
+  "o-jaano-na-ki": [
+   "prem"
+  ],
+  "o-jaler-rani": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "o-je-maane-na-mana": [
+   "prem",
+   "kautuk"
+  ],
+  "o-jonaki-ki-sukhe-oi": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "oke-bal-sokhi-bal": [
+   "bishad",
+   "prem"
+  ],
+  "oke-bandhibi-ke-re": [
+   "viraha",
+   "shanti"
+  ],
+  "oke-bojha-gelo-na": [
+   "prem",
+   "kautuk"
+  ],
+  "oke-chhuyona-chhuyona": [
+   "bishad"
+  ],
+  "oke-dhorile-to-dhora-debe-na": [
+   "prem",
+   "viraha"
+  ],
+  "oke-keno-knaadali": [
+   "bishad",
+   "viraha"
+  ],
+  "o-keno-bhaalobasa-jaanate": [
+   "prem",
+   "kautuk"
+  ],
+  "o-keno-churi-kore-chaay": [
+   "prem",
+   "kautuk"
+  ],
+  "o-ki-elo-o-ki-elo-na-1": [
+   "viraha",
+   "prem"
+  ],
+  "o-ki-elo-o-ki-elo-na-2": [
+   "viraha",
+   "prem"
+  ],
+  "o-ki-kotha-balo-sokhi": [
+   "ananda",
+   "prem"
+  ],
+  "oki-sokha-keno-more-karo": [
+   "bishad",
+   "prem"
+  ],
+  "oki-sokha-muchho-aankhi": [
+   "bishad"
+  ],
+  "o-kotha-bolona-taare": [
+   "bishad",
+   "prem"
+  ],
+  "oli-baar-baar-phire-jaye": [
+   "prem",
+   "viraha"
+  ],
+  "olo-rekhe-dey-sokhi": [
+   "bishad",
+   "prem"
+  ],
+  "olo-shephali": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "olo-soi-olo-soi": [
+   "bishad"
+  ],
+  "o-maa-o-maa": [
+   "bishad"
+  ],
+  "o-manjori-manjori": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "om-namo-buddhaya-gurabe": [
+   "bhakti",
+   "shanti"
+  ],
+  "o-nitthur-aaro-ki-baan": [
+   "bhakti",
+   "sahas"
+  ],
+  "ora-akarone-chanchol": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "ora-ke-jaay": [
+   "bhakti"
+  ],
+  "or-bhab-dekhe-je-paay": [
+   "kautuk"
+  ],
+  "ore-aagun-aamar-bhai": [
+   "sahas",
+   "ananda"
+  ],
+  "ore-aamar-hridoy-aamar": [
+   "ananda"
+  ],
+  "ore-aay-re-tobe-maat": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "ore-baachha-ekhoni-odhir": [
+   "bishad"
+  ],
+  "ore-bachha-dekhte-paarine": [
+   "sahas",
+   "bishad"
+  ],
+  "ore-bhai-mithye-bhebo-na": [
+   "sahas",
+   "deshprem"
+  ],
+  "ore-bhai-phagun-legechhe": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "ore-bhiru-tomar-haate": [
+   "bhakti",
+   "sahas"
+  ],
+  "ore-chitrorekhadore": [
+   "prem"
+  ],
+  "ore-grihobasi-khol-daar": [
+   "utsav",
+   "prakriti-bhava"
+  ],
+  "ore-jaagayo-na": [
+   "bishad",
+   "shanti"
+  ],
+  "ore-jete-hobe-aar-deri": [
+   "bhakti",
+   "shanti"
+  ],
+  "ore-jhor-neme-aaye": [
+   "prakriti-bhava",
+   "sahas"
+  ],
+  "ore-ke-re-emon-jaagay-toke": [
+   "sahas",
+   "bhakti"
+  ],
+  "ore-ki-shunechhis-ghumer": [
+   "bhakti",
+   "prem"
+  ],
+  "ore-majhi-ore-aamar": [
+   "bhakti",
+   "shanti"
+  ],
+  "ore-nuton-juger-bhore": [
+   "sahas",
+   "deshprem"
+  ],
+  "ore-ore-ore-aamar-mon": [
+   "ananda"
+  ],
+  "ore-pothik-ore-premik": [
+   "sahas",
+   "bhakti"
+  ],
+  "ore-projapoti-maay-diye": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "ore-saabdhani-pothik": [
+   "sahas",
+   "prem"
+  ],
+  "ore-shikol-tomay-kole-kore": [
+   "sahas",
+   "deshprem"
+  ],
+  "ore-toraa-jaara-shunbi-na": [
+   "bhakti",
+   "viraha"
+  ],
+  "ore-tora-nei-ba-katha-bolli": [
+   "sahas",
+   "deshprem"
+  ],
+  "or-maaner-e-bnaadh-tutbe": [
+   "prem"
+  ],
+  "o-to-aar-phirbe-na-re": [
+   "bishad",
+   "viraha"
+  ],
+  "ottho-ottho-re-biphole": [
+   "sahas",
+   "bhakti"
+  ],
+  "ottho-re-molino-mukh": [
+   "bishad"
+  ],
+  "paachhe-cheye-boshe": [
+   "prem",
+   "kautuk"
+  ],
+  "paachhe-sur-bhuli-ei": [
+   "bhakti"
+  ],
+  "paakhi-aamar-nirer-paakhi": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "paakhi-bole-chnaapa-aamare": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "paakhi-tor-sur-bhulis-ne": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "paarbi-na-ki-jog-dite-ei": [
+   "ananda",
+   "sahas"
+  ],
+  "paatar-bhela-bhasai-nire": [
+   "ananda",
+   "sahas"
+  ],
+  "paaye-pori-shono-bhai": [
+   "kautuk"
+  ],
+  "padoprante-rakho-seboke": [
+   "bhakti",
+   "shanti"
+  ],
+  "pagolini-tor-laagi": [
+   "prem"
+  ],
+  "pagol-je-tui": [
+   "sahas",
+   "ananda"
+  ],
+  "pandab-aami-arjun": [
+   "prem"
+  ],
+  "pantho-ekhono-keno-alosi": [
+   "sahas",
+   "bhakti"
+  ],
+  "pantho-paakhir-rikto-kul": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "pantho-tumi-panthojoner": [
+   "bhakti",
+   "sahas"
+  ],
+  "parobasi-chole-eso-ghore": [
+   "bhakti",
+   "viraha"
+  ],
+  "patrokhana-jaay-jodi-jak": [
+   "bhakti",
+   "shanti"
+  ],
+  "peyechhi-abhoipod-aar": [
+   "bhakti",
+   "ananda"
+  ],
+  "peyechhi-chhuti-biday-deho": [
+   "shanti",
+   "bhakti"
+  ],
+  "peyechhi-sandhan-tobo": [
+   "bhakti",
+   "shanti"
+  ],
+  "phaguner-nabin-aanande": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "phaguner-purnima-elo-kaar": [
+   "prakriti-bhava",
+   "smriti"
+  ],
+  "phaguner-shuru-hotei": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "phagun-hawaay-ronge": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "phagun-haway-haway": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "phal-phalabar-aasha-aami": [
+   "prakriti-bhava",
+   "shanti"
+  ],
+  "phele-raakhlei-ki-pore": [
+   "bhakti"
+  ],
+  "phirayo-na-mukhokhani": [
+   "prem"
+  ],
+  "phirbe-na-ta-jaani": [
+   "viraha"
+  ],
+  "phire-chol-maatir-taane": [
+   "deshprem",
+   "prakriti-bhava"
+  ],
+  "phire-jaao-keno-phire": [
+   "viraha",
+   "prem"
+  ],
+  "phire-phire-aamay-michhe": [
+   "bishad",
+   "sahas"
+  ],
+  "phire-phire-daak-dekhi-re": [
+   "viraha",
+   "prem"
+  ],
+  "phiro-na-phiro-na-aaji": [
+   "bhakti"
+  ],
+  "phul-bole-dhanyo-aami": [
+   "bhakti",
+   "shanti"
+  ],
+  "phulti-jhore-gechhe-re": [
+   "bishad",
+   "viraha"
+  ],
+  "phul-tulite-bhul-korechi": [
+   "prem",
+   "viraha"
+  ],
+  "phuralo-phuralo-ebaar": [
+   "bishad",
+   "shanti"
+  ],
+  "pinakete-laage-tonkaar": [
+   "sahas"
+  ],
+  "pipaasa-haay-naahi-mitilo": [
+   "bhakti",
+   "bishad"
+  ],
+  "pitaar-duyare-daaraiya": [
+   "bhakti"
+  ],
+  "pohalo-pohalo-bibhabori": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "pora-mone-shudhu-pora": [
+   "prem",
+   "kautuk"
+  ],
+  "poth-bhulechhis-satyi": [
+   "kautuk"
+  ],
+  "poth-cheye-je-kete-gelo": [
+   "viraha",
+   "bhakti"
+  ],
+  "poth-diye-ke-jaay-go": [
+   "viraha",
+   "bhakti"
+  ],
+  "pothe-chole-jete-jete": [
+   "bhakti",
+   "ananda"
+  ],
+  "pothe-jete-dekechhile": [
+   "bhakti",
+   "viraha"
+  ],
+  "pothe-jete-tomar-saathe": [
+   "prem",
+   "viraha"
+  ],
+  "poth-ekhono-sesh-holo-na": [
+   "bhakti",
+   "viraha"
+  ],
+  "pother-sesh-kothay": [
+   "bishad",
+   "bhakti"
+  ],
+  "pothik-hey-oi-je-chole": [
+   "bhakti",
+   "viraha"
+  ],
+  "pothik-megher-dol-jote": [
+   "prakriti-bhava",
+   "sahas"
+  ],
+  "pothik-poran-chol": [
+   "viraha",
+   "smriti"
+  ],
+  "pothohaara-tumi-pothik": [
+   "prem"
+  ],
+  "pous-toder-daak-diyechhe": [
+   "prakriti-bhava",
+   "utsav"
+  ],
+  "prakhar-tapanataape": [
+   "prakriti-bhava",
+   "bhakti"
+  ],
+  "pralaynaachon-naachle-ja": [
+   "sahas",
+   "ananda"
+  ],
+  "pramode-dhaliya-dinu-mon": [
+   "bishad"
+  ],
+  "pran-bhoriye-trisa-hariye": [
+   "bhakti"
+  ],
+  "pran-chaay-chokshu-na-chaay": [
+   "prem",
+   "viraha"
+  ],
+  "prane-gaan-nai-michhe": [
+   "bishad",
+   "bhakti"
+  ],
+  "prane-khushir-tuphan": [
+   "ananda",
+   "sahas"
+  ],
+  "praner-pran-jagichhe": [
+   "sahas",
+   "bhakti"
+  ],
+  "prangone-mor-shiris": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "pran-niye-to-sotkechhi-1": [
+   "kautuk"
+  ],
+  "pran-niye-to-sotkechhi-2": [
+   "kautuk"
+  ],
+  "preme-prane-gaane-gondhe": [
+   "ananda",
+   "bhakti"
+  ],
+  "premer-joare-bhasabo-dohare": [
+   "prem",
+   "ananda"
+  ],
+  "premer-milondine-satya-sakkhi": [
+   "bhakti",
+   "utsav"
+  ],
+  "premer-phnaad-paata-bhubone": [
+   "prem",
+   "bishad"
+  ],
+  "prem-esechhilo-nihshabdo": [
+   "viraha",
+   "bishad"
+  ],
+  "premopashe-dhora-porechhe": [
+   "prem",
+   "ananda"
+  ],
+  "priye-tomar-dheki-hole": [
+   "kautuk",
+   "prem"
+  ],
+  "probhat-aalore-mor-kaday": [
+   "viraha",
+   "bishad"
+  ],
+  "probhate-bimalo-aanonde": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "probhu-aaji-tomar-dokshin": [
+   "bhakti"
+  ],
+  "probhu-aamar-priyo-aamar": [
+   "bhakti",
+   "prem"
+  ],
+  "probhu-elem-kothay": [
+   "bhakti",
+   "bishad"
+  ],
+  "probhu-khelechhi-aanek": [
+   "bhakti",
+   "shanti"
+  ],
+  "probhu-toma-laagi-aankhi": [
+   "bhakti",
+   "viraha"
+  ],
+  "probhu-tomar-bina-jemon": [
+   "bhakti",
+   "ananda"
+  ],
+  "prochondo-gorjone-aasilo": [
+   "sahas",
+   "bhakti"
+  ],
+  "prohori-ogo-prohori": [
+   "bishad"
+  ],
+  "prohorsheser-aaloy-raanga": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "prothom-aadi-tabo-sokti": [
+   "bhakti",
+   "ananda"
+  ],
+  "prothom-aalor-charondhwani": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "prothom-juger-udaydigangone": [
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "protidin-aami-hey-jibonswami": [
+   "bhakti"
+  ],
+  "protidin-tabo-gaatha": [
+   "bhakti"
+  ],
+  "pub-hawate-dey-dola": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "pub-sagorer-paar-hote": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "purano-janiya-cheyo-na": [
+   "prem"
+  ],
+  "puratonke-bidaye-dile-na": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "purbacholer-paane-taakai": [
+   "smriti",
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "purbogagonbhage-dipto-hoilo": [
+   "sahas",
+   "bhakti"
+  ],
+  "puri-hote-paaliyechhe": [
+   "bishad"
+  ],
+  "purno-ananda-purno-mongal": [
+   "bhakti",
+   "ananda"
+  ],
+  "purno-chaander-maayay-aaj": [
+   "smriti",
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "purno-prane-chaabar-jaaha": [
+   "prem"
+  ],
+  "puruser-bidya-korechinu": [
+   "prem",
+   "bishad"
+  ],
+  "puspobone-puspo-naahi": [
+   "prem",
+   "ananda"
+  ],
+  "puspo-diye-maro": [
+   "bhakti"
+  ],
+  "puspo-phute-kon-kunjobone": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "raaj-adhiraaj-tabo-bhale": [
+   "utsav"
+  ],
+  "raajar-aadesh-bhai": [
+   "sahas"
+  ],
+  "raajar-prahori-ora": [
+   "sahas",
+   "bishad"
+  ],
+  "raajbhaboner-somador-samman": [
+   "prem",
+   "viraha"
+  ],
+  "raajpurite-bajay-bnaashi": [
+   "bhakti",
+   "prem"
+  ],
+  "raajrajendro-jayotu-jaya": [
+   "utsav"
+  ],
+  "raanga-pado-padmojuge": [
+   "bhakti",
+   "sahas"
+  ],
+  "raangie-diye-jao-jao-jao": [
+   "prem",
+   "viraha"
+  ],
+  "raate-raate-aalor-sikha": [
+   "prem",
+   "viraha"
+  ],
+  "raja-moharaja-ke-jaane": [
+   "kautuk"
+  ],
+  "rajoni-pohailo-cholechhe": [
+   "utsav",
+   "bhakti",
+   "ananda"
+  ],
+  "rajonir-sesh-taara-gopon": [
+   "bhakti",
+   "ananda"
+  ],
+  "rakho-rakho-re-jibone": [
+   "bhakti",
+   "ananda"
+  ],
+  "rakh-rakh-phel-dhonu": [
+   "bishad"
+  ],
+  "rakshaa-karo-hey": [
+   "bhakti"
+  ],
+  "ratri-eshe-jethaay-meshe": [
+   "bhakti",
+   "viraha"
+  ],
+  "rimiki-jhimiki-jhore": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "rim-jhim-ghano-ghano-re": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "rodan-bhora-e-basanta": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "rohi-rohi-anandataranga": [
+   "bhakti",
+   "ananda"
+  ],
+  "roilo-bole-rakhle-kaare": [
+   "sahas",
+   "deshprem"
+  ],
+  "rong-laagale-bone-bone": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "roy-jey-kangal-sunyo": [
+   "bhakti",
+   "viraha"
+  ],
+  "rudrobeshe-kemon-khela": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "rupsagare-dub-diyechhi": [
+   "bhakti",
+   "shanti"
+  ],
+  "saadhan-ki-mor": [
+   "sahas",
+   "deshprem"
+  ],
+  "saadher-kaanone-mor": [
+   "bishad"
+  ],
+  "saadh-kore-keno-sokha": [
+   "kautuk",
+   "prem"
+  ],
+  "saara-baros-dekhi-ne-ma": [
+   "viraha",
+   "bhakti"
+  ],
+  "saara-jibon-dilo-aalo": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "saara-nishi-chhilem": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "saarthak-janom-aamar": [
+   "deshprem",
+   "prakriti-bhava"
+  ],
+  "saat-deshete-khnuje": [
+   "ananda"
+  ],
+  "sada-thako-aanande": [
+   "ananda",
+   "shanti"
+  ],
+  "saghana-gahana-ratri": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "saghana-ghana-chhailo": [
+   "prakriti-bhava"
+  ],
+  "sahaj-habi-sahaj-habi": [
+   "shanti",
+   "bhakti"
+  ],
+  "sahasa-daalpala-tor-utola": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "sajabo-tomare-hey": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "sajani-sajani-raadhika-lo": [
+   "prem",
+   "utsav"
+  ],
+  "sakal-bhoyer-bhoy-je-taare": [
+   "bhakti",
+   "sahas"
+  ],
+  "sakalere-kaachhe-daaki": [
+   "bhakti",
+   "ananda"
+  ],
+  "sakal-garbo-dur-kori": [
+   "bhakti"
+  ],
+  "sakal-hridoy-diye": [
+   "prem"
+  ],
+  "sakali-bhulechhe-bhola-mon": [
+   "prem",
+   "smriti"
+  ],
+  "sakali-phurailo-jamini": [
+   "bishad"
+  ],
+  "sakali-phuralo-swapon": [
+   "bishad",
+   "viraha"
+  ],
+  "sakal-janam-bhore-o-mor": [
+   "bhakti",
+   "viraha"
+  ],
+  "sakal-kalushatamasaharo": [
+   "bhakti"
+  ],
+  "sakarun-benu-bajaye-ke": [
+   "viraha"
+  ],
+  "samay-kaaro-je-nai": [
+   "bhakti"
+  ],
+  "samukhete-bohichhe-totini": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "samukhey-shanti-paarabar": [
+   "shanti",
+   "bhakti"
+  ],
+  "sandhya-holo-go-o-ma": [
+   "bhakti",
+   "shanti"
+  ],
+  "sangachhadhwam-sanbadadhwam": [
+   "bhakti"
+  ],
+  "sangsare-kono-bhoi-nahi": [
+   "bhakti",
+   "sahas"
+  ],
+  "sangsarete-charidhar": [
+   "bhakti",
+   "bishad"
+  ],
+  "sangsare-tumi-rakhile": [
+   "bhakti"
+  ],
+  "sangsar-jabe-mon-kere": [
+   "bhakti"
+  ],
+  "sangsoytimiro-majhe": [
+   "bhakti"
+  ],
+  "sankocher-biwhalata": [
+   "sahas",
+   "deshprem"
+  ],
+  "sannyasi-dhyane-nimagna": [
+   "prakriti-bhava",
+   "sahas"
+  ],
+  "sannyasi-je-jagilo-oi": [
+   "utsav",
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "santrasher-biwhalata": [
+   "sahas"
+  ],
+  "saphal-karo-hey-prabhu": [
+   "utsav",
+   "bhakti"
+  ],
+  "sarba-kharbataare-dahe": [
+   "bhakti",
+   "sahas"
+  ],
+  "sardaarmoshay-deri-na": [
+   "kautuk"
+  ],
+  "sarthak-karo-sadhan": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "satimir-rajani-sachakita-sajani": [
+   "viraha",
+   "prem"
+  ],
+  "satyamangal-premamoy": [
+   "bhakti",
+   "shanti"
+  ],
+  "se-aamar-gopon-kotha": [
+   "prem",
+   "ananda"
+  ],
+  "se-aase-dhire": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "se-aasi-kohilo-priye": [
+   "prem",
+   "kautuk"
+  ],
+  "sedin-amay-bolechhile": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "sedin-dujone-dulechhinu": [
+   "smriti",
+   "viraha",
+   "prem"
+  ],
+  "sedine-aapod-aamar-jaabe": [
+   "bhakti",
+   "ananda"
+  ],
+  "sei-bhalo-maa": [
+   "viraha",
+   "bishad"
+  ],
+  "sei-bhalo-sei-bhalo": [
+   "prem",
+   "viraha"
+  ],
+  "sei-jodi-sei-jodi": [
+   "viraha",
+   "bishad",
+   "smriti"
+  ],
+  "sei-shantibhabon-bhubono": [
+   "bishad",
+   "smriti"
+  ],
+  "sei-to-aami-chai-chai-re": [
+   "bhakti",
+   "sahas"
+  ],
+  "sei-to-tomar-pother": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "se-je-bahir-holo-aami": [
+   "viraha",
+   "prem"
+  ],
+  "se-je-moner-manush-keno": [
+   "bhakti",
+   "viraha"
+  ],
+  "se-je-paashe-ese-bosechhilo": [
+   "viraha",
+   "bishad"
+  ],
+  "se-je-pothik-aamar": [
+   "viraha",
+   "bishad"
+  ],
+  "se-jon-ke-sokhi": [
+   "viraha",
+   "prem"
+  ],
+  "se-ki-bhabe-gopon-robe": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "se-kon-boner-horin": [
+   "smriti",
+   "viraha"
+  ],
+  "se-kon-pagol": [
+   "sahas",
+   "ananda"
+  ],
+  "shaktirupe-hero-taar": [
+   "sahas",
+   "bhakti"
+  ],
+  "shanganagagane-ghor-ghanaghata": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "shanti-karo-borisan": [
+   "shanti",
+   "bhakti"
+  ],
+  "shantisamudra-tumi-gobhir": [
+   "shanti",
+   "bhakti"
+  ],
+  "shanto-ha-re-mamo-chitto": [
+   "shanti",
+   "bhakti"
+  ],
+  "sharat-aalor-kamalbone": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "sharate-aaj-kon-atithi": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "sharat-tomar-arun-aalor": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "shesh-belakar-shesher": [
+   "viraha",
+   "smriti"
+  ],
+  "shesh-gaaneri-resh-niye": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "shesh-naahi-je-shesh": [
+   "bhakti",
+   "shanti"
+  ],
+  "shes-phaloner-phasol": [
+   "prakriti-bhava",
+   "shanti"
+  ],
+  "shital-tabo-padachhaya": [
+   "shanti",
+   "bhakti"
+  ],
+  "shiter-bone-kon-se": [
+   "prakriti-bhava",
+   "bishad"
+  ],
+  "shiter-haawar-laglo-nachon": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "shiuli-phota-phurolo-jei": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "shiuli-phul-shiuli-phul": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "shoktaap-gelo-dure": [
+   "shanti"
+  ],
+  "shono-shono-aamader": [
+   "deshprem",
+   "bishad",
+   "bhakti"
+  ],
+  "shono-taar-sudhabaani": [
+   "bhakti",
+   "shanti"
+  ],
+  "shon-re-shon-abodh-mon": [
+   "kautuk"
+  ],
+  "shon-tora-shon-e-aadesh": [
+   "sahas"
+  ],
+  "shon-tora-tobe-shon": [
+   "bhakti",
+   "sahas"
+  ],
+  "shrabano-borisano-paar": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "shraboner-baaridhaara": [
+   "smriti",
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "shraboner-dharar-mato": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "shraboner-gagoner-gaay": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "shraboner-pabone-akul": [
+   "viraha",
+   "smriti"
+  ],
+  "shrabonmegher-aadhek": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "shrabon-tumi-batase-kaar": [
+   "prakriti-bhava"
+  ],
+  "shranta-keno-ohe-pantha": [
+   "bhakti",
+   "sahas"
+  ],
+  "shrinwontu-bishwe": [
+   "bhakti"
+  ],
+  "shubhodine-shubhokshone": [
+   "utsav",
+   "bhakti"
+  ],
+  "shubho-karmopothe-dharo": [
+   "sahas",
+   "deshprem"
+  ],
+  "shubho-milon-lagone": [
+   "utsav",
+   "prem",
+   "ananda"
+  ],
+  "shubhra-aasone-birajo": [
+   "bhakti",
+   "ananda"
+  ],
+  "shubhra-nabashankho-tabo": [
+   "bhakti",
+   "sahas"
+  ],
+  "shubhra-probhate-purbo": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "shudhu-ekti-gondush-jol": [
+   "ananda",
+   "bhakti"
+  ],
+  "shudhu-jawa-aasa": [
+   "bishad"
+  ],
+  "shudhu-ki-taar-bnedhei": [
+   "bhakti"
+  ],
+  "shudhu-tomar-baani-noy": [
+   "bhakti",
+   "prem"
+  ],
+  "shukno-paata-ke-je": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "shuneche-tomar-naam": [
+   "bhakti"
+  ],
+  "shuni-kshane-kshane": [
+   "viraha",
+   "prem"
+  ],
+  "shuni-oi-runujhunu-paaye": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "shun-lo-shun-lo-baalika": [
+   "viraha"
+  ],
+  "shuno-nolini-kholo-go": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "shun-sokhi-baajai-bnashi": [
+   "prem",
+   "ananda"
+  ],
+  "shunyo-haate-phiri-hey": [
+   "bhakti",
+   "bishad"
+  ],
+  "shunyo-pran-kaade-soda": [
+   "bhakti",
+   "bishad"
+  ],
+  "shushkotaaper-daityopure": [
+   "prakriti-bhava",
+   "sahas"
+  ],
+  "shyama-ebar-chhere-chole": [
+   "bhakti"
+  ],
+  "shyam-mukhe-tabo": [
+   "prem",
+   "viraha"
+  ],
+  "shyamol-chhaya-nai-ba": [
+   "prakriti-bhava",
+   "shanti"
+  ],
+  "shyamol-shobhon-shrabon": [
+   "prakriti-bhava"
+  ],
+  "shyam-re-nipot-kotthin": [
+   "viraha",
+   "bishad"
+  ],
+  "simar-maajhe-asim-tumi": [
+   "bhakti",
+   "ananda"
+  ],
+  "sobai-jare-sob-ditechhe": [
+   "bhakti",
+   "shanti"
+  ],
+  "sobare-kori-aahoban": [
+   "utsav",
+   "ananda"
+  ],
+  "sobar-majhare-tomare-swikar": [
+   "bhakti"
+  ],
+  "sobar-saathe-choletechhilo": [
+   "prem"
+  ],
+  "sob-dibi-ke-sob-dibi-paay": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "sobe-ananda-karo": [
+   "ananda",
+   "bhakti"
+  ],
+  "sobe-mili-gaao-re": [
+   "utsav",
+   "bhakti"
+  ],
+  "sobhaye-tomar-thaaki": [
+   "bhakti"
+  ],
+  "sob-kaaje-haat-laagai": [
+   "sahas",
+   "ananda"
+  ],
+  "sob-kichhu-keno-nilo-na": [
+   "prem",
+   "bishad"
+  ],
+  "sohe-na-jatona": [
+   "viraha",
+   "bishad"
+  ],
+  "sohe-na-sohe-na-knaade": [
+   "bishad"
+  ],
+  "sokal-belar-aaloy-baaje": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "sokal-belar-knuri-aamar": [
+   "bishad",
+   "smriti"
+  ],
+  "sokal-snaje-dhaay-je-ora": [
+   "viraha",
+   "bhakti"
+  ],
+  "sokatore-oi-knaadichhe": [
+   "bhakti",
+   "bishad"
+  ],
+  "sokha-aapon-mon-niye": [
+   "prem",
+   "bishad"
+  ],
+  "sokha-hey-ki-diye-aami": [
+   "bishad",
+   "prem"
+  ],
+  "sokha-moder-bnedhe-rakho": [
+   "bhakti"
+  ],
+  "sokha-sadhite-sadhate": [
+   "prem",
+   "bishad"
+  ],
+  "sokha-tumi-aachho-kotha": [
+   "bhakti",
+   "bishad"
+  ],
+  "sokhi-aamari-duware-keno": [
+   "prem",
+   "viraha"
+  ],
+  "sokhi-aandhare-ekela": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "sokhi-aar-kato-din-sukh": [
+   "bishad"
+  ],
+  "sokhi-balo-dekhi-lo": [
+   "prem",
+   "kautuk"
+  ],
+  "sokhi-bhabona-kaahare": [
+   "ananda",
+   "prem"
+  ],
+  "sokhi-bohe-gelo-bela": [
+   "prem",
+   "viraha"
+  ],
+  "sokhi-lo-sokhi-lo": [
+   "viraha",
+   "prem"
+  ],
+  "sokhi-protidin-haay-2": [
+   "prem",
+   "viraha"
+  ],
+  "sokhi-re-pirit-bujhibe-ke": [
+   "viraha",
+   "bishad"
+  ],
+  "sokhi-saadh-kore-jaaha": [
+   "prem"
+  ],
+  "sokhi-se-gelo-kothay": [
+   "prem",
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "sokhi-tora-dekhe-ja-ebar": [
+   "prem",
+   "sahas"
+  ],
+  "sonaar-pinjor-bhangiye": [
+   "viraha",
+   "bishad"
+  ],
+  "sudhasagarotire-hey-esechhe": [
+   "bhakti",
+   "ananda"
+  ],
+  "sukhe-aachhi-sukhe-aachhi": [
+   "prem",
+   "ananda"
+  ],
+  "sukhe-aamay-raakhbe-keno": [
+   "bhakti"
+  ],
+  "sukher-maajhe-tomay-dekhechhi": [
+   "bhakti",
+   "shanti"
+  ],
+  "sukhe-thako-aar-sukhi-karo": [
+   "utsav",
+   "bhakti"
+  ],
+  "sukhohin-nisidin": [
+   "bhakti",
+   "sahas"
+  ],
+  "sumodhur-shuni-aaji": [
+   "bhakti"
+  ],
+  "sumongoli-bodhu": [
+   "utsav",
+   "shanti"
+  ],
+  "sundar-bohe-aananda": [
+   "bhakti",
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "sundar-bote-tabo-angad": [
+   "bhakti"
+  ],
+  "sundarer-bandhan-nistthur": [
+   "sahas",
+   "bishad"
+  ],
+  "sundar-hridiranjan-tumi": [
+   "prem"
+  ],
+  "sundari-raadhe-aawe-boni": [
+   "prem"
+  ],
+  "sunil-sagarer-shymal-kinare": [
+   "prem",
+   "smriti"
+  ],
+  "sur-bhule-jei-ghure-bera": [
+   "bhakti",
+   "viraha"
+  ],
+  "surer-guru-dao-go-surer": [
+   "bhakti"
+  ],
+  "surer-jaale-ke-jorale": [
+   "prem",
+   "viraha"
+  ],
+  "swami-tumi-eso-aaj": [
+   "bhakti",
+   "bishad"
+  ],
+  "swapane-dohe-chhinu": [
+   "viraha",
+   "prem"
+  ],
+  "swapan-jodi-bhangile": [
+   "bhakti",
+   "sahas"
+  ],
+  "swapan-loker-bideshini": [
+   "viraha",
+   "smriti"
+  ],
+  "swapanpaarer-daak-shunechhi": [
+   "viraha"
+  ],
+  "swapnamadir-neshay": [
+   "prem"
+  ],
+  "swapne-aamar-mone-holo": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "swarge-tomay-niye-jaabe": [
+   "kautuk"
+  ],
+  "swarnabarne-samujjwal": [
+   "bhakti"
+  ],
+  "swarup-tnaar-ke-jaane": [
+   "bhakti"
+  ],
+  "taai-aami-dinu-bor": [
+   "prem"
+  ],
+  "taai-hok-tobe-taai-hok": [
+   "prem",
+   "sahas"
+  ],
+  "taai-tomar-ananda-aamar": [
+   "bhakti",
+   "ananda"
+  ],
+  "taar-anto-nai-go": [
+   "ananda",
+   "bhakti"
+  ],
+  "taar-biday-belaar-malakhani": [
+   "viraha",
+   "smriti"
+  ],
+  "taare-deho-go-aani": [
+   "viraha",
+   "bishad"
+  ],
+  "taare-dekhate-paari-ne": [
+   "bishad",
+   "prem"
+  ],
+  "taare-kemone-dhoribe": [
+   "prem"
+  ],
+  "taar-haate-chhilo-hasir": [
+   "bishad",
+   "prem"
+  ],
+  "taaro-taaro-hori-dinojon": [
+   "bhakti",
+   "bishad"
+  ],
+  "tabo-amal-parashras": [
+   "bhakti",
+   "shanti"
+  ],
+  "tabo-premsudharoshe-mete": [
+   "bhakti",
+   "ananda"
+  ],
+  "tabo-singhasoner-aason": [
+   "bhakti",
+   "ananda"
+  ],
+  "tamishwaranang-paramang": [
+   "bhakti"
+  ],
+  "tapaswin-hey-dhoroni": [
+   "prakriti-bhava",
+   "shanti"
+  ],
+  "thaakte-aar-to-parli-ne": [
+   "bhakti"
+  ],
+  "thaak-thaak-michhe-keno": [
+   "bishad"
+  ],
+  "thaak-tobe-thaak-tui": [
+   "bishad"
+  ],
+  "thaamao-rimiki-jhimiki": [
+   "prakriti-bhava",
+   "sahas"
+  ],
+  "thaamo-thamo-kothay-chole": [
+   "bishad"
+  ],
+  "thaam-re-tham-re-toraa": [
+   "bishad",
+   "prem"
+  ],
+  "thaam-thaam-ki-koribi": [
+   "bishad"
+  ],
+  "timiro-abagunthane-badan": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "timirobibhabori-kaate": [
+   "bhakti",
+   "viraha"
+  ],
+  "timiroduyar-kholo": [
+   "bhakti",
+   "shanti"
+  ],
+  "timiromoy-nibiro-nisha": [
+   "sahas",
+   "bhakti"
+  ],
+  "tnaahar-ananda-dhaara": [
+   "ananda",
+   "bhakti"
+  ],
+  "tnaahar-asim-mangalolok": [
+   "utsav",
+   "bhakti"
+  ],
+  "tnaahare-aaroti-kore": [
+   "bhakti",
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "tnaahar-preme-ke-dube": [
+   "bhakti",
+   "shanti"
+  ],
+  "tobe-aay-sobe-aay": [
+   "kautuk",
+   "utsav"
+  ],
+  "tobe-ki-phiribo": [
+   "bhakti",
+   "bishad"
+  ],
+  "tobe-sesh-kore-dao-sesh": [
+   "viraha",
+   "bishad"
+  ],
+  "tobe-shukhe-thaako-sukhe": [
+   "bishad",
+   "viraha"
+  ],
+  "tobu-mone-rekho": [
+   "viraha",
+   "smriti"
+  ],
+  "tobu-paarine-snopite-pran": [
+   "deshprem",
+   "sahas"
+  ],
+  "tolon-namon-pichhon-saamon": [
+   "kautuk"
+  ],
+  "tomader-daan-josher-dalay": [
+   "bishad",
+   "smriti"
+  ],
+  "tomader-e-ki-bhranti": [
+   "prem",
+   "bishad"
+  ],
+  "toma-hin-kaate-dibos-hey": [
+   "bhakti",
+   "viraha"
+  ],
+  "toma-laagi-naath": [
+   "bhakti",
+   "viraha"
+  ],
+  "tomar-aamar-ei-biroher": [
+   "viraha",
+   "bhakti"
+  ],
+  "tomar-aason-patbo-kothay": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "tomar-aason-shunyo-aaji": [
+   "sahas"
+  ],
+  "tomar-ananda-oi-elo-1": [
+   "utsav",
+   "ananda"
+  ],
+  "tomar-ananda-oi-elo-2": [
+   "ananda",
+   "bhakti"
+  ],
+  "tomar-asime-pranomon-loye": [
+   "bhakti",
+   "shanti"
+  ],
+  "tomar-baas-kotha-je-pothik": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "tomar-bina-aamar-manomajhe": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "tomar-binay-gaan-chhilo": [
+   "smriti",
+   "bishad"
+  ],
+  "tomar-boishakhe-chhilo": [
+   "prem",
+   "kautuk"
+  ],
+  "tomar-dekha-paabo-bole": [
+   "bhakti",
+   "viraha"
+  ],
+  "tomar-duyar-kholaar-dhwani": [
+   "bhakti",
+   "ananda"
+  ],
+  "tomar-dware-keno-aasi": [
+   "bhakti"
+  ],
+  "tomarei-koriyachhi-jiboner": [
+   "prem"
+  ],
+  "tomar-ei-maadhuri": [
+   "bhakti",
+   "ananda"
+  ],
+  "tomarei-praner-aasha-kohibo": [
+   "bhakti"
+  ],
+  "tomare-jaani-ne-hey": [
+   "bhakti",
+   "shanti"
+  ],
+  "tomar-giti-jaagalo-smriti": [
+   "smriti",
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "tomar-gopon-kothati": [
+   "prem"
+  ],
+  "tomar-hater-arunolekha": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "tomar-hater-raakhikhani": [
+   "bhakti",
+   "sahas"
+  ],
+  "tomar-holo-suru-aamar-holo": [
+   "bishad"
+  ],
+  "tomari-gehe-palicho-snehe": [
+   "bhakti",
+   "ananda"
+  ],
+  "tomari-ichchha-houk-purno": [
+   "bhakti",
+   "bishad"
+  ],
+  "tomari-jhornatolar-nirjone": [
+   "shanti",
+   "bhakti"
+  ],
+  "tomari-modhur-rupe": [
+   "bhakti",
+   "ananda"
+  ],
+  "tomari-naam-bolbo-naanaa-chhole": [
+   "bhakti"
+  ],
+  "tomari-name-nayan-meli": [
+   "bhakti",
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "tomari-ragini-jibanokunje": [
+   "bhakti",
+   "shanti"
+  ],
+  "tomari-sebok-karo-hey": [
+   "bhakti",
+   "sahas"
+  ],
+  "tomari-tore-maa-sopinu": [
+   "deshprem",
+   "sahas"
+  ],
+  "tomar-kaachhe-e-bor-maagi": [
+   "bhakti",
+   "ananda"
+  ],
+  "tomar-kaachhe-shanti": [
+   "bhakti",
+   "sahas"
+  ],
+  "tomar-kachhe-dos-kori": [
+   "bishad"
+  ],
+  "tomar-kholaa-hawa-lagiye": [
+   "sahas",
+   "bhakti"
+  ],
+  "tomar-kotha-hetha-keho": [
+   "bishad",
+   "bhakti"
+  ],
+  "tomar-kotitoter-dhotti": [
+   "ananda",
+   "kautuk"
+  ],
+  "tomar-mohon-rupe-ke": [
+   "prakriti-bhava",
+   "bishad"
+  ],
+  "tomar-moner-ekti-kotha": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "tomar-naam-jaani-ne-sur": [
+   "prakriti-bhava",
+   "viraha"
+  ],
+  "tomar-nayan-aamaye-baare": [
+   "bhakti",
+   "viraha"
+  ],
+  "tomar-paayer-tolay": [
+   "prem"
+  ],
+  "tomar-potaka-jaare-dao": [
+   "bhakti",
+   "sahas"
+  ],
+  "tomar-preme-dhonno-karo": [
+   "bhakti",
+   "shanti"
+  ],
+  "tomar-premer-birje": [
+   "bishad",
+   "prem"
+  ],
+  "tomar-pujaar-chhole": [
+   "bhakti",
+   "viraha"
+  ],
+  "tomar-rongin-paatay": [
+   "prem"
+  ],
+  "tomar-sesher-gaaner": [
+   "smriti",
+   "viraha"
+  ],
+  "tomar-sonaar-thaalay-saajabo": [
+   "bhakti",
+   "bishad"
+  ],
+  "tomar-surer-dhaara-jhare": [
+   "bhakti",
+   "shanti"
+  ],
+  "tomar-sur-shunaye-je": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "tomay-aamay-milon-hobe": [
+   "bhakti",
+   "prem"
+  ],
+  "tomay-dekhe-mone-laage": [
+   "prem",
+   "bishad"
+  ],
+  "tomaye-cheye-aachhi-boshe": [
+   "viraha",
+   "bhakti"
+  ],
+  "tomay-gaan-shonabo": [
+   "viraha",
+   "prem"
+  ],
+  "tomay-jotone-rakhibo-hey": [
+   "bhakti",
+   "prem"
+  ],
+  "tomay-kichhu-debo-bole": [
+   "bhakti"
+  ],
+  "tomay-notun-kore-pabo": [
+   "prem",
+   "viraha"
+  ],
+  "tomay-saajabo-jatone": [
+   "prem",
+   "utsav"
+  ],
+  "tomra-ja-bolo-tai-bolo": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "toper-taper-baadhon-katuk": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "tor-aapon-jone-chharbe": [
+   "sahas"
+  ],
+  "tora-boshe-gnaathis-maala": [
+   "bishad"
+  ],
+  "tora-je-ja-bolis-bhai": [
+   "ananda",
+   "kautuk"
+  ],
+  "tora-shunis-ni-ki-shunis": [
+   "bhakti",
+   "ananda"
+  ],
+  "tor-bhitore-jagiya-ke-je": [
+   "viraha",
+   "bishad"
+  ],
+  "tori-aamar-hotthath-dube-jaaye": [
+   "bishad"
+  ],
+  "torite-paa-diyi-ni": [
+   "viraha",
+   "shanti"
+  ],
+  "tor-praner-ros-to-shukiye": [
+   "bishad"
+  ],
+  "tor-shikol-aamay-bikol": [
+   "sahas",
+   "bhakti"
+  ],
+  "torun-prater-arun-aakash": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "torutole-chhinnobrinto": [
+   "bishad",
+   "prakriti-bhava"
+  ],
+  "trisnar-shanti-sundorkanti-1": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "trisnar-shanti-sundorkanti-2": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "tthakur-moshaay-deri-na": [
+   "kautuk"
+  ],
+  "tui-kebol-thaakis-sore": [
+   "sahas"
+  ],
+  "tui-phele-esechhis-kaare": [
+   "viraha",
+   "smriti"
+  ],
+  "tui-re-basontosomiron": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "tumi-aachho-kon-paara": [
+   "kautuk"
+  ],
+  "tumi-aamader-pita": [
+   "bhakti"
+  ],
+  "tumi-aamay-dekechhile": [
+   "smriti",
+   "viraha"
+  ],
+  "tumi-aamay-korbe-masto": [
+   "kautuk"
+  ],
+  "tumi-aaponi-jaagao-more": [
+   "bhakti"
+  ],
+  "tumi-atithi-atithi-aamar": [
+   "prem"
+  ],
+  "tumi-bahir-theke-dile-bisam": [
+   "bhakti"
+  ],
+  "tumi-bandhu-tumi-nath": [
+   "bhakti",
+   "shanti"
+  ],
+  "tumi-chhere-chhile-bhule-chhile": [
+   "bhakti",
+   "viraha",
+   "bishad"
+  ],
+  "tumi-daak-diyechho-kon": [
+   "viraha",
+   "bhakti"
+  ],
+  "tumi-dhonya-dhonya-hey": [
+   "bhakti",
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "tumi-ebar-aamay-laho-hey": [
+   "bhakti"
+  ],
+  "tumi-ekla-ghore-boshe-boshe": [
+   "bhakti",
+   "shanti"
+  ],
+  "tumi-ektu-kebol-boste": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "tumi-e-par-o-par-karo-ke-go": [
+   "viraha",
+   "bhakti"
+  ],
+  "tumi-hey-premer-rabi": [
+   "utsav",
+   "bhakti"
+  ],
+  "tumi-hotthath-haway-bhese": [
+   "ananda",
+   "bhakti"
+  ],
+  "tumi-indromonir-haar": [
+   "bishad"
+  ],
+  "tumi-jaagichho-ke": [
+   "bhakti",
+   "bishad"
+  ],
+  "tumi-jaano-ogo-antorjami": [
+   "bhakti",
+   "shanti"
+  ],
+  "tumi-jato-bhaar-diyechho": [
+   "bhakti"
+  ],
+  "tumi-je-aamare-chao": [
+   "bhakti",
+   "viraha"
+  ],
+  "tumi-je-cheye-aachho": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "tumi-je-esechho-mor": [
+   "bhakti",
+   "ananda"
+  ],
+  "tumi-je-surer-aagun-lagiye": [
+   "ananda",
+   "bhakti"
+  ],
+  "tumi-jeyo-na-ekhoni": [
+   "prem",
+   "viraha"
+  ],
+  "tumi-kaachhe-nai-bole": [
+   "bhakti",
+   "viraha"
+  ],
+  "tumi-kamon-kore-gaan": [
+   "bhakti",
+   "ananda"
+  ],
+  "tumi-ke-go-sokhire-keno": [
+   "prem",
+   "ananda"
+  ],
+  "tumi-khushi-thako-aamar": [
+   "ananda",
+   "bhakti"
+  ],
+  "tumi-kichhu-diye-jao": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "tumi-ki-eshechho-mor": [
+   "bhakti",
+   "prakriti-bhava"
+  ],
+  "tumi-ki-go-pita-aamader": [
+   "bhakti",
+   "shanti"
+  ],
+  "tumi-ki-keboli-chhobi": [
+   "smriti",
+   "viraha"
+  ],
+  "tumi-kon-bhangoner-pothe": [
+   "viraha",
+   "bishad"
+  ],
+  "tumi-kon-kanoner-phool": [
+   "prem",
+   "smriti"
+  ],
+  "tumi-kon-pothe-je-ele": [
+   "prakriti-bhava",
+   "prem"
+  ],
+  "tumi-mor-pao-nai-porichoy": [
+   "sahas",
+   "bishad"
+  ],
+  "tumi-nabo-nabo-rupe": [
+   "bhakti",
+   "ananda"
+  ],
+  "tumi-poritechho-hese": [
+   "prem",
+   "ananda"
+  ],
+  "tumi-robe-nirobe": [
+   "prem",
+   "shanti"
+  ],
+  "tumi-sondhyar-meghomala-1": [
+   "prem"
+  ],
+  "tumi-sondhyar-meghomala-2": [
+   "prem"
+  ],
+  "tumi-sundor-joubanoghano": [
+   "bhakti",
+   "ananda"
+  ],
+  "tumi-to-sei-jabei-chole": [
+   "viraha",
+   "bishad"
+  ],
+  "tumi-usar-sonar-bindu": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "udaasini-beshe-bideshini": [
+   "viraha",
+   "prakriti-bhava"
+  ],
+  "udaasini-se-bideshini": [
+   "viraha"
+  ],
+  "ujjwol-karo-he-aaji": [
+   "utsav",
+   "bhakti"
+  ],
+  "ulongini-naache-ranorongge": [
+   "bhakti",
+   "sahas"
+  ],
+  "uriye-dhwoja-abhrobhedi": [
+   "sahas",
+   "bhakti"
+  ],
+  "utal-hawa-laglo-aamar": [
+   "sahas",
+   "prem"
+  ],
+  "utol-dhara-badol-jhore": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "utol-dharay-badol-jhore": [
+   "prem",
+   "prakriti-bhava"
+  ],
+  "uttamangena-bandehang": [
+   "bhakti"
+  ],
+  "utthi-chalo-sudin-aailo": [
+   "bhakti",
+   "ananda",
+   "prakriti-bhava"
+  ],
+  "ws-prakriti-13": [
+   "prakriti-bhava",
+   "sahas"
+  ],
+  "ws-prakriti-267": [
+   "prakriti-bhava",
+   "shanti"
+  ],
+  "ws-prem-206": [
+   "bishad",
+   "viraha"
+  ],
+  "ws-prem-315": [
+   "viraha",
+   "prem"
+  ],
+  "ws-prem-328": [
+   "prakriti-bhava",
+   "ananda"
+  ],
+  "ws-prem-360": [
+   "prem"
+  ],
+  "ws-prem-o-prakriti-67": [
+   "prakriti-bhava",
+   "shanti"
+  ]
+ }
+}

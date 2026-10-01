@@ -1,0 +1,455 @@
+{
+ "rejected_number_matches": [
+  [
+   "Aji Shrabanaghanagahano",
+   "কূজনহীন কাননভূমি, দুয়ার দেওয়া সকল ঘরে"
+  ],
+  [
+   "Amar Mon Kemon Kore",
+   "গোপন কথাটি রবে না গোপনে"
+  ],
+  [
+   "Anandadhwani Jagao Gagone",
+   "মা কি তুই পরের দ্বারে পাঠাবি তোর ঘরের ছেলে?"
+  ],
+  [
+   "Ha A A Ai Nai Kaj",
+   "হা-আ-আ-আই"
+  ],
+  [
+   "Himgiri Phele Niche",
+   "হে সন্ন্যাসী"
+  ],
+  [
+   "Hridoybasona Purno Holo",
+   "আঁধার রজনী পোহালো, জগত পূরিল পুলকে"
+  ],
+  [
+   "Kichhui To Holo Na",
+   "কে তুমি গো খুলিয়াছ স্বর্গের দুয়ার"
+  ],
+  [
+   "Ki Koribo Balo Sakha",
+   "কিছুই তো হল না"
+  ],
+  [
+   "Ore Bhai Mithya Bhebo Na",
+   "নব বৎসরে করিলাম পণ লব স্বদেশের দীক্ষা"
+  ],
+  [
+   "Patar Bhela Bhasai Nire",
+   "তুমি হঠাৎ-হাওয়ায় ভেসে-আসা ধন"
+  ],
+  [
+   "Shubhodine Shubhokhane",
+   "তুমি হে প্রেমের রবি আলো করি চরাচর"
+  ],
+  [
+   "Sokhi Lo Sokhi Lo",
+   "শ্যাম রে, নিপট কঠিন মন তোর"
+  ],
+  [
+   "Sakhire Pirit Bujhbe Ke",
+   "সখি লো, সখি লো, নিকরুণ মাধব মথুরাপুর যব যায়"
+  ],
+  [
+   "Tomar Ei Madhuri",
+   "ভুলে যাই থেকে থেকে"
+  ],
+  [
+   "Tomari Tare Ma Sapinu",
+   "তবু পারি নে সঁপিতে প্রাণ"
+  ],
+  [
+   "Tora Nei Ba Kotha Bolli",
+   "তোমারি তরে, মা, সঁপিনু এ দেহ। তোমারি তরে, মা, সঁপিনু প্রাণ"
+  ],
+  [
+   "Shraban Hoye Ele Phire",
+   "আবার শ্রাবণ হয়ে এলে ফিরে"
+  ],
+  [
+   "Aj Nahi Nahi Nidra",
+   "আজি নাহি মাহি নিদ্রা আঁখিপাতে"
+  ],
+  [
+   "Jwaleni Alo Andhokare",
+   "আমার জ্বলে নি আলো অন্ধকারে"
+  ],
+  [
+   "Arup Bina Ruper Arale",
+   "হার-মানা হার পরাব তোমার গলে"
+  ],
+  [
+   "Barota Peyechi Mone",
+   "হে সখা, বারতা পেয়েছি মনে মনে তব নিশ্বাসপরশনে"
+  ],
+  [
+   "Kar Bashi Nishibhore",
+   "মরি লো) কার বাঁশি নিশিভোরে বাজিল মোর প্রাণে"
+  ],
+  [
+   "Rong Lagale Bone Bone",
+   "কে রঙ লাগালে বনে বনে"
+  ],
+  [
+   "Oi Bujhi Bashi Baje",
+   "সখী ওই বুঝি বাঁশি বাজে— বনমাঝে কি মনোমাঝে॥"
+  ]
+ ],
+ "title_matches": [
+  [
+   "Adhek Ghume Nayan Chume",
+   "আধেক ঘুমে নয়ন চুমে স্বপন দিয়ে যায়"
+  ],
+  [
+   "Amar Mon Kemon Kore",
+   "আমার মন কেমন করে"
+  ],
+  [
+   "Ami Hridayer Katha",
+   "আমি হৃদয়ের কথা বলিতে ব্যাকুল, শুধাইল না কেহ"
+  ],
+  [
+   "Anandadhwani Jagao Gagone",
+   "আনন্দধ্বনি জাগাও গগনে"
+  ],
+  [
+   "Arup Bina Ruper Arale",
+   "অরূপবীণা রূপের আড়ালে লুকিয়ে বাজে"
+  ],
+  [
+   "Bhasiye De Tori",
+   "বুঝি ওই সুদূরে ডাকিল মোরে"
+  ],
+  [
+   "Bhul Korechhinu",
+   "ভুল করেছিনু, ভুল ভেঙেছে"
+  ],
+  [
+   "Badhon Kano Bhushan",
+   "বাঁধন কেন ভূষণ-বেশে"
+  ],
+  [
+   "Dukkho Diye Metabo",
+   "দুঃখ দিয়ে মেটাব দুঃখ তোমার"
+  ],
+  [
+   "Esechhe Hawa Banite",
+   "এসেছে হাওয়া বাণীতে দোল-দোলানো, এসেছে পথ-ভোলানো"
+  ],
+  [
+   "Eso Eso Purushottam",
+   "এসো এসো পুরুষোত্তম, এসো এসো বীর মম"
+  ],
+  [
+   "Ghumer Ghano Gahano",
+   "ঘুমের ঘন গহন হতে যেমন আসে স্বপ্ন"
+  ],
+  [
+   "Hridoybasona Purno Holo",
+   "হৃদয়বাসনা পূর্ণ হল আজি মম পূর্ণ হল, শুন সবে জগতজনে॥"
+  ],
+  [
+   "Jeno Prem Chirorini",
+   "জেনো প্রেম চিরঋণী আপনারই হরষে, জেনো প্রিয়ে"
+  ],
+  [
+   "Jeyo Na Jeyo Na Phire",
+   "যেয়ো না, যেয়ো না ফিরে"
+  ],
+  [
+   "Kaj Nei Kaj Nei Ma",
+   "কূজনহীন কাননভূমি, দুয়ার দেওয়া সকল ঘরে"
+  ],
+  [
+   "Kaho Kaho More Priye",
+   "সখি রে, পিরীত বুঝবে কে"
+  ],
+  [
+   "Ketechhe Ekela Biraher",
+   "কেটেছে একেলা বিরহের বেলা আকাশকুমচয়নে"
+  ],
+  [
+   "Kichhui To Holo Na",
+   "কিছুই তো হল না"
+  ],
+  [
+   "Ki Koribo Balo Sakha",
+   "কী করিব বলো, সখা, তোমার লাগিয়া"
+  ],
+  [
+   "Kon Badhoner Granthi",
+   "কোন্ বাঁধনের গ্রন্থি বাঁধিল দুই অজানারে"
+  ],
+  [
+   "Madhur Basanta Esechhe",
+   "মধুর বসন্ত এসেছে মধুর মিলন ঘটাতে"
+  ],
+  [
+   "Maron Re Tuhu Mamo",
+   "মরণ রে, তুঁহুঁ মম শ্যামসমান"
+  ],
+  [
+   "Na Bujhe Kare Tumi",
+   "না বুঝে কারে তুমি ভাসালে আঁখিজলে"
+  ],
+  [
+   "Nabo Batsare Korilam Pon",
+   "নব বৎসরে করিলাম পণ লব স্বদেশের দীক্ষা"
+  ],
+  [
+   "Narir Lolito Lobhano Lilay",
+   "নারীর ললিত লোভন লীলায় এখনি কেন এ ক্লান্তি"
+  ],
+  [
+   "Nil Akasher Kone Kone",
+   "নীল আকাশের কোণে কোণে ওই বুঝি আজ শিহর লাগে আহা"
+  ],
+  [
+   "Nirabe Thakis Sokhi",
+   "নীরবে থাকিস, সখী, ও তুই নীরবে থাকিস"
+  ],
+  [
+   "Ogo Sokhi Dekhi Dekhi",
+   "ওগো সখী, দেখি দেখি, মন কোথা আছে"
+  ],
+  [
+   "Oli Bar Bar Phire Jay",
+   "অলি বার বার ফিরে যায়, অলি বার বার ফিরে আসে"
+  ],
+  [
+   "Olo Rekhe De Sokhi",
+   "ওলো রেখে দে সখী রেখে দে, মিছে কথা ভালোবাসা"
+  ],
+  [
+   "Ore Bhai Mithya Bhebo Na",
+   "ওরে ভাই, মিথ্যা ভেবো না"
+  ],
+  [
+   "Ore Jhor Neme Aye",
+   "ওরে ঝড় নেমে আয়, আয় রে আমার শুকনো পাতার ডালে"
+  ],
+  [
+   "Parbi Na Ki Jog Dite",
+   "পারবি না কি যোগ দিতে এই ছন্দে রে"
+  ],
+  [
+   "Patar Bhela Bhasai Nire",
+   "পাতার ভেলা ভাসাই নীরে"
+  ],
+  [
+   "Pothohara Tumi Pothik",
+   "পথহারা তুমি পথিক যেন গো সুখের কাননে"
+  ],
+  [
+   "Premer Phand Pata",
+   "প্রেমের ফাঁদ পাতা ভুবনে"
+  ],
+  [
+   "Rodanbhora E Basanta",
+   "রোদনভরা এ বসন্ত সখী, কখনো আসে নি বুঝি আগে"
+  ],
+  [
+   "Sakal Hridoy Diye",
+   "সকল হৃদয় দিয়ে ভালোবেসেছি যারে সে কি ফিরাতে পারে সখী"
+  ],
+  [
+   "Samukhete Bohichhe Totini",
+   "সমুখেতে বহিছে তটিনী, দুটি তারা আকাশে ফুটিয়া"
+  ],
+  [
+   "Se Jon Ke Sokhi",
+   "শুনি ক্ষণে ক্ষণে মনে মনে অতল জলের আহ্বান"
+  ],
+  [
+   "Shubhodine Shubhokhane",
+   "শুভদিনে শুভক্ষণে পৃথিবী আনন্দমনে"
+  ],
+  [
+   "Shubho Milanalagone",
+   "শুভ মিলনলগনে বাজুক বাঁশি"
+  ],
+  [
+   "Shyam Re Nipot Kothin",
+   "শ্যাম রে, নিপট কঠিন মন তোর"
+  ],
+  [
+   "Sab Kichhu Keno Nilo Na",
+   "সব-কিছু কেন নিল না, নিল না, নিল না ভালোবাসা"
+  ],
+  [
+   "Sakha Apon Mon Niye",
+   "সখা, আপন মন নিয়ে কাঁদিয়ে মরি, পরের মন নিয়ে কী হবে"
+  ],
+  [
+   "Sokhi Bohe Gelo Bela",
+   "সখী, বহে গেল বেলা, শুধু হাসিখেলা এ কি আর ভালো লাগে"
+  ],
+  [
+   "Sokhi Lo Sokhi Lo",
+   "সখি লো, সখি লো, নিকরুণ মাধব মথুরাপুর যব যায়"
+  ],
+  [
+   "Sokhi Se Gelo Kothay",
+   "সখী, সে গেল কোথায়, তারে ডেকে নিয়ে আয়"
+  ],
+  [
+   "Sukhe Achhi Sukhe",
+   "সুখে আছি, সুখে আছি সখা, আপনমনে"
+  ],
+  [
+   "Tare Dekhate Pari Ne",
+   "তারে দেখাতে পারি নে কেন প্রাণ খুলে গো"
+  ],
+  [
+   "Tare Kemone Dhoribe",
+   "তারে কেমনে ধরিবে, সখী, যদি ধরা দিলে"
+  ],
+  [
+   "Tobu Pari Ne Sopite",
+   "তবু পারি নে সঁপিতে প্রাণ"
+  ],
+  [
+   "Tomar Baishakhe Chhilo",
+   "তোমার বৈশাখে ছিল প্রখর রৌদ্রের জ্বালা"
+  ],
+  [
+   "Tomar Ei Madhuri",
+   "তোমার এই মাধুরী ছাপিয়ে আকাশ ঝরবে"
+  ],
+  [
+   "Tomari Tare Ma Sapinu",
+   "তোমারি তরে, মা, সঁপিনু এ দেহ। তোমারি তরে, মা, সঁপিনু প্রাণ"
+  ],
+  [
+   "Udasini Se Bideshini",
+   "উদাসিনী-বেশে বিদেশিনী কে সে নাইবা তাহারে জানি"
+  ]
+ ],
+ "duplicates_merged": [
+  [
+   "aabar-sraban-hoye-ele",
+   "shrabon-hoye-ele-phire"
+  ],
+  [
+   "aah-bechechhi-ekhon-1",
+   "aah-bechechhi-ekhon-2"
+  ],
+  [
+   "aaji-naahi-naahi-nidra",
+   "aaj-naahi-naahi-nidra"
+  ],
+  [
+   "aalo-je-jaay-re-dekha",
+   "oi-aalo-je-jaay"
+  ],
+  [
+   "aamar-jwaleni-aalo-andhokare",
+   "jwaleni-aalo-ondhokare"
+  ],
+  [
+   "o-aamar-mon-jakhan",
+   "aamar-mon-jakhon-jagli-na-re"
+  ],
+  [
+   "michhe-ghuri-e-jagote",
+   "aami-michhe-ghuri-e-jagate"
+  ],
+  [
+   "ayi-bhubanmon-mohini",
+   "oyi-bhubonmonomohini"
+  ],
+  [
+   "ayi-bishadini-bina",
+   "oyi-bishadini-beena"
+  ],
+  [
+   "baachha-tui-je",
+   "tui-je-aamar-bukchera-dhon"
+  ],
+  [
+   "hey-sakha-barota",
+   "baarota-peyechhi"
+  ],
+  [
+   "bhaanglo-hasir-badh",
+   "oi-bhanglo-hasir-bnaadh"
+  ],
+  [
+   "dukkher-joggo-anol-1",
+   "dukkher-joggo-anol-2"
+  ],
+  [
+   "ebaar-bhasiye-dite-hobe-1",
+   "ebaar-bhasiye-dite-hobe-2"
+  ],
+  [
+   "eso-hey-grihodebota",
+   "eso-ashramdebota"
+  ],
+  [
+   "eso-eso-basonto-dhoratol-1",
+   "eso-eso-basonto-dhoratol-2"
+  ],
+  [
+   "ha-ki-dasha-holo",
+   "haay-ki-dasha-holo"
+  ],
+  [
+   "kshoma-karo-nath",
+   "hey-kshoma-karo-nath"
+  ],
+  [
+   "kaachhe-chhile-dure-1",
+   "kaachhe-chhile-dure-2"
+  ],
+  [
+   "mori-lo-kaar-bnaashi",
+   "kaar-bnaashi-nishibhore"
+  ],
+  [
+   "ke-daake-aami-kobhu-2",
+   "ke-daake-aami-kobhu-1"
+  ],
+  [
+   "knaadite-hobe-re-1",
+   "knaadite-hobe-re-2"
+  ],
+  [
+   "sokhi-oi-bujhi-bnaashi",
+   "oi-bujhi-bnaashi-baaje"
+  ],
+  [
+   "oke-bal-sokhi-bal",
+   "oke-balo-sokhi-balo"
+  ],
+  [
+   "ore-tora-nei-ba-katha-bolli",
+   "tora-nei-ba-kotha-bolli"
+  ],
+  [
+   "sokhi-protidin-haay-2",
+   "sokhi-protidin-haay-1"
+  ]
+ ],
+ "wikisource_twins_dropped": [
+  [
+   "গীতবিতান/প্রকৃতি/২৪৪",
+   "গীতবিতান/প্রেম ও প্রকৃতি/৮০"
+  ],
+  [
+   "গীতবিতান/বিচিত্র/৬৪",
+   "গীতবিতান/প্রেম ও প্রকৃতি/৬০"
+  ]
+ ],
+ "wikisource_only": [
+  "গীতবিতান/প্রকৃতি/১৩",
+  "গীতবিতান/প্রকৃতি/২৬৭",
+  "গীতবিতান/প্রেম/২০৬",
+  "গীতবিতান/প্রেম/৩১৫",
+  "গীতবিতান/প্রেম/৩২৮",
+  "গীতবিতান/প্রেম/৩৬০",
+  "গীতবিতান/প্রেম ও প্রকৃতি/৬৭"
+ ]
+}

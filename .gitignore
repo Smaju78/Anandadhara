@@ -1,0 +1,12 @@
+# secrets and local caches
+.env
+cache/
+__pycache__/
+.claude/
+
+# contain geetabitan.com's transliterations (their work) - kept local, not published
+data/gb_raw.json
+data/songs_base.json
+
+# working notes
+checkpoint2_youtube.md
