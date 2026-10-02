@@ -9,54 +9,18 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA, YT, SITE = ROOT / "data", ROOT / "cache" / "youtube", ROOT / "docs"
 
-# Singer name -> spellings seen in video titles/channels (case-insensitive substrings)
-SINGERS = {
-    "Debabrata Biswas": ["debabrata", "দেবব্রত"],
-    "Hemanta Mukherjee": ["hemanta", "hemant kumar", "হেমন্ত"],
-    "Suchitra Mitra": ["suchitra mitra", "সুচিত্রা মিত্র"],
-    "Kanika Bandyopadhyay": ["kanika", "কণিকা"],
-    "Sagar Sen": ["sagar sen", "সাগর সেন"],
-    "Chinmoy Chatterjee": ["chinmoy", "চিন্ময়"],
-    "Dwijen Mukherjee": ["dwijen", "দ্বিজেন"],
-    "Subinoy Roy": ["subinoy", "সুবিনয়"],
-    "Ashoktaru Bandyopadhyay": ["ashoktaru", "ashok taru", "অশোকতরু"],
-    "Pankaj Mullick": ["pankaj", "পঙ্কজ"],
-    "Sumitra Sen": ["sumitra sen", "সুমিত্রা সেন"],
-    "Nilima Sen": ["nilima sen", "নীলিমা সেন"],
-    "Maya Sen": ["maya sen", "মায়া সেন"],
-    "Purba Dam": ["purba dam", "পূর্বা দাম"],
-    "Rezwana Choudhury Bannya": ["rezwana", "bannya", "বন্যা", "রেজওয়ানা"],
-    "Srabani Sen": ["srabani", "sraboni", "shraboni", "শ্রাবণী"],
-    "Indrani Sen": ["indrani sen", "ইন্দ্রাণী"],
-    "Swagatalakshmi Dasgupta": ["swagatalakshmi", "swagatalaxmi", "স্বাগতালক্ষ্মী"],
-    "Srikanto Acharya": ["srikanto", "srikanta", "শ্রীকান্ত"],
-    "Jayati Chakraborty": ["jayati", "জয়তী"],
-    "Lopamudra Mitra": ["lopamudra", "লোপামুদ্রা"],
-    "Iman Chakraborty": ["iman chakraborty", "ইমন"],
-    "Sahana Bajpaie": ["sahana bajpaie", "সাহানা"],
-    "Adity Mohsin": ["adity mohsin", "অদিতি মহসিন"],
-    "Papia Sarwar": ["papia", "পাপিয়া"],
-    "Mita Huq": ["mita huq", "মিতা হক"],
-    "Kishore Kumar": ["kishore", "কিশোর"],
-    "Lata Mangeshkar": ["lata mangeshkar", "লতা"],
-    "Asha Bhosle": ["asha bhosle", "আশা ভোঁসলে"],
-    "Manna Dey": ["manna dey", "মান্না দে"],
-    "Shreya Ghoshal": ["shreya", "শ্রেয়া"],
-    "Arijit Singh": ["arijit", "অরিজিৎ"],
-    "Monali Thakur": ["monali", "মোনালি"],
-    "Somlata Acharyya Chowdhury": ["somlata", "সোমলতা"],
-    "Anwesha": ["anwesha", "অন্বেষা"],
-    "Rupankar Bagchi": ["rupankar", "রূপঙ্কর"],
-    "Shubhamita": ["shubhamita", "শুভমিতা"],
-    "Kamalini Mukherji": ["kamalini", "কমলিনী"],
-    "Mohan Singh": ["mohan singh", "মোহন সিং"],
-    "Aditi Gupta": ["aditi gupta", "অদিতি গুপ্ত"],
-}
+# Singer name -> spellings seen in video titles/channels (case-insensitive substrings); edit data/singers.json
+SINGERS = json.loads((DATA / "singers.json").read_text(encoding="utf-8"))["singers"]
 
 
 def singers_of(video):
     hay = (video["title"] + " " + video.get("channel", "")).lower()
-    return [name for name, keys in SINGERS.items() if any(k.lower() in hay for k in keys)]
+    found = [name for name, keys in SINGERS.items() if any(k.lower() in hay for k in keys)]
+    # YouTube's auto-generated "<Artist> - Topic" channels always name the performer
+    topic = re.fullmatch(r"(.+?) - Topic", video.get("channel", ""))
+    if not found and topic and not re.search(r"various|artists|tagore|rabindra", topic.group(1), re.I):
+        found = [topic.group(1)]
+    return found
 
 
 def main():

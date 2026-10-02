@@ -389,6 +389,8 @@ def slug(url):
 
 
 MATCH_MIN = 0.5  # number matches below this title similarity are numbering mismatches
+# geetabitan pages whose transliteration belongs to a different song (their Bengali match is right)
+TRANSLIT_WRONG = {"saarthak-janom-aamar"}
 FUZZY_MIN = 0.8
 
 
@@ -464,7 +466,8 @@ def stage_merge():
                 and title_sim(w["title_bn"], g["title_en"], window=True) < FUZZY_MIN:
             rejected.append((g["title_en"], w["title_bn"]))
             w = None
-        rows.append({"g": g, "p_en": p_en, "p_bn": p_bn, "drama": drama, "num": num, "w": w})
+        rows.append({"g": g, "p_en": p_en, "p_bn": p_bn, "drama": drama, "num": num, "w": w,
+                     "orig": {"p_en": p_en, "p_bn": p_bn, "num": num}})
 
     # pass 1b: several pages claiming one Wikisource song -> only near-perfect title matches keep it
     claims = collections.defaultdict(list)
@@ -501,6 +504,70 @@ def stage_merge():
         if not r["w"] and w in free:
             r["w"] = w
             free.remove(w)
+    # pass 2d: verify every match against geetabitan's transliterated first line. Near-identical titles
+    # (দিন যদি হল অবসান / দিন অবসান হল) can pair songs crosswise; swap, reassign or unmatch those.
+    def line_sim(w, g):
+        """Overlap of the opening ~30 consonants of the Bengali lyrics and the transliteration.
+        Uses the first two lines (line breaks differ between sources) and matching blocks, so
+        repeated phrases in one source don't count against it."""
+        tl = " ".join((g["lyrics_translit"] or "").strip().split("\n")[:2])
+        if not (tl.strip() and w and w["lyrics_bn"]):
+            return None
+        bn = " ".join(w["lyrics_bn"].split("\n")[:2])
+        bn = bn.replace("্য", "").replace("্ব", "").replace("ঙ্গ", "ঙ")  # silent ya-/ba-phala; 'ng' is one sound
+        tl = re.sub(r"w", "", tl, flags=re.I)  # 'w' in romanisation is mostly the য়/ওয় glide
+        b, t = skel_bn(bn), skel_en(tl)
+        n = min(len(b), len(t), 30)
+        if n < 6:
+            return None
+        blocks = difflib.SequenceMatcher(None, b[:n], t[:n]).get_matching_blocks()
+        return sum(m.size for m in blocks) / n
+
+    def assign(r, w):
+        r["w"] = w
+        if w and not r["drama"]:
+            r.update(p_bn=w["section_bn"], num=w["num"], p_en=WS_PARJAY.get(w["section_bn"], r["p_en"]))
+        elif not w:
+            r.update(r["orig"])  # back to what geetabitan says
+
+    relinked = []
+    for r in rows:
+        sc = line_sim(r["w"], r["g"])
+        if sc is None or sc >= 0.75 or slug(r["g"]["gb_url"]) in TRANSLIT_WRONG:
+            continue
+        cands = [(line_sim(w, r["g"]) or 0, w) for w in ws]
+        bs, best = max(cands, key=lambda c: c[0])
+        old = r["w"]
+        if bs < 0.85:
+            assign(r, None)
+            free.append(old)
+        else:
+            owner = next((o for o in rows if o["w"] is best), None)
+            if owner is None:
+                if best in free:
+                    free.remove(best)
+                assign(r, best)
+                free.append(old)
+            elif (line_sim(best, owner["g"]) or 1) < 0.75:
+                assign(owner, old)  # crosswise pair: swap
+                assign(r, best)
+            else:
+                assign(r, None)
+                free.append(old)
+        relinked.append((slug(r["g"]["gb_url"]), old["title_bn"], r["w"]["title_bn"] if r["w"] else None))
+
+    # pass 2e: unmatched geetabitan songs vs still-free Wikisource songs, accepted only when the
+    # transliteration confirms it (stricter than the title matching in pass 2)
+    for r in rows:
+        if r["w"] or not r["g"]["lyrics_translit"]:
+            continue
+        cands = [(line_sim(w, r["g"]) or 0, w) for w in free]
+        sc, best = max(cands, key=lambda c: c[0], default=(0, None))
+        if best and sc >= 0.85:
+            free.remove(best)
+            assign(r, best)
+            relinked.append((slug(r["g"]["gb_url"]), None, best["title_bn"]))
+
     # pass 2c: Wikisource songs printed twice in Gitabitan (two sections) whose twin is already matched
     twins = []
     for w in list(free):
@@ -548,6 +615,8 @@ def stage_merge():
         g, w = r["g"], r["w"] or next((x["w"] for x in grp if x["w"]), None)
         if not w and any(x["drama"] for x in grp):  # Bengali text from the drama itself
             found, _ = match_drama(g["lyrics_translit"], dlines, dskels)
+            if found and (line_sim({"lyrics_bn": "\n".join(found)}, g) or 1) < 0.5:
+                found = None  # first word matched but the lines don't: a different song in the drama
             if found:
                 drama_hits += 1
                 w = {"title_bn": found[0].rstrip(",।;—-–! "), "lyrics_bn": "\n".join(found)}
@@ -574,7 +643,19 @@ def stage_merge():
             "lyrics_translit": g["lyrics_translit"] or pick("lyrics_translit") or "",
             "source": g["gb_url"],
         })
-    for w in free:  # Wikisource songs geetabitan doesn't have
+    # Wikisource songs geetabitan doesn't have, minus repeats of songs already listed
+    # (Gitabitan prints a few songs twice; punctuation differs, so compare title skeletons)
+    seen_titles = {skel_bn(s["title_bn"])[:12] for s in songs if s["title_bn"]}
+    kept_free = []
+    for w in free:
+        k = skel_bn(w["title_bn"])[:12]
+        if k in seen_titles:
+            twins.append((w["ws_title"], "repeat of a listed song"))
+            continue
+        seen_titles.add(k)
+        kept_free.append(w)
+    free = kept_free
+    for w in free:
         songs.append({
             "id": f'ws-{WS_PARJAY.get(w["section_bn"], "x").lower().replace(" ", "-")}-{w["num"]}',
             "aliases": [], "title_bn": w["title_bn"], "title_en": "",
@@ -589,7 +670,8 @@ def stage_merge():
     (DATA / "songs_base.json").write_text(json.dumps(songs, ensure_ascii=False, indent=1), encoding="utf-8")
     (DATA / "merge_report.json").write_text(json.dumps(
         {"rejected_number_matches": rejected, "title_matches": fuzzy, "duplicates_merged": dup_report,
-         "wikisource_twins_dropped": twins, "wikisource_only": [w["ws_title"] for w in free]}, ensure_ascii=False, indent=1), encoding="utf-8")
+         "lyrics_relinked": relinked, "wikisource_twins_dropped": twins,
+         "wikisource_only": [w["ws_title"] for w in free]}, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"merged: {len(songs)} songs | {len(gb)} geetabitan pages, {len(dup_report)} duplicate groups merged, "
           f"{len(fuzzy)} title matches, {len(rejected)} number matches rejected, "
           f"{len(free)} Wikisource-only, {drama_hits} drama songs given Bengali text", flush=True)

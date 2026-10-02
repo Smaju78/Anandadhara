@@ -1,0 +1,340 @@
+{
+ "_note": "Singer name -> spellings to look for in video titles/channel names (case-insensitive substrings). Edit freely; run scripts/build_data.py after changes. scripts/singer_report.py lists frequent names not yet covered.",
+ "singers": {
+  "Aditi Gupta": [
+   "aditi gupta",
+   "অদিতি গুপ্ত"
+  ],
+  "Adity Mohsin": [
+   "adity mohsin",
+   "aditi mohsin",
+   "অদিতি মহসিন"
+  ],
+  "Agnibha Bandyopadhyay": [
+   "agnibha",
+   "অগ্নিভ"
+  ],
+  "Amiya Tagore": [
+   "amiya tagore",
+   "অমিয়া ঠাকুর"
+  ],
+  "Anwesha": [
+   "anwesha",
+   "অন্বেষা"
+  ],
+  "Arati Mukherjee": [
+   "arati mukherjee",
+   "আরতি মুখোপাধ্যায়"
+  ],
+  "Arghya Sen": [
+   "arghya sen",
+   "অর্ঘ্য সেন"
+  ],
+  "Arijit Singh": [
+   "arijit",
+   "অরিজিৎ"
+  ],
+  "Asha Bhosle": [
+   "asha bhosle",
+   "আশা ভোঁসলে"
+  ],
+  "Ashoktaru Bandyopadhyay": [
+   "ashoktaru",
+   "ashok taru",
+   "অশোকতরু"
+  ],
+  "Babul Supriyo": [
+   "babul supriyo",
+   "বাবুল সুপ্রিয়"
+  ],
+  "Chinmoy Chatterjee": [
+   "chinmoy",
+   "চিন্ময়"
+  ],
+  "Debabrata Biswas": [
+   "debabrata",
+   "দেবব্রত"
+  ],
+  "Durba Sen": [
+   "durba",
+   "দূর্বা"
+  ],
+  "Dwijen Mukherjee": [
+   "dwijen",
+   "দ্বিজেন"
+  ],
+  "Fahmida Khatun": [
+   "fahmida",
+   "ফাহমিদা"
+  ],
+  "Hemanta Mukherjee": [
+   "hemanta mukh",
+   "hemanta mukherjee",
+   "hemant kumar",
+   "হেমন্ত মুখোপাধ্যায়",
+   "হেমন্ত মুখার্জি"
+  ],
+  "Iman Chakraborty": [
+   "iman chakraborty",
+   "ইমন চক্রবর্তী"
+  ],
+  "Indrani Sen": [
+   "indrani sen",
+   "ইন্দ্রাণী"
+  ],
+  "Jayati Chakraborty": [
+   "jayati",
+   "জয়তী"
+  ],
+  "Kalim Sharafi": [
+   "kalim sharafi",
+   "কলিম শরাফী"
+  ],
+  "Kamalini Mukherji": [
+   "kamalini",
+   "কমলিনী"
+  ],
+  "Kanika Bandyopadhyay": [
+   "kanika",
+   "কণিকা"
+  ],
+  "Kaushiki Chakraborty": [
+   "kaushiki",
+   "কৌশিকী"
+  ],
+  "Kishore Kumar": [
+   "kishore kumar",
+   "কিশোর কুমার"
+  ],
+  "Kishori Amonkar": [
+   "kishori amonkar"
+  ],
+  "Lata Mangeshkar": [
+   "lata mangeshkar",
+   "লতা মঙ্গেশকর"
+  ],
+  "Lily Islam": [
+   "lily islam",
+   "লিলি ইসলাম"
+  ],
+  "Lopamudra Mitra": [
+   "lopamudra",
+   "লোপামুদ্রা"
+  ],
+  "Manasi Mukherjee": [
+   "manasi mukherjee",
+   "মানসী মুখোপাধ্যায়"
+  ],
+  "Manna Dey": [
+   "manna dey",
+   "মান্না দে"
+  ],
+  "Maya Sen": [
+   "maya sen",
+   "মায়া সেন"
+  ],
+  "Mita Huq": [
+   "mita huq",
+   "মিতা হক"
+  ],
+  "Mohan Singh": [
+   "mohan singh",
+   "মোহন সিং"
+  ],
+  "Monali Thakur": [
+   "monali",
+   "মোনালি"
+  ],
+  "Monomoy Bhattacharya": [
+   "monomoy",
+   "মনোময়"
+  ],
+  "Nilima Sen": [
+   "nilima sen",
+   "নীলিমা সেন"
+  ],
+  "Pandit Ajoy Chakrabarty": [
+   "ajoy chakrabarty",
+   "ajoy chakraborty",
+   "অজয় চক্রবর্তী"
+  ],
+  "Pankaj Mullick": [
+   "pankaj mullick",
+   "pankaj mallick",
+   "pankaj kumar mullick",
+   "পঙ্কজ মল্লিক",
+   "পঙ্কজকুমার মল্লিক"
+  ],
+  "Papia Sarwar": [
+   "papia",
+   "পাপিয়া"
+  ],
+  "Pijush Kanti Sarkar": [
+   "pijush kanti",
+   "পীযূষকান্তি"
+  ],
+  "Pramita Mallick": [
+   "pramita",
+   "প্রমিতা"
+  ],
+  "Purba Dam": [
+   "purba dam",
+   "পূর্বা দাম"
+  ],
+  "Raghab Chatterjee": [
+   "raghab",
+   "রাঘব"
+  ],
+  "Rajeswari Dutta": [
+   "rajeswari",
+   "রাজেশ্বরী"
+  ],
+  "Rezaul Karim": [
+   "rezaul karim"
+  ],
+  "Rezwana Choudhury Bannya": [
+   "rezwana",
+   "bannya",
+   "বন্যা",
+   "রেজওয়ানা"
+  ],
+  "Ritu Guha": [
+   "ritu guha",
+   "ঋতু গুহ"
+  ],
+  "Rupankar Bagchi": [
+   "rupankar",
+   "রূপঙ্কর"
+  ],
+  "Sabita Chowdhury": [
+   "sabita",
+   "সবিতা চৌধুরী"
+  ],
+  "Sadi Mohammad": [
+   "sadi mohammad",
+   "সাদি মহম্মদ"
+  ],
+  "Sagar Sen": [
+   "sagar sen",
+   "সাগর সেন"
+  ],
+  "Sahana Bajpaie": [
+   "sahana bajpaie",
+   "সাহানা বাজপেয়ী"
+  ],
+  "Sahana Devi": [
+   "sahana devi",
+   "সাহানা দেবী"
+  ],
+  "Sandhya Mukherjee": [
+   "sandhya mukherjee",
+   "sandhya mukhopadhyay",
+   "সন্ধ্যা মুখোপাধ্যায়"
+  ],
+  "Sanjida Khatun": [
+   "sanjida",
+   "সন্‌জীদা",
+   "সনজীদা"
+  ],
+  "Santosh Sengupta": [
+   "santosh sengupta",
+   "সন্তোষ সেনগুপ্ত"
+  ],
+  "Sasha Ghoshal": [
+   "sasha ghoshal",
+   "সাশা ঘোষাল"
+  ],
+  "Shaan": [
+   "shaan"
+  ],
+  "Shailajaranjan Majumdar": [
+   "shailajaranjan",
+   "শৈলজারঞ্জন"
+  ],
+  "Shantideb Ghosh": [
+   "shantideb",
+   "শান্তিদেব"
+  ],
+  "Sharmila Roy Pomo": [
+   "pomo",
+   "পমো"
+  ],
+  "Shreya Ghoshal": [
+   "shreya",
+   "শ্রেয়া"
+  ],
+  "Shubhamita Banerjee": [
+   "shubhamita",
+   "subhamita",
+   "শুভমিতা"
+  ],
+  "Somlata Acharyya Chowdhury": [
+   "somlata",
+   "সোমলতা"
+  ],
+  "Soumi Sarkar": [
+   "soumi sarkar",
+   "সৌমী সরকার"
+  ],
+  "Sourav Chattopadhyay": [
+   "sourav chattopadhyay",
+   "sourav chatterjee"
+  ],
+  "Srabani Sen": [
+   "srabani sen",
+   "sraboni sen",
+   "shraboni sen",
+   "srabani",
+   "শ্রাবণী সেন"
+  ],
+  "Sreeradha Bandyopadhyay": [
+   "sreeradha",
+   "শ্রীরাধা"
+  ],
+  "Srikanto Acharya": [
+   "srikanto",
+   "srikanta",
+   "শ্রীকান্ত"
+  ],
+  "Subinoy Roy": [
+   "subinoy",
+   "subinay",
+   "সুবিনয়"
+  ],
+  "Suchitra Mitra": [
+   "suchitra mitra",
+   "সুচিত্রা মিত্র"
+  ],
+  "Sudeshna Swayamprabha": [
+   "sudeshna",
+   "সুদেষ্ণা"
+  ],
+  "Sumitra Guha": [
+   "sumitra guha",
+   "সুমিত্রা গুহ"
+  ],
+  "Sumitra Sen": [
+   "sumitra sen",
+   "সুমিত্রা সেন"
+  ],
+  "Susmita Patra": [
+   "susmita patra",
+   "সুস্মিতা পাত্র"
+  ],
+  "Swagatalakshmi Dasgupta": [
+   "swagatalakshmi",
+   "swagatalaxmi",
+   "স্বাগতালক্ষ্মী"
+  ],
+  "Tagore (his own voice)": [
+   "tagore's own voice",
+   "in tagore's voice",
+   "রবীন্দ্রনাথের কণ্ঠে",
+   "রবীন্দ্রনাথ ঠাকুরের কণ্ঠে"
+  ],
+  "Ustad Rashid Khan": [
+   "rashid khan",
+   "রশিদ খান"
+  ]
+ }
+}
