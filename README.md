@@ -18,6 +18,10 @@ cd docs && python3 -m http.server 8000      # then open http://localhost:8000
 | Refresh stored video stats (monthly, ~1 unit / 50 videos) | `python3 scripts/refresh_stats.py` | updates `cache/youtube/` |
 
 Moods live in `data/moods.json` (approved list + per-song tags).
+Singers are recognised from video titles/channels using `data/singers.json` (plus YouTube "<Artist> - Topic"
+channels); `python3 scripts/singer_report.py` lists frequent names not yet in the list.
+The merge step verifies every song's Bengali lyrics against geetabitan's transliterated first lines and
+reports any re-links in `data/merge_report.json` (`lyrics_relinked`).
 The YouTube key is read from `.env` (`YOUTUBE_API_KEY=...`); `.env` and `cache/` are git-ignored.
 A Windows scheduled task ("Rabindrasangeet YouTube daily", 14:00) runs `scripts/run_youtube_daily.cmd`
 and logs to `cache/youtube_daily.log`.
