@@ -118,32 +118,41 @@ def short_title(t, words=5):
 
 
 def song_skels(song):
+    """(skeleton, number of words) pairs to look for in video titles: the Bengali title, its first
+    four words (videos are often titled with just the opening words) and the English title."""
     out = []
     if song.get("title_bn"):
-        out.append(skel_bn(fix_bn(song["title_bn"])))
+        words = re.sub(r"[,;:!?।॥—–\-‘’'\"()]+", " ", fix_bn(song["title_bn"])).split()
+        out.append((skel_bn(" ".join(words)), len(words)))
+        if len(words) > 4:
+            out.append((skel_bn(" ".join(words[:4])), 4))
     if song.get("title_en"):
-        out.append(skel_en(re.sub(r"\s+\d+$", "", song["title_en"])))
-    return [s[:10] for s in out if len(s) >= 4]
+        en = re.sub(r"\s+\d+$", "", song["title_en"])
+        out.append((skel_en(en), len(en.split())))
+    return [(s[:10], w) for s, w in out if len(s) >= 4]
 
 
 TAGORE = re.compile(r"rabindra|tagore|রবীন্দ্র|রবি ঠাকুর", re.I)
 
 
 def relevance(song, video):
-    """Best approximate-substring match of the song's title skeleton inside the video title
-    (Bengali and romanised parts are both skeletonised). Short titles are ambiguous, so they
-    need an exact match plus a Tagore marker in the video title or channel."""
+    """Best approximate-substring match of the song's title skeletons inside the video title
+    (Bengali and romanised parts are both skeletonised). Short titles of one to three words
+    ("ভালোবাসি, ভালোবাসি") are ambiguous, so they need an exact match plus a Tagore marker in the
+    video title or channel; a longer line is distinctive enough on its own."""
     t = fix_bn(video["title"])
     hay = [skel_bn(t), skel_en(re.sub(r"[ঀ-৿]", " ", t))]
     marked = bool(TAGORE.search(video["title"] + " " + video.get("channel", "")))
     best = 0.0
-    for needle in song_skels(song):
+    for needle, words in song_skels(song):
         n, sc = len(needle), 0.0
         for h in hay:
             for i in range(max(1, len(h) - n + 1)):
                 sc = max(sc, difflib.SequenceMatcher(None, needle, h[i:i + n]).ratio())
-        if n < 10 and (sc < 1.0 or not marked):
+        if n < 10 and words < 4 and (sc < 1.0 or not marked):
             sc = 0.0
+        elif n < 10 and sc < 1.0:
+            sc = 0.0  # short skeleton of a longer line: still require it exactly
         best = max(best, sc)
     return round(best, 2)
 
