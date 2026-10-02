@@ -51,7 +51,9 @@ def main():
         }
         n_vid += bool(rec["videos"])
         n_mood += bool(rec["moods"])
-        out.append({k: v for k, v in rec.items() if v not in (None, "", [])} | {"id": s["id"]})
+        # drop empty fields to keep the file small, but keep videos: [] ("searched, nothing found")
+        out.append({k: v for k, v in rec.items() if v not in (None, "", []) or (k == "videos" and v == [])}
+                   | {"id": s["id"]})
     SITE.mkdir(exist_ok=True)
     meta = {"moods": moods["moods"], "count": len(out)}
     (SITE / "songs.json").write_text(json.dumps({"meta": meta, "songs": out}, ensure_ascii=False,
