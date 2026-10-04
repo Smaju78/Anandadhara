@@ -449,7 +449,8 @@ function renderListen(body) {
       <p class="tabs">${Object.entries(KINDS).filter(([k]) => k !== "popular").map(([k, v]) => `<a class="tab" href="#/browse/${k}">By ${v.label}</a>`).join("")}</p>
     </section>`;
   $("#pop-list", body).append(songList(popRec.length >= 12 ? popRec : popular, { limit: 12, toggle: false }));
-  if (FEEL) renderFeel($("#feel-box", body)); else $("#feel-box", body).hidden = true;
+  // The feelings box appears only once the language model has loaded (see startup below).
+  if (FEEL && M.ready) renderFeel($("#feel-box", body)); else $("#feel-box", body).hidden = true;
   $$("[data-play]", body).forEach((b) => b.onclick = () => {
     const [kind, value] = b.dataset.play.split(":");
     playFiltered(kind, value);
@@ -1048,6 +1049,12 @@ fetch("songs.json", { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Er
   jb.init();
   window.addEventListener("hashchange", route);
   route();
+  // Load the language model in the background; show "How are you feeling?" when it's ready.
+  // Not on data-saving or 2G connections: there the box stays hidden.
+  if (FEEL && mayPreload()) warmUp().then(() => {
+    const box = $("#feel-box");
+    if (M.ready && box && box.hidden) { box.hidden = false; renderFeel(box); }
+  });
 }).catch((e) => {
   view.innerHTML = `<p>Couldn't load songs.json (${esc(e.message)}). Serve this folder over HTTP, e.g. <code>python3 -m http.server</code> inside <code>docs/</code>.</p>`;
 });
