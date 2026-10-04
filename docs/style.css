@@ -280,3 +280,4 @@ a.chip:hover { outline: 1px solid var(--gold); }
 .feel-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 8px; }
 .feel-list .q-num { color: var(--muted); font-variant-numeric: tabular-nums; min-width: 1.4rem; text-align: right; padding-top: 4px; }
 .why { color: var(--teal); }
+.model-note { margin: 10px 0 0; font-style: italic; }

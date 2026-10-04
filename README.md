@@ -18,6 +18,10 @@ cd docs && python3 -m http.server 8000      # then open http://localhost:8000
 | Refresh stored video stats (monthly, ~1 unit / 50 videos) | `python3 scripts/refresh_stats.py` | updates `cache/youtube/` |
 
 Moods live in `data/moods.json` (approved list + per-song tags).
+The "How are you feeling?" box understands text with `docs/feelings.json` (word list, instant) and the
+in-browser model Xenova/multilingual-e5-small (same as the Kathamrita site), compared against mood
+descriptions in `docs/search/moods.json`. Rebuild those after editing the descriptions in
+`scripts/embed_songs.py`: `../ramakrishna/.venv/bin/python scripts/embed_songs.py --eval` (in WSL).
 Singers are recognised from video titles/channels using `data/singers.json` (plus YouTube "<Artist> - Topic"
 channels); `python3 scripts/singer_report.py` lists frequent names not yet in the list.
 The merge step verifies every song's Bengali lyrics against geetabitan's transliterated first lines and

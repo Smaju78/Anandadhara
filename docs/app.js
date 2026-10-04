@@ -218,6 +218,88 @@ function detectFeelings(text) {
     .map(([m, s]) => ({ mood: m, weight: s / max }));
   return { moods, season, hits };
 }
+/* Language model: the same small open multilingual model as the Kathamrita site
+   (Xenova/multilingual-e5-small via transformers.js), run in a background Web Worker so the page
+   never freezes. It compares the visitor's words with a description of each mood
+   (docs/search/moods.json, made by scripts/embed_songs.py). Nothing leaves the browser.
+   The browser caches the model after the first download. */
+const MODEL_JS = "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3";
+const WORKER_SRC = `
+  import {pipeline} from "${MODEL_JS}";
+  let ext = null;
+  const load = () => ext || (ext = pipeline("feature-extraction", "Xenova/multilingual-e5-small", {dtype: "q8"}));
+  self.onmessage = async e => {
+    const {id, text} = e.data;
+    try {
+      const p = await load();
+      if (text == null) return self.postMessage({id, ok: true});          // warm-up only
+      const out = await p("query: " + text, {pooling: "mean", normalize: true});
+      self.postMessage({id, ok: true, vec: out.data});
+    } catch (err) { ext = null; self.postMessage({id, ok: false, err: String(err)}); }
+  };`;
+const M = { worker: null, seq: 0, waiting: new Map(), ready: false, warming: null, main: null, moods: null };
+function modelWorker() {
+  if (M.worker === null) {
+    try {
+      M.worker = new Worker(URL.createObjectURL(new Blob([WORKER_SRC], { type: "text/javascript" })), { type: "module" });
+      M.worker.onmessage = (e) => { const w = M.waiting.get(e.data.id); if (w) { M.waiting.delete(e.data.id); e.data.ok ? w.ok(e.data) : w.fail(e.data.err); } };
+      M.worker.onerror = () => { M.worker = false; for (const w of M.waiting.values()) w.fail("worker"); M.waiting.clear(); };
+    } catch { M.worker = false; }   // very old browsers: fall back to the main thread
+  }
+  return M.worker;
+}
+function askWorker(text) {
+  return new Promise((ok, fail) => { const id = ++M.seq; M.waiting.set(id, { ok, fail }); modelWorker().postMessage({ id, text }); });
+}
+async function embedMain(text) {
+  if (!M.main) M.main = import(MODEL_JS).then(({ pipeline }) => pipeline("feature-extraction", "Xenova/multilingual-e5-small", { dtype: "q8" }));
+  const p = await M.main;
+  if (text == null) return null;
+  return (await p("query: " + text, { pooling: "mean", normalize: true })).data;
+}
+async function embed(text) {
+  if (modelWorker()) {
+    try { const r = await askWorker(text); M.ready = true; return r.vec; }
+    catch (err) { if (M.worker !== false) throw err; }   // worker unavailable: use the main thread
+  }
+  const v = await embedMain(text); M.ready = true; return v;
+}
+function loadMoodVectors() {
+  if (!M.moods) M.moods = fetch("search/moods.json?v=1").then((r) => r.json()).then((d) => ({
+    margin: d.margin || 0.015,
+    rows: Object.entries(d.moods).map(([mood, q]) => [mood, Float32Array.from(q, (x) => x / d.scale)]),
+  }));
+  return M.moods;
+}
+function warmUp() {
+  if (!M.warming) M.warming = Promise.all([loadMoodVectors(), embed(null)]).catch((err) => { M.warming = null; console.warn(err); });
+  return M.warming;
+}
+// Don't fetch a 118 MB model on data-saving or very slow connections until it's actually needed.
+function mayPreload() {
+  const c = navigator.connection;
+  return !(c && (c.saveData || /(^|-)2g$/.test(c.effectiveType || "")));
+}
+// Moods whose description is closest to the visitor's words (within a small margin of the best).
+async function semanticMoods(text) {
+  const [mv, v] = await Promise.all([loadMoodVectors(), embed(text)]);
+  const sims = mv.rows.map(([mood, row]) => [mood, row.reduce((a, x, i) => a + x * v[i], 0)]);
+  const top = Math.max(...sims.map(([, s]) => s));
+  return sims.filter(([, s]) => s >= top - mv.margin).sort((a, b) => b[1] - a[1]).slice(0, 3)
+    .map(([mood, s]) => ({ mood, weight: 1 - ((top - s) / mv.margin) * 0.3 }));
+}
+// Word matches are explicit, so they keep full weight; the model adds what the words missed.
+function mergeMoods(lexical, semantic) {
+  const out = new Map(lexical.map((m) => [m.mood, { ...m }]));
+  for (const m of semantic) {
+    const w = lexical.length ? Math.min(0.8, m.weight) : m.weight;
+    const cur = out.get(m.mood);
+    if (cur) cur.weight = Math.max(cur.weight, w);
+    else out.set(m.mood, { mood: m.mood, weight: w, on: true, viaModel: true });
+  }
+  return [...out.values()].sort((a, b) => b.weight - a.weight).slice(0, 4);
+}
+
 // Best-fitting songs with recordings. A little randomness so "Another mix" differs.
 function buildPlaylist({ moods, season }, n) {
   const w = Object.fromEntries(moods.map((m) => [m.mood, m.weight]));
@@ -272,8 +354,10 @@ function renderFeel(box) {
     const seasonChip = state.season ? `<button type="button" class="chip mood-chip" data-season aria-pressed="${state.seasonOn}">${esc(state.season)} ${SEASON_BN[state.season]}</button>` : "";
     out.innerHTML = `
       <div class="feel-understood">
-        ${state.hits.length ? `<p class="hint">I picked up: ${[...new Set(state.hits.map((h) => `“${esc(h.word)}” → ${esc(h.mood)}`))].join(", ")}</p>`
-          : `<p class="hint">I couldn't find a feeling in those words. Choose one or more moods below, or try words like lonely, happy, missing someone, rain, prayer, celebration.</p>`}
+        ${state.hits.length ? `<p class="hint">Words I recognised: ${[...new Set(state.hits.map((h) => `“${esc(h.word)}” → ${esc(h.mood)}`))].join(", ")}</p>` : ""}
+        ${state.byModel && state.byModel.length ? `<p class="hint">The language model reads your words as: <strong>${state.byModel.map(esc).join(", ")}</strong></p>` : ""}
+        ${!state.hits.length && !(state.byModel && state.byModel.length) && !state.note
+          ? `<p class="hint">I couldn't find a feeling in those words. Choose one or more moods below, or try words like lonely, happy, missing someone, rain, prayer, celebration.</p>` : ""}
         <div class="chips">${seasonChip}${chips}</div>
       </div>
       ${picks.length ? `
@@ -291,9 +375,11 @@ function renderFeel(box) {
     $$(".mood-chip[data-mood]", out).forEach((b) => b.onclick = () => {
       const m = b.dataset.mood, d = state.moods.find((x) => x.mood === m);
       if (d) d.on = !d.on; else state.moods.push({ mood: m, weight: 0.8, on: true });
+      state.edited = true;   // the listener's own choice: the language model won't override it
       draw();
     });
-    const sc = $(".mood-chip[data-season]", out); if (sc) sc.onclick = () => { state.seasonOn = !state.seasonOn; draw(); };
+    const sc = $(".mood-chip[data-season]", out); if (sc) sc.onclick = () => { state.seasonOn = !state.seasonOn; state.edited = true; draw(); };
+    if (state.note) out.insertAdjacentHTML("afterbegin", `<p class="hint model-note">${state.note}</p>`);
     const ids = picks.map((p) => p.s.id);
     const label = active.map((m) => m.mood).concat(state.seasonOn && state.season ? [state.season] : []).join(" · ");
     const play = (from) => { jb.playPlaylist(ids, label, active.map((m) => m.mood), from); location.hash = "#/jukebox"; };
@@ -301,13 +387,31 @@ function renderFeel(box) {
     if ($("#feel-again", out)) $("#feel-again", out).onclick = draw;
     $$("[data-feel-play]", out).forEach((b) => b.onclick = () => play(+b.dataset.feelPlay));
   };
+  // Word matching answers at once; the language model then refines the moods (unless the
+  // listener has already changed the chips, or another question was asked meanwhile).
+  let asked = 0;
   const go = () => {
     const text = $("#feel-text", box).value;
     sessionSet("feel", text);
     const d = detectFeelings(text);
     state = { moods: d.moods.map((m) => ({ ...m, on: true })), season: d.season, seasonOn: !!d.season, hits: d.hits };
+    const mine = ++asked;
+    if (!text.trim()) return draw();
+    state.note = M.ready ? "" : "Understanding your words… (the first time, a 118 MB language model downloads once; it runs only in your browser)";
     draw();
+    semanticMoods(text).then((sem) => {
+      if (mine !== asked || !state || state.edited) return;
+      state.moods = mergeMoods(state.moods, sem);
+      state.note = "";
+      state.byModel = sem.map((m) => m.mood);
+      draw();
+    }).catch(() => {
+      if (mine !== asked || !state) return;
+      state.note = "Couldn't load the language model, so this is based on word matching only.";
+      draw();
+    });
   };
+  $("#feel-text", box).addEventListener("focus", () => { if (mayPreload()) warmUp(); }, { once: true });
   $("#feel-go", box).onclick = go;
   $("#feel-text", box).addEventListener("keydown", (e) => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) go(); });
   if (text.trim()) go();
