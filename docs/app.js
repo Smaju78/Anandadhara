@@ -404,11 +404,12 @@ const jb = (() => {
     return apiLoading;
   }
 
-  async function playItem(item) {
+  // autoplay=false loads the song paused (used when filters change while the listener had paused)
+  async function playItem(item, autoplay = true) {
     current = item;
-    wantPlay = true;
+    wantPlay = autoplay;
     prefs.recent.push(item.song.id); prefs.recent = prefs.recent.slice(-200); savePrefs();
-    showNow(); planNext();
+    showNow(); planNext(); renderQueue();
     await loadApi();
     $("#jb-empty").hidden = true;
     if (!player) {
@@ -425,8 +426,32 @@ const jb = (() => {
           onError: () => { if (++errors < 5) next(); }, // unembeddable or removed video: move on
         },
       });
-    } else player.loadVideoById(item.video.id);
+    } else if (autoplay) player.loadVideoById(item.video.id);
+    else player.cueVideoById(item.video.id);
     updateButtons();
+  }
+
+  // Play a song chosen from the list (keeps "Previous" working).
+  function playSong(id) {
+    const s = BY_ID.get(id);
+    if (!s || !hasRec(s)) return;
+    if (current) history.push(current);
+    playItem({ song: s, video: pickVideo(s) });
+  }
+
+  // Filters changed under a song that no longer fits: start afresh in the new selection.
+  function switchToSelection() {
+    history.length = 0;   // earlier songs belong to the old selection
+    upNext = null;
+    const s = pickSong();
+    if (!s) return stop();
+    playItem({ song: s, video: pickVideo(s) }, wantPlay);
+  }
+  function stop() {
+    try { player && player.stopVideo(); } catch { /* not ready */ }
+    current = null; upNext = null; wantPlay = false; history.length = 0;
+    showNow(); $("#jb-lyrics").innerHTML = ""; $("#jb-next").innerHTML = "";
+    showEmpty(); renderQueue();
   }
 
   function next() {
@@ -445,6 +470,7 @@ const jb = (() => {
     if (back) {     // after going back, "next" returns to the song we just left
       upNext = back;
       $("#jb-next").innerHTML = `Up next: <a href="#/song/${enc(back.song.id)}">${esc(title(back.song))}</a>`;
+      renderQueue();
     }
   }
   function start() {
@@ -469,6 +495,7 @@ const jb = (() => {
       ${s.bn && s.en ? `<p>${esc(s.en)}</p>` : ""}
       <p>${[s.parjay, s.season, s.raag, s.taal].filter(Boolean).map(esc).join(" · ")}</p>
       <p class="chips">${(s.moods || []).map((m) => `<span class="chip">${esc(m)}</span>`).join("")}</p>
+      ${(current.video.singers || []).length ? `<p class="singer">Singer: <strong>${current.video.singers.map(esc).join(", ")}</strong></p>` : ""}
       <p class="hint">${esc(current.video.t)} — ${esc(current.video.ch)}</p>`;
     $("#jb-lyrics").innerHTML = s.lyrics
       ? `<pre class="lyrics bn">${esc(s.lyrics)}</pre>` : "";
@@ -569,9 +596,41 @@ const jb = (() => {
     });
     const c = $("#jb-clear"); if (c) c.onclick = clearFilters;
   }
-  function filtersChanged() {
-    savePrefs(); updateCounts(); planNext();
+  // immediate: switch at once (a "Play … songs" button); otherwise wait a moment so several quick
+  // filter clicks lead to one switch, not one per click.
+  let resetTimer = null;
+  function filtersChanged(immediate = false) {
+    savePrefs(); updateCounts(); planNext(); renderQueue();
+    clearTimeout(resetTimer);
+    const reset = () => { if (current && !matches(current.song, F)) switchToSelection(); };
+    if (current && !matches(current.song, F)) {
+      if (immediate) reset(); else resetTimer = setTimeout(reset, 700);
+    }
     if (!current) showEmpty(); else updateButtons();
+  }
+
+  /* the selection as a list, with singers */
+  let queueAll = false;
+  function renderQueue() {
+    const list = pool();
+    const order = (s) => s === current?.song ? 0 : s === upNext?.song ? 1 : 2;
+    list.sort((a, b) => order(a) - order(b) || (a.pop || 9999) - (b.pop || 9999) || title(a).localeCompare(title(b)));
+    const shown = queueAll ? list : list.slice(0, 25);
+    $("#jb-queue-count").textContent = `${plural(list.length, "song")}`;
+    $("#jb-queue").innerHTML = shown.map((s) => {
+      const singers = [...new Set(s.videos.flatMap((v) => v.singers || []))];
+      const tag = s === current?.song ? `<span class="badge now">Now playing</span>`
+        : s === upNext?.song ? `<span class="badge">Up next</span>` : "";
+      return `<li class="${s === current?.song ? "is-now" : ""}">
+        <button class="btn icon small" type="button" data-play-id="${esc(s.id)}" aria-label="Play ${esc(title(s))}">▶</button>
+        <div class="q-main"><span><a href="#/song/${enc(s.id)}" class="q-title">${esc(title(s))}</a>${isLiked(s.id) ? ` <span class="liked" title="Liked">♥</span>` : ""} ${tag}</span>
+          <span class="q-singers">${singers.length
+            ? singers.map((n) => n === F.singer ? `<strong>${esc(n)}</strong>` : esc(n)).join(", ")
+            : `<span class="hint">singer not identified</span>`}</span></div>
+      </li>`;
+    }).join("") || `<li class="hint">No songs with recordings match these filters yet.</li>`;
+    $("#jb-queue-more").hidden = list.length <= 25;
+    $("#jb-queue-more").textContent = queueAll ? "Show fewer" : `Show all ${list.length}`;
   }
   function clearFilters() { Object.assign(F, { ...EMPTY_FILTERS, moods: [], parjays: [], seasons: [] }); filtersChanged(); }
   function setFilter(kind, value) {
@@ -581,7 +640,7 @@ const jb = (() => {
   // Replace all filters with the given ones (unspecified ones are cleared).
   function setFilters(f) {
     Object.assign(F, { ...EMPTY_FILTERS, moods: [], parjays: [], seasons: [] }, f);
-    filtersChanged();
+    filtersChanged(true);
   }
   const countFor = (f) => pool({ ...EMPTY_FILTERS, moods: [], parjays: [], seasons: [], ...f }).length;
 
@@ -595,7 +654,7 @@ const jb = (() => {
       <h3 class="hint">Never play</h3><ul>${prefs.never.map((id) => row(id, "never")).join("") || "<li class='hint'>None</li>"}</ul>
       <p class="hint">Saved in this browser only.</p>`;
     $$("#jb-prefs [data-un]").forEach((b) => b.onclick = () => { toggle(b.dataset.un, b.dataset.id, false); prefsChanged(); });
-    if (SONGS.length) { updateCounts(); updateButtons(); }
+    if (SONGS.length) { updateCounts(); updateButtons(); renderQueue(); }
   }
 
   function togglePlay() {
@@ -623,6 +682,9 @@ const jb = (() => {
     $("#mini-play").onclick = togglePlay;
     $("#mini-skip").onclick = next;
     $("#mini-like").onclick = likeCurrent;
+    $("#jb-queue").onclick = (e) => { const b = e.target.closest("[data-play-id]"); if (b) playSong(b.dataset.playId); };
+    $("#jb-queue-more").onclick = () => { queueAll = !queueAll; renderQueue(); };
+    renderQueue();
   }
 
   return { init, start, setFilter, setFilters, countFor, prefsChanged, updateMini, pause: () => { try { player && player.pauseVideo(); } catch { /* not ready */ } wantPlay = false; updateButtons(); } };

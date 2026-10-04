@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Hind+Siliguri:wght@400;500;600&family=Alegreya+Sans:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 <header class="top">
@@ -57,6 +57,11 @@
     <button class="btn small" type="button" id="jb-edit" aria-expanded="false" aria-controls="jb-filters">Edit filters</button>
   </div>
   <div class="jb-filters" id="jb-filters" hidden></div>
+  <section class="jb-queue" aria-labelledby="jb-queue-h">
+    <div class="section-head"><h2 id="jb-queue-h">Songs in this selection</h2><span class="hint" id="jb-queue-count"></span></div>
+    <ol class="queue" id="jb-queue"></ol>
+    <button class="btn small" type="button" id="jb-queue-more" hidden>Show all</button>
+  </section>
   <details class="jb-prefs" id="jb-prefs"></details>
 </section>
 
@@ -79,6 +84,6 @@
   <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
 </footer>
 
-<script src="app.js"></script>
+<script src="app.js?v=4"></script>
 </body>
 </html>
