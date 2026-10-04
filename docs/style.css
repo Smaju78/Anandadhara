@@ -258,3 +258,7 @@ a.chip:hover { outline: 1px solid var(--gold); }
 .badge { display: inline-block; font-size: .72rem; padding: 1px 8px; border-radius: 999px; background: var(--gold-soft); color: var(--ink); vertical-align: middle; }
 .badge.now { background: var(--teal); color: var(--on-teal); }
 .jb-now .singer { color: var(--ink); }
+
+/* Ask AI link */
+.btn.ask-ai { border-color: var(--gold); background: var(--gold-soft); color: var(--ink); }
+.btn.ask-ai:hover { border-color: var(--teal); }

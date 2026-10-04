@@ -303,6 +303,7 @@ function renderSong(id) {
       <div class="song-actions">
         <button class="btn small" id="s-like" type="button" aria-pressed="${isLiked(s.id)}">♥ ${isLiked(s.id) ? "Liked" : "Like"}</button>
         <button class="btn small" id="s-never" type="button" aria-pressed="${isNever(s.id)}">${isNever(s.id) ? "Hidden from jukebox" : "Never play in jukebox"}</button>
+        ${askAiLink(s)}
       </div>
       <dl class="facts">${facts.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>
       ${s.lyrics ? `<pre class="lyrics bn" id="lyrics">${esc(s.lyrics)}</pre>` : `<p class="novideo">Bengali lyrics are not available here.</p>`}
@@ -337,6 +338,30 @@ function renderSong(id) {
   });
   $("#s-like").onclick = () => { toggle("likes", s.id, !isLiked(s.id)); renderSong(id); jb.prefsChanged(); };
   $("#s-never").onclick = () => { toggle("never", s.id, !isNever(s.id)); renderSong(id); jb.prefsChanged(); };
+}
+
+/* Ask AI: opens ChatGPT in a new tab with the question already filled in (chatgpt.com/?q=...).
+   Nothing is sent until the listener clicks. The lyrics are Tagore's and in the public domain. */
+function askAiPrompt(s) {
+  const facts = [
+    s.parjay && `Parjay: ${s.parjay}${s.sub ? ` (${s.sub})` : ""}`,
+    s.drama && `From the dance drama: ${s.drama}`,
+    s.raag && `Raag: ${s.raagFull || s.raag}`, s.taal && `Taal: ${s.taal}`, s.written && `Written: ${s.written}`,
+  ].filter(Boolean).join("; ");
+  let lyrics = s.lyrics || "";
+  // Bengali letters take ~9 characters each in a URL: keep the link under ~8,000 characters
+  if (lyrics.length > 800) lyrics = lyrics.slice(0, 800).replace(/\n[^\n]*$/, "") + "\n… (opening verses only)";
+  return `Explain the meaning of the Rabindrasangeet song "${s.bn || s.en}"${s.bn && s.en ? ` (${s.en})` : ""} by Rabindranath Tagore.`
+    + (facts ? `\n${facts}.` : "")
+    + (lyrics ? `\n\nBengali lyrics:\n${lyrics}` : "")
+    + `\n\nPlease give:\n1. The meaning line by line in simple English, quoting each Bengali line first.`
+    + `\n2. The central idea and emotion of the song.`
+    + `\n3. Any known background: when and why Tagore wrote it, and how it is usually understood.`
+    + `\nIf you are unsure about any detail, say so rather than guessing.`;
+}
+function askAiLink(s) {
+  return `<a class="btn small ask-ai" href="https://chatgpt.com/?q=${enc(askAiPrompt(s))}" target="_blank" rel="noopener"
+    title="Opens ChatGPT in a new tab with this song's lyrics and a question about its meaning">✨ Ask AI: meaning</a>`;
 }
 
 function sessionGet(k) { try { return sessionStorage.getItem("gitabitan." + k) || ""; } catch { return ""; } }
@@ -496,7 +521,8 @@ const jb = (() => {
       <p>${[s.parjay, s.season, s.raag, s.taal].filter(Boolean).map(esc).join(" · ")}</p>
       <p class="chips">${(s.moods || []).map((m) => `<span class="chip">${esc(m)}</span>`).join("")}</p>
       ${(current.video.singers || []).length ? `<p class="singer">Singer: <strong>${current.video.singers.map(esc).join(", ")}</strong></p>` : ""}
-      <p class="hint">${esc(current.video.t)} — ${esc(current.video.ch)}</p>`;
+      <p class="hint">${esc(current.video.t)} — ${esc(current.video.ch)}</p>
+      <p>${askAiLink(s)}</p>`;
     $("#jb-lyrics").innerHTML = s.lyrics
       ? `<pre class="lyrics bn">${esc(s.lyrics)}</pre>` : "";
   }
