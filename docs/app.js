@@ -521,8 +521,8 @@ const jb = (() => {
       <p>${[s.parjay, s.season, s.raag, s.taal].filter(Boolean).map(esc).join(" · ")}</p>
       <p class="chips">${(s.moods || []).map((m) => `<span class="chip">${esc(m)}</span>`).join("")}</p>
       ${(current.video.singers || []).length ? `<p class="singer">Singer: <strong>${current.video.singers.map(esc).join(", ")}</strong></p>` : ""}
-      <p class="hint">${esc(current.video.t)} — ${esc(current.video.ch)}</p>
-      <p>${askAiLink(s)}</p>`;
+      <p class="hint">${esc(current.video.t)} — ${esc(current.video.ch)}</p>`;
+    $("#jb-ask").href = `https://chatgpt.com/?q=${enc(askAiPrompt(s))}`;
     $("#jb-lyrics").innerHTML = s.lyrics
       ? `<pre class="lyrics bn">${esc(s.lyrics)}</pre>` : "";
   }
@@ -531,6 +531,7 @@ const jb = (() => {
   function updateButtons() {
     const on = !!current, n = pool().length;
     $("#jb-skip").disabled = !on || !n; $("#jb-like").disabled = !on; $("#jb-never").disabled = !on;
+    $("#jb-ask").hidden = !on;
     $("#jb-prev").disabled = !history.length;
     $("#jb-play").disabled = !on && !n;
     const liked = on && isLiked(current.song.id);
@@ -649,6 +650,8 @@ const jb = (() => {
         : s === upNext?.song ? `<span class="badge">Up next</span>` : "";
       return `<li class="${s === current?.song ? "is-now" : ""}">
         <button class="btn icon small" type="button" data-play-id="${esc(s.id)}" aria-label="Play ${esc(title(s))}">▶</button>
+        <a class="btn icon small ask-ai" href="https://chatgpt.com/?q=${enc(askAiPrompt(s))}" target="_blank" rel="noopener"
+           title="Ask AI what this song means (opens ChatGPT)" aria-label="Ask AI about ${esc(title(s))}">✨</a>
         <div class="q-main"><span><a href="#/song/${enc(s.id)}" class="q-title">${esc(title(s))}</a>${isLiked(s.id) ? ` <span class="liked" title="Liked">♥</span>` : ""} ${tag}</span>
           <span class="q-singers">${singers.length
             ? singers.map((n) => n === F.singer ? `<strong>${esc(n)}</strong>` : esc(n)).join(", ")
