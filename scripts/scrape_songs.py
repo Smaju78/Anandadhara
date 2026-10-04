@@ -441,6 +441,32 @@ def match_drama(translit, lines, skels):
     return out, best
 
 
+NUKTA_PAIRS = {"ড": "ড়", "ঢ": "ঢ়", "য": "য়"}  # ড ঢ য -> ড় ঢ় য়
+
+
+def fix_missing_nukta(songs):
+    """OCR sometimes drops the dot under ড়/ঢ়/য় (ঝডের for ঝড়ের). Correct a word only when the dotted
+    spelling is clearly the usual one in the whole corpus (3+ times and 3x as common), so real words
+    with ড/ঢ/য (ডাক, ঢেউ, যদি) are never touched. Returns the corrections made."""
+    def words(t):
+        return re.findall(r"[ঀ-৿]+", unicodedata.normalize("NFC", t or ""))
+    count = collections.Counter(w for s in songs for w in words(s["lyrics_bn"]))
+    fixes = {}
+    for w, n in count.items():
+        for i, ch in enumerate(w):
+            if ch in NUKTA_PAIRS and (i + 1 >= len(w) or w[i + 1] != "়"):
+                v = w[:i] + NUKTA_PAIRS[ch] + w[i + 1:]
+                if count.get(v, 0) >= max(3, 3 * n):
+                    fixes[w] = v
+    if fixes:
+        pat = re.compile(r"[ঀ-৿]+")
+        for s in songs:
+            for f in ("lyrics_bn", "title_bn"):
+                if s[f]:
+                    s[f] = pat.sub(lambda m: fixes.get(m.group(0), m.group(0)), unicodedata.normalize("NFC", s[f]))
+    return fixes
+
+
 def translit_key(x):
     """Skeleton of the first two transliterated lines; same key = same song."""
     lines = [l for l in (x.get("lyrics_translit") or "").split("\n") if l.strip()][:2]
@@ -665,12 +691,13 @@ def stage_merge():
             "lyrics_bn": w["lyrics_bn"], "lyrics_translit": "",
             "source": "https://bn.wikisource.org/wiki/" + w["ws_title"].replace(" ", "_"),
         })
+    spelling = fix_missing_nukta(songs)
     ids = collections.Counter(s["id"] for s in songs)
     assert not [i for i, c in ids.items() if c > 1], "duplicate ids"
     (DATA / "songs_base.json").write_text(json.dumps(songs, ensure_ascii=False, indent=1), encoding="utf-8")
     (DATA / "merge_report.json").write_text(json.dumps(
         {"rejected_number_matches": rejected, "title_matches": fuzzy, "duplicates_merged": dup_report,
-         "lyrics_relinked": relinked, "wikisource_twins_dropped": twins,
+         "lyrics_relinked": relinked, "spelling_fixes": spelling, "wikisource_twins_dropped": twins,
          "wikisource_only": [w["ws_title"] for w in free]}, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"merged: {len(songs)} songs | {len(gb)} geetabitan pages, {len(dup_report)} duplicate groups merged, "
           f"{len(fuzzy)} title matches, {len(rejected)} number matches rejected, "

@@ -346,6 +346,9 @@ function sessionSet(k, v) { try { sessionStorage.setItem("gitabitan." + k, v); }
 const jb = (() => {
   const F = prefs.filters;
   let player = null, apiLoading = null, current = null, upNext = null, errors = 0;
+  // What the listener asked for. YouTube reports ads and buffering as "not playing", so the
+  // Pause/Resume buttons follow this instead of the player's state.
+  let wantPlay = false;
   const history = [];
   const ARR = { moods: "moods", parjays: "parjays", seasons: "seasons" };
 
@@ -403,6 +406,7 @@ const jb = (() => {
 
   async function playItem(item) {
     current = item;
+    wantPlay = true;
     prefs.recent.push(item.song.id); prefs.recent = prefs.recent.slice(-200); savePrefs();
     showNow(); planNext();
     await loadApi();
@@ -414,7 +418,8 @@ const jb = (() => {
         events: {
           onStateChange: (e) => {
             if (e.data === YT.PlayerState.ENDED) next();
-            if (e.data === YT.PlayerState.PLAYING) errors = 0;
+            if (e.data === YT.PlayerState.PLAYING) { errors = 0; wantPlay = true; }
+            if (e.data === YT.PlayerState.PAUSED) wantPlay = false; // also when paused in YouTube's own controls
             updateButtons();
           },
           onError: () => { if (++errors < 5) next(); }, // unembeddable or removed video: move on
@@ -443,7 +448,7 @@ const jb = (() => {
     }
   }
   function start() {
-    if (current && player) { player.playVideo(); return; }
+    if (current && player) { player.playVideo(); wantPlay = true; updateButtons(); return; }
     next();
   }
 
@@ -469,7 +474,7 @@ const jb = (() => {
       ? `<pre class="lyrics bn">${esc(s.lyrics)}</pre>` : "";
   }
 
-  const playing = () => !!(player && player.getPlayerState && player.getPlayerState() === 1);
+  const playing = () => !!(player && current && wantPlay);
   function updateButtons() {
     const on = !!current, n = pool().length;
     $("#jb-skip").disabled = !on || !n; $("#jb-like").disabled = !on; $("#jb-never").disabled = !on;
@@ -593,7 +598,12 @@ const jb = (() => {
     if (SONGS.length) { updateCounts(); updateButtons(); }
   }
 
-  function togglePlay() { if (!current || !player) return next(); playing() ? player.pauseVideo() : player.playVideo(); }
+  function togglePlay() {
+    if (!current || !player) return next();
+    if (wantPlay) player.pauseVideo(); else player.playVideo();
+    wantPlay = !wantPlay;
+    updateButtons();
+  }
   function likeCurrent() { if (!current) return; toggle("likes", current.song.id, !isLiked(current.song.id)); prefsChanged(); }
 
   function init() {
@@ -615,7 +625,7 @@ const jb = (() => {
     $("#mini-like").onclick = likeCurrent;
   }
 
-  return { init, start, setFilter, setFilters, countFor, prefsChanged, updateMini, pause: () => { try { player && player.pauseVideo(); } catch { /* not ready */ } } };
+  return { init, start, setFilter, setFilters, countFor, prefsChanged, updateMini, pause: () => { try { player && player.pauseVideo(); } catch { /* not ready */ } wantPlay = false; updateButtons(); } };
 })();
 
 function playFiltered(kind, value) {
