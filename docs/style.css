@@ -262,3 +262,21 @@ a.chip:hover { outline: 1px solid var(--gold); }
 /* Ask AI link */
 .btn.ask-ai { border-color: var(--gold); background: var(--gold-soft); color: var(--ink); }
 .btn.ask-ai:hover { border-color: var(--teal); }
+
+/* "How are you feeling?" */
+.feel { padding: 16px 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.feel-text { width: 100%; font: inherit; font-size: 1.05rem; padding: 10px 12px; border: 1px solid var(--line);
+  border-radius: var(--r); background: var(--paper); color: var(--ink); resize: vertical; min-height: 3.2rem; }
+.feel-text::placeholder { color: var(--muted); }
+.feel-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 10px; }
+.feel-n { display: flex; align-items: center; gap: 4px; }
+.feel-n-input { width: 4.2rem; font: inherit; padding: 4px 8px; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--paper); color: var(--ink); }
+.feel-row #feel-go { margin-left: auto; }
+.feel-understood { margin-top: 14px; display: grid; gap: 8px; }
+.feel-understood p { margin: 0; }
+.mood-chip { cursor: pointer; border: 1px solid transparent; background: var(--paper); color: var(--muted); }
+.mood-chip[aria-pressed="true"] { background: var(--gold-soft); color: var(--ink); border-color: var(--gold); }
+.feel-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 8px; }
+.feel-list .q-num { color: var(--muted); font-variant-numeric: tabular-nums; min-width: 1.4rem; text-align: right; padding-top: 4px; }
+.why { color: var(--teal); }

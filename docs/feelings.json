@@ -1,0 +1,39 @@
+{
+ "_note": "Feeling words -> mood weights (and optional season). English words match whole words (a trailing * matches any ending: 'miss*' = miss, missing, missed). Bengali and romanised phrases match anywhere. Edit freely.",
+ "moods": [
+  {"mood": "viraha", "words": ["miss*", "longing", "long for", "yearn*", "far away", "far from", "away from", "apart", "separat*", "distance", "lonely", "loneliness", "alone", "waiting for", "wait for", "absent", "homesick", "pining", "left me",
+    "একা", "একলা লাগ", "বিরহ", "মন কেমন", "তোমায় মনে", "অপেক্ষা", "দূরে", "কাছে নেই", "eka lag", "ekla lag", "mon kemon", "monkemon", "biroho", "birah", "opekkha"]},
+  {"mood": "bishad", "words": ["sad", "sadness", "unhappy", "down", "low", "blue", "depress*", "heartbroken", "heartbreak", "broken", "hurt*", "pain*", "cry*", "tears", "grief", "griev*", "mourn*", "loss", "lost someone", "died", "death", "passed away", "funeral", "hopeless", "despair", "gloomy", "miserable", "upset", "disappointed", "regret*",
+    "মন খারাপ", "দুঃখ", "কষ্ট", "কান্না", "কাঁদ", "বেদনা", "শোক", "হতাশ", "ভালো লাগছে না", "ভাল লাগছে না", "mon kharap", "monkharap", "dukkho", "kosto", "kashto", "kanna", "bhalo lagche na", "bhalo lagchhe na"]},
+  {"mood": "ananda", "words": ["happy", "happiness", "joy*", "glad", "cheerful", "excited", "exciting", "great", "wonderful", "amazing", "elated", "delight*", "blessed", "grateful", "thankful", "good mood", "on top of the world", "fantastic", "awesome", "smil*", "laugh*",
+    "আনন্দ", "খুশি", "খুসি", "ভালো লাগছে", "ভাল লাগছে", "মন ভালো", "দারুণ", "anondo", "ananda", "khushi", "khusi", "bhalo lagche", "bhalo lagchhe", "mon bhalo"]},
+  {"mood": "shanti", "words": ["calm", "peace*", "relax*", "quiet", "serene", "still", "soothing", "rest", "restful", "sleep*", "tired", "exhausted", "stress*", "anxious", "anxiety", "overwhelmed", "restless", "tense", "need comfort", "comfort", "unwind", "meditat*", "slow down", "gentle",
+    "শান্তি", "শান্ত", "ক্লান্ত", "ঘুম", "অস্থির", "চিন্তা", "দুশ্চিন্তা", "বিশ্রাম", "shanti", "klanto", "ghum", "osthir", "chinta"]},
+  {"mood": "bhakti", "words": ["pray*", "god", "divine", "spiritual*", "faith", "worship", "devotion*", "surrender", "blessing", "soul", "temple", "puja", "prayerful", "grace", "lord",
+    "প্রার্থনা", "ঈশ্বর", "ভগবান", "ঠাকুর", "প্রভু", "পূজা", "পুজো", "ভক্তি", "আত্মা", "prarthona", "ishwar", "bhogoban", "bhagaban", "thakur", "probhu", "bhakti"]},
+  {"mood": "prem", "words": ["love", "loving", "in love", "romantic", "romance", "crush", "beloved", "sweetheart", "darling", "partner", "wife", "husband", "girlfriend", "boyfriend", "date", "anniversary", "tender*", "affection", "adore",
+    "প্রেম", "ভালোবাসা", "ভালবাসা", "ভালোবাসি", "প্রিয়", "প্রিয়া", "প্রিয়তম", "prem", "bhalobasa", "bhalobashi", "bhalobasi", "priyo"]},
+  {"mood": "prakriti-bhava", "words": ["rain*", "monsoon", "cloud*", "storm*", "thunder", "spring", "flower*", "bloom*", "autumn", "winter", "summer", "breeze", "wind", "moon*", "sky", "sunrise", "sunset", "river", "sea", "garden", "nature", "outdoors", "trees", "birds", "season",
+    "বৃষ্টি", "বর্ষা", "মেঘ", "ঝড়", "বসন্ত", "ফুল", "শরৎ", "শীত", "গ্রীষ্ম", "হাওয়া", "বাতাস", "চাঁদ", "আকাশ", "নদী", "প্রকৃতি", "brishti", "bristi", "borsha", "barsha", "megh", "jhor", "basanta", "bosonto", "phool", "akash", "nodi"]},
+  {"mood": "utsav", "words": ["celebrat*", "festival", "festive", "party", "wedding", "marriage", "birthday", "holi", "dol", "durga", "new year", "occasion", "ceremony", "graduation", "welcome", "farewell", "guests",
+    "উৎসব", "বিয়ে", "জন্মদিন", "দোল", "নববর্ষ", "পয়লা বৈশাখ", "পঁচিশে বৈশাখ", "অনুষ্ঠান", "utsob", "biye", "jonmodin", "noboborsho", "poila boishakh"]},
+  {"mood": "deshprem", "words": ["country", "nation*", "patriot*", "motherland", "homeland", "india", "bangladesh", "bengal", "freedom", "independence", "republic day",
+    "দেশ", "স্বদেশ", "মাতৃভূমি", "বাংলা", "ভারত", "স্বাধীনতা", "desh", "swadesh", "matribhumi", "swadhinota"]},
+  {"mood": "sahas", "words": ["courage", "brave", "strong", "strength", "determined", "determination", "motivat*", "inspire*", "fight*", "struggle", "afraid", "scared", "fear*", "nervous", "exam", "interview", "challenge", "new start", "fresh start", "keep going", "give up", "alone in the fight", "confidence", "hope",
+    "সাহস", "ভয়", "লড়াই", "শক্তি", "একলা চলো", "এগিয়ে", "পরীক্ষা", "sahos", "saahos", "bhoy", "lorai", "ekla cholo", "ekla chalo", "porikkha"]},
+  {"mood": "smriti", "words": ["nostalgi*", "remember*", "memor*", "childhood", "old days", "old times", "the past", "used to", "reminisc*", "old friend*", "school days", "college days", "grandmother", "grandfather", "my mother", "my father", "mother", "father",
+    "মনে পড়", "স্মৃতি", "পুরানো", "পুরোনো", "ছেলেবেলা", "ছোটবেলা", "মা'র কথা", "বাবার কথা", "mone pore", "mone porche", "smriti", "purono", "chhotobela", "chotobela"]},
+  {"mood": "kautuk", "words": ["funny", "playful", "silly", "fun", "naughty", "mischie*", "lighthearted", "light hearted", "cheeky", "joke*", "tease", "laugh out",
+    "মজা", "দুষ্টু", "হাসি", "মজার", "moja", "dushtu", "hasi"]}
+ ],
+ "seasons": [
+  {"season": "Barsha", "words": ["rain*", "monsoon", "storm*", "cloud*", "thunder", "বৃষ্টি", "বর্ষা", "মেঘ", "ঝড়", "brishti", "bristi", "borsha", "barsha", "megh"]},
+  {"season": "Basanta", "words": ["spring", "holi", "dol", "basanta", "bosonto", "বসন্ত", "দোল", "ফাগুন", "phagun"]},
+  {"season": "Sharat", "words": ["autumn", "durga", "puja season", "sharat", "shorot", "শরৎ", "পুজো", "শিউলি", "কাশ"]},
+  {"season": "Sheet", "words": ["winter", "cold", "chilly", "sheet", "শীত", "ঠান্ডা"]},
+  {"season": "Grishma", "words": ["summer", "heat", "hot day", "scorching", "grishma", "গ্রীষ্ম", "গরম", "বৈশাখ"]},
+  {"season": "Hemanta", "words": ["late autumn", "harvest", "hemanta", "হেমন্ত", "নবান্ন"]}
+ ],
+ "_negations_note": "English only: a negation up to two words before a positive feeling ('not happy', 'can't sleep') turns it into sadness. Bengali negation comes after the verb, so it is handled by phrases such as 'ভালো লাগছে না' above.",
+ "negations": ["not", "no", "never", "isn't", "isnt", "don't", "dont", "can't", "cant", "cannot", "without", "hardly", "nothing"]
+}

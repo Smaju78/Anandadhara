@@ -170,6 +170,149 @@ function renderHome() {
   run();
 }
 
+/* ---------------- "How are you feeling?" playlists ----------------
+   Free text -> moods (and a season) using docs/feelings.json, then the best-fitting songs. */
+let FEEL = null, FEEL_PATTERNS = null;
+const POSITIVE = new Set(["ananda", "shanti", "prem", "utsav", "kautuk"]);
+const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+function feelPattern(w) {
+  if (isBengali(w)) return new RegExp(reEsc(w.normalize("NFC")), "g");
+  const p = reEsc(w.toLowerCase()).replace(/\\\*$/, "[a-z']*");
+  return new RegExp(`(?<![a-z])${p}(?![a-z])`, "g");
+}
+function compileFeelings() {
+  const list = [];
+  FEEL.moods.forEach(({ mood, words }) => words.forEach((w) => list.push({ mood, w, re: feelPattern(w) })));
+  list.sort((a, b) => b.w.length - a.w.length);   // longest phrase wins ("ভালো লাগছে না" before "ভালো লাগছে")
+  const seasons = FEEL.seasons.map(({ season, words }) => ({ season, res: words.map(feelPattern) }));
+  const neg = new RegExp(`(?<![a-z])(${FEEL.negations.map(reEsc).join("|")})\\s+(\\S+\\s+)?$`);
+  FEEL_PATTERNS = { list, seasons, neg };
+}
+function detectFeelings(text) {
+  if (!FEEL_PATTERNS) compileFeelings();
+  const t = (text || "").normalize("NFC").toLowerCase();
+  let work = t;
+  const scores = {}, hits = [];
+  for (const { mood, re } of FEEL_PATTERNS.list) {
+    re.lastIndex = 0;
+    let m;
+    while ((m = re.exec(work))) {
+      const negated = !isBengali(m[0]) && FEEL_PATTERNS.neg.test(t.slice(Math.max(0, m.index - 25), m.index));
+      if (negated && POSITIVE.has(mood)) {
+        scores.bishad = (scores.bishad || 0) + 0.8;
+        hits.push({ word: `not ${m[0].trim()}`, mood: "bishad" });
+      } else if (!negated) {
+        scores[mood] = (scores[mood] || 0) + 1;
+        hits.push({ word: m[0].trim(), mood });
+      }
+      work = work.slice(0, m.index) + " ".repeat(m[0].length) + work.slice(m.index + m[0].length);
+    }
+  }
+  let season = null, best = 0;
+  for (const { season: name, res } of FEEL_PATTERNS.seasons) {
+    const n = res.reduce((c, re) => { re.lastIndex = 0; return c + (t.match(re) || []).length; }, 0);
+    if (n > best) { best = n; season = name; }
+  }
+  const max = Math.max(0, ...Object.values(scores));
+  const moods = Object.entries(scores).filter(([, s]) => s >= max * 0.34).sort((a, b) => b[1] - a[1]).slice(0, 4)
+    .map(([m, s]) => ({ mood: m, weight: s / max }));
+  return { moods, season, hits };
+}
+// Best-fitting songs with recordings. A little randomness so "Another mix" differs.
+function buildPlaylist({ moods, season }, n) {
+  const w = Object.fromEntries(moods.map((m) => [m.mood, m.weight]));
+  const scored = [];
+  for (const s of SONGS) {
+    if (!hasRec(s) || isNever(s.id)) continue;
+    const tags = s.moods || [];
+    const fit = tags.reduce((a, m, i) => a + (w[m] || 0) * (i === 0 ? 1 : 0.75), 0);
+    const inSeason = season && s.season === season;
+    if (!fit && !inSeason) continue;
+    const score = fit * 2 + (inSeason ? 1 : 0) + (isLiked(s.id) ? 0.6 : 0)
+      + (s.pop ? 0.4 * (1 - s.pop / 400) : 0) + Math.random() * 0.8;
+    const why = tags.filter((m) => w[m]).concat(inSeason ? [season] : []);
+    scored.push({ s, score, why });
+  }
+  return scored.sort((a, b) => b.score - a.score).slice(0, n);
+}
+
+function renderFeel(box) {
+  const text = sessionGet("feel"), n = sessionGet("feelN") || "10";
+  box.innerHTML = `
+    <div class="section-head"><h2 id="h-feel">How are you feeling?</h2>
+      <span class="hint">Say it in your own words, in English or বাংলা, and get a playlist</span></div>
+    <textarea id="feel-text" class="feel-text" rows="2" aria-labelledby="h-feel"
+      placeholder="e.g. missing my mother on a rainy evening · বৃষ্টির দিনে মন খারাপ · need courage before an exam">${esc(text)}</textarea>
+    <div class="feel-row">
+      <span class="hint" id="feel-n-label">Songs:</span>
+      <div class="feel-n" role="group" aria-labelledby="feel-n-label">
+        ${[5, 10, 20].map((k) => `<button type="button" class="btn small" data-n="${k}" aria-pressed="${String(k) === n}">${k}</button>`).join("")}
+        <input id="feel-n" class="feel-n-input" type="number" min="1" max="50" value="${esc(n)}" aria-label="Number of songs">
+      </div>
+      <button class="btn primary" type="button" id="feel-go">Make my playlist</button>
+    </div>
+    <div id="feel-result" aria-live="polite"></div>`;
+  const input = $("#feel-n", box);
+  let state = null;   // last detection, possibly edited via chips
+  const count = () => Math.max(1, Math.min(50, parseInt(input.value, 10) || 10));
+  $$("[data-n]", box).forEach((b) => b.onclick = () => {
+    input.value = b.dataset.n; sessionSet("feelN", b.dataset.n);
+    $$("[data-n]", box).forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    if (state) draw();
+  });
+  input.onchange = () => { sessionSet("feelN", String(count())); $$("[data-n]", box).forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.n === String(count())))); if (state) draw(); };
+  const draw = () => {
+    const out = $("#feel-result", box);
+    const active = state.moods.filter((m) => m.on);
+    const picks = active.length || state.season ? buildPlaylist({ moods: active, season: state.seasonOn ? state.season : null }, count()) : [];
+    const chips = Object.keys(META.moods).map((m) => {
+      const d = state.moods.find((x) => x.mood === m);
+      return `<button type="button" class="chip mood-chip" data-mood="${esc(m)}" aria-pressed="${!!(d && d.on)}" title="${esc(META.moods[m])}">${esc(m)}</button>`;
+    }).join("");
+    const seasonChip = state.season ? `<button type="button" class="chip mood-chip" data-season aria-pressed="${state.seasonOn}">${esc(state.season)} ${SEASON_BN[state.season]}</button>` : "";
+    out.innerHTML = `
+      <div class="feel-understood">
+        ${state.hits.length ? `<p class="hint">I picked up: ${[...new Set(state.hits.map((h) => `“${esc(h.word)}” → ${esc(h.mood)}`))].join(", ")}</p>`
+          : `<p class="hint">I couldn't find a feeling in those words. Choose one or more moods below, or try words like lonely, happy, missing someone, rain, prayer, celebration.</p>`}
+        <div class="chips">${seasonChip}${chips}</div>
+      </div>
+      ${picks.length ? `
+        <div class="feel-actions">
+          <button class="btn primary" type="button" id="feel-play">▶ Play this playlist (${picks.length})</button>
+          <button class="btn" type="button" id="feel-again">↻ Another mix</button>
+        </div>
+        <ol class="queue feel-list">${picks.map(({ s, why }, i) => {
+          const singers = [...new Set(s.videos.flatMap((v) => v.singers || []))];
+          return `<li><span class="q-num">${i + 1}</span>
+            <button class="btn icon small" type="button" data-feel-play="${i}" aria-label="Play from ${esc(title(s))}">▶</button>
+            <div class="q-main"><span><a class="q-title" href="#/song/${enc(s.id)}">${esc(title(s))}</a>${isLiked(s.id) ? ` <span class="liked">♥</span>` : ""}</span>
+              <span class="q-singers">${singers.length ? singers.map(esc).join(", ") : "singer not identified"} · <span class="why">${why.map(esc).join(", ")}</span></span></div></li>`;
+        }).join("")}</ol>` : (active.length || state.seasonOn ? `<p class="hint">No songs with recordings fit these moods yet; more are added every day.</p>` : "")}`;
+    $$(".mood-chip[data-mood]", out).forEach((b) => b.onclick = () => {
+      const m = b.dataset.mood, d = state.moods.find((x) => x.mood === m);
+      if (d) d.on = !d.on; else state.moods.push({ mood: m, weight: 0.8, on: true });
+      draw();
+    });
+    const sc = $(".mood-chip[data-season]", out); if (sc) sc.onclick = () => { state.seasonOn = !state.seasonOn; draw(); };
+    const ids = picks.map((p) => p.s.id);
+    const label = active.map((m) => m.mood).concat(state.seasonOn && state.season ? [state.season] : []).join(" · ");
+    const play = (from) => { jb.playPlaylist(ids, label, active.map((m) => m.mood), from); location.hash = "#/jukebox"; };
+    if ($("#feel-play", out)) $("#feel-play", out).onclick = () => play(0);
+    if ($("#feel-again", out)) $("#feel-again", out).onclick = draw;
+    $$("[data-feel-play]", out).forEach((b) => b.onclick = () => play(+b.dataset.feelPlay));
+  };
+  const go = () => {
+    const text = $("#feel-text", box).value;
+    sessionSet("feel", text);
+    const d = detectFeelings(text);
+    state = { moods: d.moods.map((m) => ({ ...m, on: true })), season: d.season, seasonOn: !!d.season, hits: d.hits };
+    draw();
+  };
+  $("#feel-go", box).onclick = go;
+  $("#feel-text", box).addEventListener("keydown", (e) => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) go(); });
+  if (text.trim()) go();
+}
+
 function renderListen(body) {
   const season = currentSeason();
   const seasonSongs = SONGS.filter((s) => s.season === season && hasRec(s)).length;
@@ -178,6 +321,7 @@ function renderListen(body) {
   const popRec = popular.filter(hasRec);
   const totalRec = SONGS.filter(hasRec).length;
   body.innerHTML = `
+    <section class="section feel" aria-labelledby="h-feel" id="feel-box"></section>
     <section class="section" aria-labelledby="h-listen">
       <div class="section-head"><h2 id="h-listen">Listen now</h2>
         <span class="hint">${totalRec} of ${SONGS.length} songs have recordings so far · more are added every day</span></div>
@@ -201,6 +345,7 @@ function renderListen(body) {
       <p class="tabs">${Object.entries(KINDS).filter(([k]) => k !== "popular").map(([k, v]) => `<a class="tab" href="#/browse/${k}">By ${v.label}</a>`).join("")}</p>
     </section>`;
   $("#pop-list", body).append(songList(popRec.length >= 12 ? popRec : popular, { limit: 12, toggle: false }));
+  if (FEEL) renderFeel($("#feel-box", body)); else $("#feel-box", body).hidden = true;
   $$("[data-play]", body).forEach((b) => b.onclick = () => {
     const [kind, value] = b.dataset.play.split(":");
     playFiltered(kind, value);
@@ -374,6 +519,8 @@ const jb = (() => {
   // What the listener asked for. YouTube reports ads and buffering as "not playing", so the
   // Pause/Resume buttons follow this instead of the player's state.
   let wantPlay = false;
+  // A playlist from "How are you feeling?": played in order, then shuffle continues on its moods.
+  let playlist = null;   // { label, ids, idx }
   const history = [];
   const ARR = { moods: "moods", parjays: "parjays", seasons: "seasons" };
 
@@ -411,7 +558,8 @@ const jb = (() => {
     return vids[0];
   }
   function planNext() {
-    const s = pickSong(current ? [current.song.id] : []);
+    const fromList = playlist && playlist.ids.slice(playlist.idx + 1).map((id) => BY_ID.get(id)).find((s) => s && !isNever(s.id));
+    const s = fromList || pickSong(current ? [current.song.id] : []);
     upNext = s ? { song: s, video: pickVideo(s) } : null;
     const el = $("#jb-next");
     el.innerHTML = upNext && current ? `Up next: <a href="#/song/${enc(upNext.song.id)}">${esc(title(upNext.song))}</a>` : "";
@@ -461,6 +609,19 @@ const jb = (() => {
     const s = BY_ID.get(id);
     if (!s || !hasRec(s)) return;
     if (current) history.push(current);
+    if (playlist && playlist.ids.includes(id)) playlist.idx = playlist.ids.indexOf(id);
+    playItem({ song: s, video: pickVideo(s) });
+  }
+
+  // Start a playlist (from the feelings box) at position `from`. Filters are set to its moods
+  // quietly, so shuffle continues in the same spirit once the list ends.
+  function playPlaylist(ids, label, moods, from = 0) {
+    clearTimeout(resetTimer);
+    Object.assign(F, { ...EMPTY_FILTERS, moods: [], parjays: [], seasons: [] }, { moods: moods || [] });
+    savePrefs(); updateCounts();
+    playlist = { label, ids, idx: from };
+    history.length = 0; upNext = null;
+    const s = BY_ID.get(ids[from]);
     playItem({ song: s, video: pickVideo(s) });
   }
 
@@ -480,6 +641,18 @@ const jb = (() => {
   }
 
   function next() {
+    if (playlist) {
+      const rest = playlist.ids.slice(playlist.idx + 1);
+      const k = rest.findIndex((id) => !isNever(id));
+      if (k >= 0) {
+        playlist.idx += k + 1;
+        const s = BY_ID.get(playlist.ids[playlist.idx]);
+        if (current) history.push(current);
+        return playItem(upNext && upNext.song === s ? upNext : { song: s, video: pickVideo(s) });
+      }
+      playlist = null;   // finished: carry on shuffling songs of the same moods
+      upNext = null;
+    }
     if (upNext && !matches(upNext.song, F)) upNext = null;
     const item = upNext || (() => { const s = pickSong(); return s && { song: s, video: pickVideo(s) }; })();
     if (!item) { showEmpty(); return; }
@@ -491,6 +664,7 @@ const jb = (() => {
     if (!item) return;
     const back = current;
     current = null;
+    if (playlist && playlist.ids.includes(item.song.id)) playlist.idx = playlist.ids.indexOf(item.song.id);
     playItem(item); // runs planNext synchronously before its first await
     if (back) {     // after going back, "next" returns to the song we just left
       upNext = back;
@@ -627,6 +801,7 @@ const jb = (() => {
   // filter clicks lead to one switch, not one per click.
   let resetTimer = null;
   function filtersChanged(immediate = false) {
+    playlist = null;   // choosing filters by hand leaves playlist mode
     savePrefs(); updateCounts(); planNext(); renderQueue();
     clearTimeout(resetTimer);
     const reset = () => { if (current && !matches(current.song, F)) switchToSelection(); };
@@ -639,11 +814,19 @@ const jb = (() => {
   /* the selection as a list, with singers */
   let queueAll = false;
   function renderQueue() {
-    const list = pool();
-    const order = (s) => s === current?.song ? 0 : s === upNext?.song ? 1 : 2;
-    list.sort((a, b) => order(a) - order(b) || (a.pop || 9999) - (b.pop || 9999) || title(a).localeCompare(title(b)));
+    let list;
+    if (playlist) {
+      list = playlist.ids.map((id) => BY_ID.get(id)).filter((s) => s && hasRec(s) && !isNever(s.id));
+      $("#jb-queue-h").textContent = `Your playlist: ${playlist.label || "for your mood"}`;
+      $("#jb-queue-count").textContent = `song ${Math.min(playlist.idx + 1, list.length)} of ${list.length} · then more like these`;
+    } else {
+      list = pool();
+      const order = (s) => s === current?.song ? 0 : s === upNext?.song ? 1 : 2;
+      list.sort((a, b) => order(a) - order(b) || (a.pop || 9999) - (b.pop || 9999) || title(a).localeCompare(title(b)));
+      $("#jb-queue-h").textContent = "Songs in this selection";
+      $("#jb-queue-count").textContent = `${plural(list.length, "song")}`;
+    }
     const shown = queueAll ? list : list.slice(0, 25);
-    $("#jb-queue-count").textContent = `${plural(list.length, "song")}`;
     $("#jb-queue").innerHTML = shown.map((s) => {
       const singers = [...new Set(s.videos.flatMap((v) => v.singers || []))];
       const tag = s === current?.song ? `<span class="badge now">Now playing</span>`
@@ -716,7 +899,7 @@ const jb = (() => {
     renderQueue();
   }
 
-  return { init, start, setFilter, setFilters, countFor, prefsChanged, updateMini, pause: () => { try { player && player.pauseVideo(); } catch { /* not ready */ } wantPlay = false; updateButtons(); } };
+  return { init, start, setFilter, setFilters, countFor, prefsChanged, playPlaylist, updateMini, pause: () => { try { player && player.pauseVideo(); } catch { /* not ready */ } wantPlay = false; updateButtons(); } };
 })();
 
 function playFiltered(kind, value) {
@@ -746,7 +929,10 @@ function route() {
   if (page !== "home") { window.scrollTo(0, 0); view.focus({ preventScroll: true }); }
 }
 
-fetch("songs.json").then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).then((d) => {
+// The feelings word list is optional: without it the site works, just without the feelings box.
+const feelingsLoad = fetch("feelings.json?v=1").then((r) => (r.ok ? r.json() : null)).catch(() => null);
+fetch("songs.json", { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(async (d) => {
+  FEEL = await feelingsLoad;
   META = d.meta; SONGS = d.songs;
   for (const s of SONGS) {
     BY_ID.set(s.id, s);

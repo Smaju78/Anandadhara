@@ -19,7 +19,9 @@ def singers_of(video):
     # YouTube's auto-generated "<Artist> - Topic" channels always name the performer
     topic = re.fullmatch(r"(.+?) - Topic", video.get("channel", ""))
     if not found and topic and not re.search(r"various|artists|tagore|rabindra", topic.group(1), re.I):
-        found = [topic.group(1)]
+        names = [n.strip() for n in re.split(r"\s*[|,&]\s*", topic.group(1)) if n.strip()]
+        # two names = a duet; longer lists are YouTube's auto-tagging mixing in unrelated artists
+        found = names if len(names) <= 2 else names[:1]
     return found
 
 
