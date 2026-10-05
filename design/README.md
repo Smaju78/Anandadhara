@@ -55,6 +55,22 @@ progress line on every page, the "Welcome back — continue?" prompt, and the ac
   space; a light top bar on desktop, bottom tabs on the phone; dark mode is soft night ink with the same clay line.
   Screenshots: `d-{home,song,jukebox}-{phone,desktop}.png`, `d-home-dark-desktop.png`.
 
+- **E · রবির রং Rabir Rong — Tagore's own palette and paintings** (added after D was found "too empty and drab"; the owner liked
+  B's colourful mood tiles and season scene and C's alpona used lightly, and asked for warmth from Tagore's paintings). B's layout
+  and energy — the drawn season scene banner, colourful mood tiles, card rhythm, thumbnail rows, bottom-sheet filters, floating
+  player pill on the phone — repainted in the colours of Tagore's paintings: ochre #c6922e, indigo #2f3f6e, burnt sienna #a65a31,
+  sap green #5f7a3a, muted crimson #8e2f3c, rust #b4472b, sepia, soft teal, lamp-black ink #2a2320 on warm handmade paper #f3e9d6.
+  Each mood tile has its own colour from that palette (prem rose-crimson, viraha indigo, bishad slate-ink, ananda ochre, shanti
+  sage, bhakti saffron, prakriti sap green, utsav rust, deshprem deep red, sahas sienna, smriti sepia, kautuk teal) with a detail of
+  one of his public-domain paintings showing through in luminosity blend; the season banner blends a fragment of his 1937
+  landscape with the drawn scene; a "song of the day" card (deterministic by day of year) carries a painting; the song-page header
+  has a faint manuscript-page texture and the lyrics sit on A's ruled leaf; the jukebox lyric leaf has a faint handwriting
+  texture; the empty jukebox stage shows "Seven Figures". One fine line-drawn alpona is the mark, sits quietly in the banner
+  corner and is the divider; no filled medallions. Tiro Bangla titles at regular weight. Dark mode keeps the palette at night
+  (deep umber paper, lighter sienna accent). Images: 11 Tagore works from Wikimedia Commons, all public domain, downscaled to
+  ≤560 px and under 150 KB each, listed with Commons URLs and licence templates in `design/image-sources.md`.
+  Screenshots: `e-{home,song,jukebox}-{phone,desktop}.png`, `e-home-dark-desktop.png`.
+
 ## Recommendation
 
 **D · শান্ত রাঙামাটি** — it is C's Santiniketan identity with the owner's feedback applied: the clay line, the single
