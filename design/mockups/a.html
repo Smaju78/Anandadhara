@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="bn" data-concept="a">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>আনন্দধারা · A — পাণ্ডুলিপি Pandulipi</title>
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Galada&family=Hind+Siliguri:wght@400;500;600&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ===== A · পাণ্ডুলিপি — the Gitabitan manuscript: aged paper, blue-black fountain-pen ink, a red margin rule,
+   dotted index leaders, and Tagore's strike-through doodles as the only ornament. ===== */
+:root{
+  --paper:#efe5cf; --sheet:#f7f0df; --sheet2:#fbf6ea; --ink:#241e19; --ink2:#5d5247; --ink3:#8a7e70;
+  --rule:#d9cdb0; --rule2:#c6b893; --red:#a8321e; --red-soft:#f0d8cf; --blue:#1f3566; --blue-soft:#dfe3ee; --on-blue:#fbf6ea;
+  --wash:#e7dcc2; --shadow:0 10px 30px rgba(60,40,10,.12);
+  --bn:"Tiro Bangla","Noto Serif Bengali",serif; --hand:"Galada","Tiro Bangla",cursive; --ui:"Hind Siliguri","Alegreya Sans",system-ui,sans-serif; --en:"Alegreya",Georgia,serif;
+  --bar:66px; color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --paper:#12141b; --sheet:#1a1d26; --sheet2:#20242f; --ink:#ece4d2; --ink2:#b3a894; --ink3:#817867;
+  --rule:#2d3240; --rule2:#3b4152; --red:#e27a5f; --red-soft:#3a2520; --blue:#9fb3df; --blue-soft:#232b3f; --on-blue:#12141b;
+  --wash:#171a22; --shadow:0 10px 30px rgba(0,0,0,.4); color-scheme:dark}}
+:root[data-theme=dark]{
+  --paper:#12141b; --sheet:#1a1d26; --sheet2:#20242f; --ink:#ece4d2; --ink2:#b3a894; --ink3:#817867;
+  --rule:#2d3240; --rule2:#3b4152; --red:#e27a5f; --red-soft:#3a2520; --blue:#9fb3df; --blue-soft:#232b3f; --on-blue:#12141b;
+  --wash:#171a22; --shadow:0 10px 30px rgba(0,0,0,.4); color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--ui);font-size:16px;line-height:1.55;overflow-x:hidden;
+  background-image:radial-gradient(120% 60% at 50% -20%,rgba(255,255,255,.35),transparent 60%);padding-bottom:calc(var(--bar) + 24px + env(safe-area-inset-bottom))}
+:root[data-theme=dark] body,:root:not([data-theme=light]) body{background-image:none}
+@media (prefers-color-scheme:light){:root:not([data-theme=dark]) body{background-image:radial-gradient(120% 60% at 50% -20%,rgba(255,255,255,.35),transparent 60%)}}
+a{color:var(--blue);text-decoration-thickness:1px;text-underline-offset:3px}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:2px}
+#view:focus,#view:focus-visible{outline:none}
+h1,h2,h3{margin:0;font-weight:400;line-height:1.2;text-wrap:balance}
+.bn{font-family:var(--bn)}
+.en{font-family:var(--en)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-left)) 0 max(16px,env(safe-area-inset-right))}
+.hint{color:var(--ink3);font-size:.86rem}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+
+/* ---- header: the manuscript cover ---- */
+.top{border-bottom:1px solid var(--rule2);background:linear-gradient(var(--sheet),var(--paper))}
+.top .wrap{display:grid;grid-template-columns:1fr auto;gap:8px 16px;align-items:center;padding-top:14px;padding-bottom:0}
+.brand{display:flex;align-items:baseline;gap:12px;text-decoration:none;color:var(--ink);min-width:0}
+.brand .mark{font-family:var(--hand);font-size:2.3rem;line-height:1;color:var(--blue);letter-spacing:.01em;white-space:nowrap}
+.brand small{font-family:var(--en);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3);white-space:nowrap}
+@media (max-width:640px){.brand small{display:none}}
+.tools{display:flex;gap:6px;align-items:center}
+.pill{height:34px;padding:0 12px;border-radius:999px;border:1px solid var(--rule2);background:var(--sheet2);color:var(--ink2);font-weight:500;font-size:.84rem;display:inline-flex;align-items:center;gap:6px}
+.pill:hover{border-color:var(--blue);color:var(--blue)}
+.pill.ic{width:34px;padding:0;justify-content:center}
+.pill svg{width:17px;height:17px}
+.avatar{width:34px;height:34px;border-radius:50%;background:var(--blue);color:var(--on-blue);border:0;font-family:var(--en);font-weight:700;display:grid;place-items:center;position:relative}
+.avatar.in::after{content:"";position:absolute;right:-1px;bottom:-1px;width:10px;height:10px;border-radius:50%;background:#3b9b5a;border:2px solid var(--sheet)}
+nav.main{grid-column:1/-1;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin:4px -16px 0;padding:0 16px}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{flex:0 0 auto;padding:10px 14px 8px;text-decoration:none;color:var(--ink2);font-weight:500;border-bottom:3px solid transparent;margin-bottom:-1px;display:inline-flex;gap:6px;align-items:baseline}
+nav.main a small{font-family:var(--en);font-size:.72rem;color:var(--ink3);letter-spacing:.06em}
+nav.main a[aria-current=page]{color:var(--ink);border-color:var(--red)}
+nav.main a:hover{color:var(--blue)}
+@media (min-width:900px){
+  .top .wrap{grid-template-columns:auto 1fr auto;padding-top:18px}
+  nav.main{grid-column:auto;margin:0 0 -1px 28px;padding:0;align-self:end}
+  nav.main a{padding:14px 16px 12px}
+  .brand .mark{font-size:2.7rem}
+}
+
+/* ---- the date line: Tagore dated every page ---- */
+.dateline{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;color:var(--red);font-family:var(--bn);font-size:1.02rem;margin:18px 0 6px}
+.dateline .en{color:var(--ink3);font-size:.9rem;font-style:italic}
+
+/* ---- sheets: cards as leaves of paper ---- */
+.sheet{background:var(--sheet);border:1px solid var(--rule);box-shadow:var(--shadow);position:relative;padding:18px 18px 20px}
+.sheet.ruled{background-image:repeating-linear-gradient(transparent 0 31px,var(--rule) 31px 32px);background-origin:content-box}
+.sheet::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,transparent,var(--rule2),transparent)}
+.margin{position:relative;padding-left:42px}
+.margin::before{content:"";position:absolute;left:28px;top:-18px;bottom:-20px;width:1px;background:var(--red);opacity:.65}
+.sec{margin:26px 0 0}
+.sec-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.sec-h h2{font-family:var(--bn);font-size:1.5rem}
+.sec-h .en{color:var(--ink3);font-size:.95rem;font-style:italic}
+.sec-h .more{margin-left:auto;font-size:.9rem}
+.pg{font-family:var(--en);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+/* the doodle: a crossed-out line that became a creature */
+.doodle{display:block;width:min(100%,360px);height:34px;color:var(--ink);opacity:.55;margin:18px auto 0}
+:root[data-theme=dark] .doodle{opacity:.5}
+
+/* ---- buttons ---- */
+.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--rule2);background:var(--sheet2);color:var(--ink);font-weight:500;text-decoration:none;white-space:nowrap}
+.btn:hover{border-color:var(--blue);color:var(--blue)}
+.btn.pri{background:var(--blue);border-color:var(--blue);color:var(--on-blue)}
+.btn.pri:hover{color:var(--on-blue);filter:brightness(1.08)}
+.btn.sm{height:32px;padding:0 12px;font-size:.86rem}
+.btn.ic{width:40px;padding:0;justify-content:center}
+.btn.ic.sm{width:32px}
+.btn[aria-pressed=true]{background:var(--red-soft);border-color:var(--red);color:var(--ink)}
+.btn:disabled{opacity:.45;cursor:default}
+.btn svg{width:18px;height:18px}
+.btn.ai{border-style:dashed}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 11px;border-radius:999px;border:1px solid var(--rule2);background:var(--sheet2);color:var(--ink2);text-decoration:none;font-size:.86rem;font-weight:500}
+.chip:hover{border-color:var(--blue);color:var(--blue)}
+.chip[aria-pressed=true],.chip.on{background:var(--blue);border-color:var(--blue);color:var(--on-blue)}
+.chip small{opacity:.7;font-variant-numeric:tabular-nums}
+.chip:disabled{opacity:.4;cursor:default}
+.chip.x::after{content:"×";margin-left:2px;opacity:.7}
+
+/* ---- search ---- */
+.search{display:flex;align-items:center;gap:10px;height:48px;padding:0 14px;border:1px solid var(--rule2);background:var(--sheet2);border-radius:4px;margin-top:14px}
+.search:focus-within{border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-soft)}
+.search input{flex:1;min-width:0;border:0;background:none;font:inherit;font-size:1.05rem;color:var(--ink);outline:none;font-family:var(--bn)}
+.search svg{width:20px;height:20px;color:var(--ink3);flex:none}
+
+/* ---- feelings sheet ---- */
+.feel h2{font-family:var(--hand);font-size:2rem;color:var(--blue);line-height:1.1}
+.feel textarea{width:100%;font:inherit;font-family:var(--bn);font-size:1.08rem;line-height:32px;padding:0 4px;border:0;border-bottom:1px solid var(--rule2);background:transparent;color:var(--ink);resize:vertical;min-height:64px;outline:none}
+.feel textarea:focus{border-color:var(--blue)}
+.feel textarea::placeholder{color:var(--ink3)}
+.feel-row{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin-top:12px}
+.feel-row .go{margin-left:auto}
+.feel-n{display:flex;gap:4px;align-items:center}
+.feel-n input{width:4rem;font:inherit;padding:4px 8px;border:1px solid var(--rule2);border-radius:999px;background:var(--sheet2);color:var(--ink)}
+.feel-out{margin-top:14px;display:grid;gap:10px}
+.feel-out p{margin:0}
+
+/* ---- season band ---- */
+.season{display:grid;grid-template-columns:1fr auto;gap:10px 18px;align-items:center;padding:14px 18px;border:1px solid var(--rule2);background:var(--sheet2);margin-top:10px}
+.season .nm{font-family:var(--bn);font-size:1.7rem;line-height:1.1}
+.season .nm span{color:var(--ink3);font-size:1rem;font-family:var(--en);font-style:italic;margin-left:8px}
+.season p{margin:2px 0 0;color:var(--ink2)}
+@media (max-width:560px){.season{grid-template-columns:1fr}}
+
+/* ---- index (table of contents with dotted leaders) ---- */
+.toc{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:0 32px}
+@media (min-width:700px){.toc{grid-template-columns:1fr 1fr}}
+.toc li{display:flex;align-items:baseline;gap:6px;padding:7px 0;border-bottom:1px solid transparent}
+.toc button,.toc a{font:inherit;background:none;border:0;padding:0;color:var(--ink);text-align:left;text-decoration:none;display:flex;align-items:baseline;gap:6px;flex:1;min-width:0}
+.toc .nm{font-family:var(--bn);font-size:1.12rem;white-space:nowrap}
+.toc .ds{color:var(--ink3);font-size:.82rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.toc .lead{flex:1;border-bottom:1px dotted var(--rule2);min-width:16px;transform:translateY(-4px)}
+.toc .n{font-variant-numeric:tabular-nums;color:var(--blue);font-weight:500;white-space:nowrap}
+.toc .n.off{color:var(--ink3);font-weight:400;font-size:.82rem}
+.toc button:hover .nm,.toc a:hover .nm{color:var(--blue)}
+.toc button:disabled .nm{color:var(--ink3)}
+
+/* ---- song rows ---- */
+.rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule2)}
+.rows li{border-bottom:1px solid var(--rule)}
+.rows a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 14px;padding:9px 2px;text-decoration:none;color:var(--ink)}
+.rows a:hover{background:var(--sheet2)}
+.rows .t{font-family:var(--bn);font-size:1.12rem;line-height:1.35}
+.rows .t2{color:var(--ink3);font-size:.84rem;font-family:var(--en);font-style:italic}
+.rows .m{grid-row:1/span 2;grid-column:2;align-self:center;text-align:right;font-size:.82rem;color:var(--ink3);white-space:nowrap;display:grid;justify-items:end}
+.rows .m b{color:var(--red);font-weight:500}
+.rows li.nr .t{color:var(--ink2)}
+.rows .div{padding:12px 2px 4px;color:var(--red);font-family:var(--en);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase}
+.list-tools{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:0 0 8px}
+.tog{display:inline-flex;gap:6px;align-items:center;font-size:.86rem;color:var(--ink2);cursor:pointer}
+.more-row{margin-top:12px}
+
+/* ---- browse: index tabs along the edge ---- */
+.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin:14px -16px 0;padding:0 16px}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{flex:0 0 auto;padding:8px 14px;text-decoration:none;color:var(--ink2);border:1px solid var(--rule2);border-bottom:0;background:var(--wash);font-size:.92rem;border-radius:3px 3px 0 0}
+.tabs a[aria-current=page]{background:var(--sheet);color:var(--ink);font-weight:600;position:relative;top:1px}
+.tabsheet{border-top:1px solid var(--rule2)}
+.crumb{color:var(--ink3);font-size:.86rem;margin:16px 0 4px}
+.list-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:0 0 12px}
+.list-h h1{font-family:var(--bn);font-size:2rem}
+.list-h .n{color:var(--ink3)}
+.subtabs{margin:-4px 0 14px}
+
+/* ---- song page: the leaf and its marginalia ---- */
+.song{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;margin-top:16px}
+@media (min-width:900px){.song{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:40px;align-items:start}}
+.song h1{font-family:var(--bn);font-size:clamp(1.8rem,5.5vw,2.6rem);line-height:1.25}
+.song .t2{font-family:var(--en);font-style:italic;color:var(--ink2);font-size:1.1rem;margin:4px 0 14px}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.lyrics{white-space:pre-wrap;font-family:var(--bn);font-size:1.2rem;line-height:32px;margin:0;max-width:62ch}
+.facts{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:6px 14px;margin:0 0 18px}
+.facts dt{color:var(--red);font-family:var(--en);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding-top:4px}
+.facts dd{margin:0}
+.facts dd .sub{color:var(--ink3);font-size:.86rem;margin-left:6px}
+.src{font-size:.84rem;color:var(--ink3);margin-top:14px}
+.vid{margin:0 0 16px;display:grid;grid-template-columns:120px 1fr;gap:12px;align-items:start}
+.vid .fr{position:relative;aspect-ratio:16/9;background:#000;border:3px solid var(--sheet2);box-shadow:0 2px 6px rgba(0,0,0,.25);overflow:hidden}
+.vid .fr img{width:100%;height:100%;object-fit:cover;display:block}
+.vid .fr button{position:absolute;inset:0;border:0;background:transparent;display:grid;place-items:center}
+.vid .fr button span{width:34px;height:24px;border-radius:6px;background:rgba(0,0,0,.65);color:#fff;display:grid;place-items:center;font-size:12px}
+.vid .fr button:hover span{background:var(--red)}
+.vid figcaption{font-size:.92rem;line-height:1.4}
+.vid figcaption .s{font-family:var(--bn);font-size:1.02rem}
+.vid figcaption small{display:block;color:var(--ink3);font-variant-numeric:tabular-nums}
+.vid .yt{display:inline-flex;align-items:center;gap:4px;font-size:.8rem;color:var(--ink2);margin-top:3px}
+.vid .yt svg{width:14px;height:14px}
+@media (min-width:600px){.vid{grid-template-columns:168px 1fr}}
+
+/* ---- jukebox: the evening's sheet ---- */
+.jb{margin-top:16px;display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+@media (min-width:900px){.jb{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px;align-items:start}}
+.stage{position:relative;aspect-ratio:16/9;background:#0e0f14;border:6px solid var(--sheet2);box-shadow:var(--shadow);overflow:hidden}
+.stage iframe,.stage img{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover}
+.stage .empty{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:12px;text-align:center;padding:16px;color:#e9e1cf;font-family:var(--bn);font-size:1.05rem}
+.stage .empty p{margin:0;max-width:34ch}
+.stage .paused{position:absolute;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.45)}
+.stage .paused button{width:72px;height:72px;border-radius:50%;border:0;background:var(--sheet);color:var(--ink);font-size:28px}
+.now h2{font-family:var(--bn);font-size:1.7rem;line-height:1.25}
+.now h2 a{color:var(--ink);text-decoration:none}
+.now h2 a:hover{text-decoration:underline}
+.now .t2{font-family:var(--en);font-style:italic;color:var(--ink2);margin:2px 0 6px}
+.now .meta{color:var(--ink2);font-size:.92rem;margin:0 0 8px}
+.now .meta b{font-weight:600;color:var(--ink)}
+.seek{display:flex;align-items:center;gap:10px;font-size:.78rem;color:var(--ink3);font-variant-numeric:tabular-nums;margin:12px 0}
+.seek .trk{flex:1;height:2px;background:var(--rule2);position:relative}
+.seek .trk i{position:absolute;left:0;top:0;bottom:0;background:var(--red);width:0}
+.seek .trk i::after{content:"";position:absolute;right:-5px;top:-4px;width:10px;height:10px;border-radius:50%;background:var(--red)}
+.ctls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ctls .big{width:56px;height:56px;border-radius:50%;background:var(--blue);color:var(--on-blue);border:0;display:grid;place-items:center}
+.ctls .big svg{width:26px;height:26px}
+.next{margin:10px 0 0;color:var(--ink2);font-size:.9rem}
+.jl{margin-top:14px;max-height:14rem;overflow:auto;border-top:1px solid var(--rule);padding-top:8px}
+.jl .lyrics{font-size:1.05rem;line-height:1.8}
+.fbar{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin-top:24px;padding-top:16px;border-top:1px solid var(--rule2)}
+.fbar .cnt{font-weight:600;font-variant-numeric:tabular-nums}
+.fbar .act{display:flex;flex-wrap:wrap;gap:6px;flex:1 1 200px}
+.filters{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-top:14px}
+.filters fieldset{border:1px solid var(--rule2);background:var(--sheet2);padding:8px 10px 10px;margin:0;min-width:0}
+.filters legend{font-family:var(--en);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red);padding:0 4px}
+.find{display:flex;align-items:center;gap:6px;height:34px;padding:0 10px;border:1px solid var(--rule2);background:var(--sheet);margin-bottom:8px}
+.find input{flex:1;min-width:0;border:0;background:none;font:inherit;color:var(--ink);outline:none}
+.find svg{width:16px;height:16px;color:var(--ink3)}
+.queue{list-style:none;margin:8px 0 0;padding:0;counter-reset:q}
+.queue li{display:grid;grid-template-columns:2rem auto 1fr auto;gap:8px;align-items:center;padding:7px 4px;border-bottom:1px solid var(--rule)}
+.queue li.now{background:var(--sheet2);box-shadow:inset 3px 0 0 var(--red)}
+.queue .num{color:var(--ink3);font-variant-numeric:tabular-nums;text-align:right;font-family:var(--bn)}
+.queue .t{font-family:var(--bn);font-size:1.05rem;color:var(--ink);text-decoration:none;display:block;line-height:1.3}
+.queue .s{display:block;font-size:.82rem;color:var(--ink3)}
+.queue .s b{color:var(--ink);font-weight:500}
+.queue .tag{display:inline-block;font-family:var(--en);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-left:6px}
+.queue .lk{color:var(--red)}
+.queue .ex{display:flex;gap:4px}
+
+/* ---- mine ---- */
+.acct{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;padding:14px 16px;margin:14px 0 18px}
+.acct .avatar{width:44px;height:44px;font-size:1.1rem}
+.acct p{margin:0}
+.acct .btn{grid-column:1/-1;justify-self:start}
+@media (min-width:600px){.acct{grid-template-columns:auto 1fr auto}.acct .btn{grid-column:auto}}
+
+/* ---- persistent player bar: a bookmark ribbon with a red hairline progress ---- */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--sheet);border-top:1px solid var(--rule2);box-shadow:0 -8px 24px rgba(40,25,0,.12);
+  padding:0 max(12px,env(safe-area-inset-left)) env(safe-area-inset-bottom) max(12px,env(safe-area-inset-right))}
+.bar .prog{position:absolute;left:0;right:0;top:-1px;height:3px;background:var(--rule)}
+.bar .prog i{display:block;height:100%;background:var(--red);width:0}
+.bar .in{height:var(--bar);display:flex;align-items:center;gap:10px;max-width:1140px;margin:0 auto}
+.bar .th{width:66px;height:42px;object-fit:cover;flex:none;border:2px solid var(--sheet2);box-shadow:0 1px 4px rgba(0,0,0,.3);background:#000}
+.bar .meta{flex:1;min-width:0;text-decoration:none;color:var(--ink)}
+.bar .meta b{display:block;font-family:var(--bn);font-weight:400;font-size:1.05rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.3}
+.bar .meta span{display:block;font-size:.78rem;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar .time{font-size:.74rem;color:var(--ink3);font-variant-numeric:tabular-nums;display:none}
+.bar .ctl{display:flex;gap:2px;flex:none}
+.bar .ctl button{width:40px;height:40px;border-radius:50%;border:0;background:none;display:grid;place-items:center;color:var(--ink)}
+.bar .ctl button:hover{background:var(--wash)}
+.bar .ctl button.on{color:var(--red)}
+.bar .ctl .pp{background:var(--blue);color:var(--on-blue)}
+.bar .ctl svg{width:22px;height:22px}
+.bar .yt{display:none}
+@media (min-width:700px){.bar .time{display:block}.bar .yt{display:inline-flex}}
+body[data-page=jukebox] .bar{display:none}
+body[data-page=jukebox]{padding-bottom:24px}
+
+/* ---- welcome back ---- */
+.resume{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--bar) + 16px + env(safe-area-inset-bottom));z-index:21;width:min(520px,calc(100% - 24px));
+  background:var(--sheet2);border:1px solid var(--red);box-shadow:var(--shadow);padding:12px 14px;display:grid;grid-template-columns:1fr auto;gap:8px 12px;align-items:center}
+.resume .kick{font-family:var(--hand);color:var(--red);font-size:1.3rem;line-height:1}
+.resume p{margin:2px 0 0;font-family:var(--bn);font-size:1rem}
+.resume .acts{margin:0;grid-column:1/-1;display:flex;gap:8px}
+@media (min-width:600px){.resume .acts{grid-column:auto}}
+body[data-page=jukebox] .resume{bottom:16px}
+
+/* ---- account popover ---- */
+.pop{position:absolute;right:16px;top:64px;z-index:30;width:min(320px,calc(100% - 32px));background:var(--sheet2);border:1px solid var(--rule2);box-shadow:var(--shadow);padding:14px}
+.pop h3{font-family:var(--bn);font-size:1.15rem;margin-bottom:8px}
+.pop .row{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:8px 0;border-top:1px solid var(--rule)}
+.pop .row:first-of-type{border-top:0}
+.pop .row small{display:block;color:var(--ink3);font-size:.78rem}
+.pop .row label{display:flex;gap:10px;align-items:flex-start;cursor:pointer;flex:1}
+.pop .row input{margin-top:4px}
+.pop .btn{width:100%;justify-content:center}
+.pop .g{width:18px;height:18px}
+.toast{position:fixed;left:50%;bottom:calc(var(--bar) + 20px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(10px);background:var(--ink);color:var(--paper);padding:8px 14px;border-radius:999px;font-size:.86rem;opacity:0;transition:all .25s;z-index:50;pointer-events:none;white-space:nowrap}
+.toast.on{opacity:1;transform:translateX(-50%)}
+.foot{margin-top:40px;padding:20px 0 10px;border-top:1px solid var(--rule2);color:var(--ink3);font-size:.84rem}
+.foot .conc{font-family:var(--en);font-style:italic}
+.loading{padding:60px 0;text-align:center;color:var(--ink3);font-family:var(--bn)}
+.empty{padding:28px 18px;text-align:center;color:var(--ink2)}
+.empty b{display:block;font-family:var(--bn);font-size:1.3rem;font-weight:400;color:var(--ink)}
+.empty p{margin:6px auto 0;max-width:36ch}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Tagore's manuscript doodle: the crossed-out line that grows a head and a tail -->
+    <symbol id="doodle" viewBox="0 0 360 40">
+      <path d="M6 24c18-9 26 6 44-1s22-12 40-4 20 10 38 1 24-11 44-2 22 9 42 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M8 20c20 4 40 7 62 4-20 6-40 8-62-4zM100 18c18 6 36 8 58 2-18 8-38 10-58-2z" fill="currentColor"/>
+      <path d="M214 22c6-14 26-18 40-10s20 20 10 28-26 4-34-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M232 14c4-6 12-6 16 0-6 2-10 2-16 0z" fill="currentColor"/><circle cx="246" cy="17" r="1.6" fill="currentColor"/>
+      <path d="M264 28c10 6 22 6 34-2 12-8 24-8 36 0 8 6 14 6 20 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M330 22c6-4 14-4 20 2-8 2-14 2-20-2z" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z" fill="currentColor"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="M5 5v14l10-7zM16 5h3v14h-3z" fill="currentColor"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="M19 5v14L9 12zM5 5h3v14H5z" fill="currentColor"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.5 3.9 12.4a4.6 4.6 0 0 1 6.5-6.5l1.6 1.6 1.6-1.6a4.6 4.6 0 0 1 6.5 6.5z" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-heart-f" viewBox="0 0 24 24"><path d="M12 20.5 3.9 12.4a4.6 4.6 0 0 1 6.5-6.5l1.6 1.6 1.6-1.6a4.6 4.6 0 0 1 6.5 6.5z" fill="currentColor"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-yt" viewBox="0 0 24 24"><path d="M3 8.5C3 6.6 4.6 5 6.5 5h11C19.4 5 21 6.6 21 8.5v7c0 1.9-1.6 3.5-3.5 3.5h-11C4.6 19 3 17.4 3 15.5z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 9v6l5-3z" fill="currentColor"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z" fill="currentColor"/></symbol>
+    <symbol id="i-g" viewBox="0 0 24 24"><path d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.4z" fill="#4285F4"/><path d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22z" fill="#34A853"/><path d="M6.4 14a6 6 0 0 1 0-3.9V7.5H3.1a10 10 0 0 0 0 9z" fill="#FBBC05"/><path d="M12 6c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3.1 7.5l3.3 2.6C7.2 7.8 9.4 6 12 6z" fill="#EA4335"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#/"><span class="mark">আনন্দধারা</span><small>Anandadhara · Rabindrasangeet</small></a>
+    <div class="tools">
+      <button class="pill" id="lang" type="button"></button>
+      <button class="pill ic" id="theme" type="button" aria-label="Night / day"><svg><use href="#i-moon"/></svg></button>
+      <button class="avatar" id="acct" type="button" aria-haspopup="dialog" aria-expanded="false">S</button>
+    </div>
+    <nav class="main" aria-label="Main" id="nav"></nav>
+  </div>
+</header>
+
+<main class="wrap" id="view" tabindex="-1"><p class="loading">গান আসছে… loading songs.json</p></main>
+
+<!-- jukebox stays in the page (moved off-screen) so a real embed could keep playing -->
+<section class="wrap jukebox" id="jukebox" hidden aria-label="Jukebox">
+  <div class="dateline" id="jb-date"></div>
+  <div class="jb">
+    <div>
+      <div class="stage" id="stage"></div>
+      <div class="seek" id="seek"><span id="seek-a">0:00</span><div class="trk"><i id="seek-i"></i></div><span id="seek-b">0:00</span></div>
+      <div class="ctls" id="ctls"></div>
+      <p class="next" id="next"></p>
+    </div>
+    <div class="sheet ruled now" id="now"></div>
+  </div>
+  <div class="fbar" id="fbar"></div>
+  <div class="filters" id="filters" hidden></div>
+  <section class="sec" aria-labelledby="qh"><div class="sec-h"><h2 id="qh"></h2><span class="hint" id="qn"></span></div><ol class="queue" id="queue"></ol><p class="more-row"><button class="btn sm" id="qmore" type="button" hidden></button></p></section>
+</section>
+
+<div class="pop" id="pop" hidden role="dialog" aria-label="Account"></div>
+<div class="resume" id="resume" hidden role="dialog" aria-live="polite"></div>
+<div class="bar" id="bar" hidden role="region" aria-label="Now playing"><div class="prog"><i id="bar-i"></i></div><div class="in" id="bar-in"></div></div>
+<div class="toast" id="toast" role="status"></div>
+<footer class="wrap foot" id="foot"></footer>
+
+<script src="common.js"></script>
+<script>
+(() => {
+const { $, $$, esc, enc, state, t, num, nameOf, moodDesc, player, on, emit } = AD;
+let D = null, cur = { page: "home", parts: [] }, resumeDismissed = false;
+const icon = (id) => `<svg aria-hidden="true"><use href="#${id}"/></svg>`;
+const doodle = () => `<svg class="doodle" aria-hidden="true"><use href="#doodle"/></svg>`;
+const toast = (m) => { const el = $("#toast"); el.textContent = m; el.classList.add("on"); clearTimeout(el._t); el._t = setTimeout(() => el.classList.remove("on"), 1800); };
+const songHref = (s) => `#/song/${enc(s.id)}`;
+const bnToday = () => { const d = AD.bengaliDate(), sn = AD.currentSeason(); return `<span>${esc(d.text)}</span><span class="en">${state.lang === "bn" ? `${new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })} · ${sn}` : `${AD.SEASONS[sn].bn} · ${AD.SEASONS[sn].monthsEn}`}</span>`; };
+
+/* ---------- shell ---------- */
+function renderNav() {
+  const items = [["home", "listen", "Listen"], ["browse/popular", "browse", "Browse"], ["jukebox", "jukebox", "Jukebox"], ["mine", "mine", "Mine"]];
+  const active = { home: "home", song: "home", browse: "browse/popular", list: "browse/popular", jukebox: "jukebox", mine: "mine" }[cur.page] || "home";
+  $("#nav").innerHTML = items.map(([h, k, en]) => `<a href="#/${h === "home" ? "" : h}"${h === active ? ' aria-current="page"' : ""}>${t(k)}${state.lang === "bn" ? `<small>${en}</small>` : ""}</a>`).join("");
+  $("#lang").textContent = t("language");
+  $("#acct").textContent = state.signedIn ? "Y" : "S"; $("#acct").classList.toggle("in", !!state.signedIn);
+  $("#foot").innerHTML = `<p>${t("footer")}</p><p class="conc">Design concept A · পাণ্ডুলিপি Pandulipi — the Gitabitan manuscript. Prototype over the real songs.json; the progress line is simulated.</p>`;
+}
+function renderPop() {
+  const p = $("#pop");
+  p.innerHTML = `<h3>${t("account")}</h3>
+    <div class="row">${state.signedIn ? `<div><b>${esc(state.email)}</b><small>${t("syncedAs", state.email)}</small></div><button class="btn sm" id="p-out" type="button">${t("signOut")}</button>`
+      : `<div style="flex:1"><button class="btn" id="p-in" type="button">${icon("i-g")} ${t("signIn")}</button><small style="display:block;margin-top:6px;color:var(--ink3)">${t("signInHint")}</small></div>`}</div>
+    <div class="row"><label><input type="checkbox" id="p-prem"${state.premium ? " checked" : ""}><span>${t("premium")}<small>${t("premiumHint")}</small></span></label></div>
+    <div class="row"><span>${t("theme")}</span><button class="pill ic" id="p-theme" type="button" aria-label="${t("theme")}">${icon("i-moon")}</button></div>
+    <div class="row"><span>${state.lang === "bn" ? "ভাষা" : "Language"}</span><button class="pill" id="p-lang" type="button">${t("language")}</button></div>
+    <p class="hint" style="margin:8px 0 0">${t("demoNote")}</p>`;
+  const b = $("#p-in"); if (b) b.onclick = () => { AD.signIn(); toast(t("syncedAs", state.email)); };
+  const o = $("#p-out"); if (o) o.onclick = AD.signOut;
+  $("#p-prem").onchange = (e) => AD.setPremium(e.target.checked);
+  $("#p-theme").onclick = AD.toggleTheme;
+  $("#p-lang").onclick = () => AD.setLang(state.lang === "bn" ? "en" : "bn");
+}
+function renderResume() {
+  const r = state.resume, el = $("#resume");
+  const show = r && !resumeDismissed && !player.current && D.BY_ID.get(r.id);
+  el.hidden = !show; if (!show) return;
+  const s = D.BY_ID.get(r.id), v = s.videos.find((x) => x.id === r.vid) || s.videos[0];
+  el.innerHTML = `<div><div class="kick">${t("welcome")}</div><p>${t("continueQ", `“${esc(AD.title(s))}”`)} <span class="hint">${AD.fmtTime(r.pos)} / ${AD.fmtTime(v.sec)}${(v.singers || []).length ? ` · ${esc(nameOf("singer", v.singers[0]))}` : ""}</span></p></div>
+    <div class="acts"><button class="btn pri sm" id="r-go" type="button">${icon("i-play")} ${t("cont")}</button><button class="btn sm" id="r-no" type="button">${t("dismiss")}</button></div>`;
+  $("#r-go").onclick = () => { player.play(s, v, r.pos); AD.go("#/jukebox"); };
+  $("#r-no").onclick = () => { resumeDismissed = true; renderResume(); };
+}
+function renderBar() {
+  const c = player.current, bar = $("#bar");
+  bar.hidden = !c; document.body.classList.toggle("has-bar", !!c);
+  if (!c) return;
+  const s = c.song, v = c.video, singers = (v.singers || []).map((x) => nameOf("singer", x));
+  $("#bar-in").innerHTML = `<img class="th" src="${AD.thumb(v, "mqdefault")}" alt="">
+    <a class="meta" href="#/jukebox"><b>${esc(AD.title(s))}</b><span>${singers.length ? esc(singers.join(", ")) : esc(v.ch)}${player.upNext ? ` · ${t("upNext")}: ${esc(AD.title(player.upNext.song))}` : ""}</span></a>
+    <span class="time" id="bar-t">${AD.fmtTime(player.pos)} / ${AD.fmtTime(v.sec)}</span>
+    <a class="btn sm ic yt" href="${AD.ytWatch(v)}" target="_blank" rel="noopener" title="${t("openYt")}" aria-label="${t("openYt")}">${icon("i-yt")}</a>
+    <div class="ctl">
+      <button type="button" id="b-like" class="${AD.isLiked(s.id) ? "on" : ""}" aria-pressed="${AD.isLiked(s.id)}" aria-label="${t("like")}">${icon(AD.isLiked(s.id) ? "i-heart-f" : "i-heart")}</button>
+      <button type="button" id="b-pp" class="pp" aria-label="${player.playing ? t("pause") : t("play")}">${icon(player.playing ? "i-pause" : "i-play")}</button>
+      <button type="button" id="b-next" aria-label="${t("next")}">${icon("i-next")}</button>
+    </div>`;
+  $("#b-like").onclick = player.likeCurrent; $("#b-pp").onclick = player.toggle; $("#b-next").onclick = player.next;
+  renderProgress();
+}
+function renderProgress() {
+  const c = player.current; if (!c) return;
+  const pct = Math.min(100, (player.pos / c.video.sec) * 100) + "%";
+  $("#bar-i").style.width = pct; $("#seek-i").style.width = pct;
+  const bt = $("#bar-t"); if (bt) bt.textContent = `${AD.fmtTime(player.pos)} / ${AD.fmtTime(c.video.sec)}`;
+  $("#seek-a").textContent = AD.fmtTime(player.pos); $("#seek-b").textContent = AD.fmtTime(c.video.sec);
+}
+
+/* ---------- lists ---------- */
+function row(s) {
+  const meta = [nameOf("parjay", s.parjay), nameOf("raag", s.raag)].filter(Boolean).join(" · ");
+  return `<li class="${AD.hasRec(s) ? "" : "nr"}"><a href="${songHref(s)}"><span class="t">${esc(AD.title(s))}</span>
+    <span class="m">${AD.hasRec(s) ? `<b>▶ ${num(s.videos.length)}</b>` : ""}<span>${esc(meta)}</span></span>
+    ${AD.title2(s) ? `<span class="t2">${esc(AD.title2(s))}</span>` : ""}</a></li>`;
+}
+function songList(list, { limit = 60, toggle = true, recFirst = true } = {}) {
+  const wrap = document.createElement("div"); let shown = limit, recOnly = false;
+  const draw = () => {
+    const rec = list.filter(AD.hasRec), rest = list.filter((s) => !AD.hasRec(s));
+    const all = recOnly ? rec : recFirst ? rec.concat(rest) : list, vis = all.slice(0, shown);
+    const firstRest = recFirst ? vis.findIndex((s) => !AD.hasRec(s)) : -1;
+    wrap.innerHTML = (toggle ? `<div class="list-tools"><label class="tog"><input type="checkbox" class="ro"${recOnly ? " checked" : ""}> ${t("recOnly", rec.length, list.length)}</label></div>` : "")
+      + `<ul class="rows">${vis.map((s, i) => (i === firstRest && i > 0 ? `<li class="div">${t("noRec")}</li>` : "") + row(s)).join("") || `<li class="div">${t("noRec")}</li>`}</ul>`
+      + (all.length > shown ? `<p class="more-row"><button class="btn sm" type="button">${t("showMore", Math.min(300, all.length - shown))}</button></p>` : "");
+    const ro = $(".ro", wrap); if (ro) ro.onchange = (e) => { recOnly = e.target.checked; draw(); };
+    const b = $(".more-row button", wrap); if (b) b.onclick = () => { shown += 300; draw(); };
+  };
+  draw(); return wrap;
+}
+
+/* ---------- home ---------- */
+function renderHome() {
+  const view = $("#view");
+  view.innerHTML = `<div class="dateline">${bnToday()}</div>
+    <div class="search"><svg aria-hidden="true"><use href="#i-search"/></svg><input id="q" type="search" placeholder="${t("searchPh")}" aria-label="${t("search")}" autocomplete="off"></div>
+    <div id="body"></div>`;
+  const body = $("#body"), input = $("#q");
+  const run = () => {
+    if (input.value.trim()) { const res = AD.searchSongs(input.value); body.innerHTML = `<div class="sec"><div class="sec-h"><h2>${res.length ? t("found", res.length) : t("nothingFound")}</h2></div></div>`; body.append(songList(res, { recFirst: false })); }
+    else renderListen(body);
+  };
+  input.oninput = run; run();
+}
+function renderListen(body) {
+  const season = AD.currentSeason(), S = AD.SEASONS[season], SONGS = D.SONGS;
+  const seasonN = SONGS.filter((s) => s.season === season && AD.hasRec(s)).length, totalRec = SONGS.filter(AD.hasRec).length;
+  const pop = AD.popular(), popRec = pop.filter(AD.hasRec);
+  body.innerHTML = `
+    <section class="sec sheet ruled feel" id="feel" aria-labelledby="feel-h"></section>
+    <section class="sec" aria-labelledby="h-listen">
+      <div class="sec-h"><span class="pg">${num(1)}</span><h2 id="h-listen">${t("listenNow")}</h2><span class="hint">${t("ofSongs", totalRec, SONGS.length)}</span></div>
+      <div class="season"><div><div class="nm">${t("seasonNow", state.lang === "bn" ? S.bn : season)}<span>${state.lang === "bn" ? S.months : S.monthsEn}</span></div>
+        <p>${state.lang === "bn" ? S.note : S.noteEn} · ${seasonN ? t("seasonSongs", seasonN) : t("seasonSoon")}</p></div>
+        <button class="btn pri" type="button" data-play="season:${season}"${seasonN ? "" : " disabled"}>${icon("i-play")} ${t("playSeason", state.lang === "bn" ? S.bn : season)}</button></div>
+      <div class="sec-h" style="margin-top:18px"><h2 style="font-size:1.2rem">${t("moods")}</h2></div>
+      <ol class="toc">${Object.keys(D.META.moods).map((m) => { const n = SONGS.filter((s) => AD.hasRec(s) && (s.moods || []).includes(m)).length;
+        return `<li><button type="button" data-play="mood:${esc(m)}"${n ? "" : " disabled"}><span class="nm">${esc(nameOf("mood", m))}</span><span class="ds">${esc(moodDesc(m))}</span><span class="lead"></span><span class="n${n ? "" : " off"}">${n ? `▶ ${num(n)}` : t("comingSoon")}</span></button></li>`; }).join("")}</ol>
+      ${doodle()}
+    </section>
+    <section class="sec" aria-labelledby="h-pop">
+      <div class="sec-h"><span class="pg">${num(2)}</span><h2 id="h-pop">${t("wellKnown")}</h2><a class="more" href="#/browse/popular">${t("all", pop.length)}</a></div>
+      <div id="pop"></div>
+    </section>
+    <section class="sec" aria-labelledby="h-ex">
+      <div class="sec-h"><span class="pg">${num(3)}</span><h2 id="h-ex">${t("exploreAll", SONGS.length)}</h2></div>
+      <div class="chips">${Object.entries(AD.KINDS).filter(([k]) => k !== "popular").map(([k, v]) => `<a class="chip" href="#/browse/${k}">${t(v.key)}</a>`).join("")}</div>
+    </section>`;
+  $("#pop", body).append(songList(popRec.length >= 12 ? popRec : pop, { limit: 12, toggle: false }));
+  renderFeel($("#feel", body));
+  $$("[data-play]", body).forEach((b) => b.onclick = () => { const [k, v] = b.dataset.play.split(":"); player.setFilter(k, v); player.start(); AD.go("#/jukebox"); });
+}
+function renderFeel(box) {
+  box.innerHTML = `<h2 id="feel-h">${t("feelH")}</h2><p class="hint" style="margin:0 0 8px">${t("feelHint")}</p>
+    <textarea id="ft" rows="2" placeholder="${esc(t("feelPh"))}" aria-labelledby="feel-h"></textarea>
+    <div class="feel-row"><span class="hint">${t("songsN")}</span><div class="feel-n" role="group">${[5, 10, 20].map((k) => `<button type="button" class="chip" data-n="${k}" aria-pressed="${k === 10}">${num(k)}</button>`).join("")}<input id="fn" type="number" min="1" max="50" value="10" aria-label="${t("songsN")}"></div>
+      <button class="btn pri go" id="fgo" type="button">${t("makeList")}</button></div>
+    <div class="feel-out" id="fout" aria-live="polite"></div>`;
+  let st = null; const count = () => Math.max(1, Math.min(50, +$("#fn", box).value || 10));
+  $$("[data-n]", box).forEach((b) => b.onclick = () => { $("#fn", box).value = b.dataset.n; $$("[data-n]", box).forEach((x) => x.setAttribute("aria-pressed", String(x === b))); if (st) draw(); });
+  const draw = () => {
+    const out = $("#fout", box), active = st.moods.filter((m) => m.on);
+    const picks = active.length || (st.seasonOn && st.season) ? AD.buildPlaylist({ moods: active, season: st.seasonOn ? st.season : null }, count()) : [];
+    out.innerHTML = `${st.hits.length ? `<p class="hint">${t("recognised")} ${[...new Set(st.hits.map((h) => `“${esc(h.word)}” → ${esc(nameOf("mood", h.mood))}`))].join(", ")}</p>` : `<p class="hint">${t("notFound")}</p>`}
+      <div class="chips">${st.season ? `<button type="button" class="chip" data-season aria-pressed="${st.seasonOn}">${esc(nameOf("season", st.season))}</button>` : ""}
+        ${Object.keys(D.META.moods).map((m) => { const d = st.moods.find((x) => x.mood === m); return `<button type="button" class="chip" data-mood="${m}" aria-pressed="${!!(d && d.on)}" title="${esc(moodDesc(m))}">${esc(nameOf("mood", m))}</button>`; }).join("")}</div>
+      ${picks.length ? `<div class="acts" style="margin:6px 0 0"><button class="btn pri" id="fplay" type="button">${icon("i-play")} ${t("playList")} (${num(picks.length)})</button><button class="btn" id="fagain" type="button">↻ ${t("anotherMix")}</button></div>
+        <ol class="queue">${picks.map(({ s, why }, i) => { const sg = AD.singersOf(s).map((x) => nameOf("singer", x)); return `<li><span class="num">${num(i + 1)}</span><button class="btn ic sm" type="button" data-fp="${i}" aria-label="${t("playFrom")}">${icon("i-play")}</button>
+          <div><a class="t" href="${songHref(s)}">${esc(AD.title(s))}</a><span class="s">${sg.length ? esc(sg.join(", ")) : t("unknownSinger")} · <i>${why.map((w) => esc(nameOf("mood", w) === w ? nameOf("season", w) : nameOf("mood", w))).join(", ")}</i></span></div><span></span></li>`; }).join("")}</ol>` : ""}
+      <p class="hint" style="font-style:italic">${t("modelNote")}</p>`;
+    $$("[data-mood]", out).forEach((b) => b.onclick = () => { const d = st.moods.find((x) => x.mood === b.dataset.mood); if (d) d.on = !d.on; else st.moods.push({ mood: b.dataset.mood, weight: .8, on: true }); draw(); });
+    const sc = $("[data-season]", out); if (sc) sc.onclick = () => { st.seasonOn = !st.seasonOn; draw(); };
+    const ids = picks.map((p) => p.s.id), label = active.map((m) => nameOf("mood", m.mood)).join(" · ");
+    const play = (from) => { player.playPlaylist(ids, label, active.map((m) => m.mood), from); AD.go("#/jukebox"); };
+    const fp = $("#fplay", out); if (fp) fp.onclick = () => play(0);
+    const fa = $("#fagain", out); if (fa) fa.onclick = draw;
+    $$("[data-fp]", out).forEach((b) => b.onclick = () => play(+b.dataset.fp));
+  };
+  const go = () => { const d = AD.detectFeelings($("#ft", box).value); st = { moods: d.moods, season: d.season, seasonOn: !!d.season, hits: d.hits }; draw(); };
+  $("#fgo", box).onclick = go;
+  $("#ft", box).onkeydown = (e) => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) go(); };
+}
+
+/* ---------- browse ---------- */
+function tabs(kind) { return `<nav class="tabs" aria-label="Browse by">${Object.entries(AD.KINDS).map(([k, v]) => `<a href="#/browse/${k}"${k === kind ? ' aria-current="page"' : ""}>${t(v.key)}</a>`).join("")}</nav><div class="tabsheet"></div>`; }
+function renderBrowse(kind) {
+  if (!AD.KINDS[kind]) kind = "popular";
+  const view = $("#view");
+  view.innerHTML = `<div class="dateline">${bnToday()}</div>${tabs(kind)}<div id="body" style="margin-top:14px"></div>`;
+  const body = $("#body");
+  if (kind === "popular" || kind === "az") { body.append(songList(AD.listFor(kind))); return; }
+  const groups = AD.groupsOf(kind), withFind = ["singer", "raag", "taal", "drama"].includes(kind);
+  body.innerHTML = `${withFind ? `<div class="find" style="max-width:420px"><svg aria-hidden="true"><use href="#i-search"/></svg><input id="gf" type="search" placeholder="${t("typeFind")}" aria-label="${t("typeFind")}"></div>` : ""}<ol class="toc" id="groups"></ol>`;
+  const draw = (q = "") => {
+    const names = q ? AD.findNames(groups.map(([v]) => v), q) : groups.map(([v]) => v);
+    const g = new Map(groups);
+    $("#groups").innerHTML = names.map((v) => { const { n, rec } = g.get(v); const label = kind === "mood" ? `<span class="ds">${esc(moodDesc(v))}</span>` : kind === "season" ? `<span class="ds">${esc(state.lang === "bn" ? AD.SEASONS[v].months : AD.SEASONS[v].monthsEn)}</span>` : (state.lang === "bn" && nameOf(kind, v) !== v ? `<span class="ds">${esc(v)}</span>` : "");
+      return `<li><a href="#/list/${kind}/${enc(v)}"><span class="nm">${esc(nameOf(kind, v))}</span>${label}<span class="lead"></span><span class="n" title="${rec} with recordings">${num(n)}${rec ? ` <small style="color:var(--red)">▶${num(rec)}</small>` : ""}</span></a></li>`; }).join("") || `<li class="hint">${t("nothingFound")}</li>`;
+  };
+  draw(); const gf = $("#gf"); if (gf) gf.oninput = () => draw(gf.value);
+}
+function renderList(kind, value, sub = "") {
+  if (!AD.KINDS[kind] || !AD.KINDS[kind].get) return renderBrowse("popular");
+  const all = AD.listFor(kind, value), list = sub ? all.filter((s) => s.sub === sub) : all;
+  const playable = ["mood", "parjay", "season", "raag", "singer"].includes(kind) && all.some(AD.hasRec);
+  const subs = kind === "parjay" ? AD.subGroups(all) : [];
+  $("#view").innerHTML = `<p class="crumb"><a href="#/browse/${kind}">${t(AD.KINDS[kind].key)}</a>${sub ? ` › <a href="#/list/parjay/${enc(value)}">${esc(nameOf("parjay", value))}</a>` : ""}</p>
+    <div class="list-h"><h1>${esc(sub ? nameOf("sub", sub) : nameOf(kind, value))}</h1><span class="n">${t("songsCount", list.length)}</span>${kind === "mood" ? `<span class="hint">${esc(moodDesc(value))}</span>` : ""}
+      ${playable ? `<button class="btn sm pri" id="pl" type="button">${icon("i-play")} ${t("play")}</button>` : ""}</div>
+    ${subs.length > 1 ? `<div class="chips subtabs"><a class="chip${sub ? "" : " on"}" href="#/list/parjay/${enc(value)}">${t("subAll")} <small>${num(all.length)}</small></a>${subs.map(([v, n]) => `<a class="chip${v === sub ? " on" : ""}" href="#/list/parjay/${enc(value)}/${enc(v)}">${esc(nameOf("sub", v))} <small>${num(n)}</small></a>`).join("")}</div>` : ""}
+    <div id="body"></div>`;
+  $("#body").append(songList(list));
+  if (playable) $("#pl").onclick = () => { player.setFilter(kind, value); player.start(); AD.go("#/jukebox"); };
+}
+
+/* ---------- song page ---------- */
+function renderSong(id) {
+  const s = D.BY_ID.get(id), view = $("#view");
+  if (!s) { view.innerHTML = `<p>Not found. <a href="#/">${t("home")}</a></p>`; return; }
+  const chip = (k, v) => `<a class="chip" href="#/list/${k}/${enc(v)}">${esc(nameOf(k, v))}</a>`;
+  const facts = [["parjay", s.parjay && chip("parjay", s.parjay) + (s.sub ? `<a class="sub" href="#/list/parjay/${enc(s.parjay)}/${enc(s.sub)}">${esc(nameOf("sub", s.sub))}</a>` : "")],
+    ["season", s.season && chip("season", s.season)], ["drama", s.drama && s.drama.split(", ").map((d) => chip("drama", d)).join(" ")],
+    ["raag", s.raag && chip("raag", s.raag) + (s.raagFull && s.raagFull !== s.raag ? `<span class="sub">${esc(s.raagFull)}</span>` : "")], ["taal", s.taal && chip("taal", s.taal)],
+    ["mood", (s.moods || []).length && `<span class="chips">${s.moods.map((m) => chip("mood", m)).join("")}</span>`], ["written", s.written && esc(s.written)]].filter(([, v]) => v);
+  const vids = s.videos == null ? `<p class="hint">${t("notYet")}</p>` : !s.videos.length ? `<p class="hint">${t("noMatch")}</p>`
+    : s.videos.map((v, i) => `<figure class="vid"><div class="fr"><img src="${AD.thumb(v)}" alt="" loading="lazy"><button type="button" data-v="${i}" aria-label="${t("play")}: ${esc(v.t)}"><span>▶</span></button></div>
+      <figcaption><span class="s">${(v.singers || []).length ? esc(v.singers.map((x) => nameOf("singer", x)).join(", ")) : esc(v.ch)}</span><small>${esc(v.t)}</small><small>${AD.fmtViews(v.views)} ${t("views")} · ${AD.fmtTime(v.sec)}</small>
+      <a class="yt" href="${AD.ytWatch(v)}" target="_blank" rel="noopener">${icon("i-ext")} ${t("openYt")}</a></figcaption></figure>`).join("");
+  view.innerHTML = `<p class="crumb"><a href="#/">${t("listen")}</a>${s.parjay ? ` › <a href="#/list/parjay/${enc(s.parjay)}">${esc(nameOf("parjay", s.parjay))}</a>` : ""}</p>
+  <article class="song">
+    <div class="sheet ruled margin">
+      <h1>${esc(AD.title(s))}</h1>${AD.title2(s) ? `<p class="t2">${esc(AD.title2(s))}</p>` : ""}
+      <div class="acts"><button class="btn sm" id="s-like" type="button" aria-pressed="${AD.isLiked(s.id)}">${icon(AD.isLiked(s.id) ? "i-heart-f" : "i-heart")} ${AD.isLiked(s.id) ? t("liked") : t("like")}</button>
+        <button class="btn sm" id="s-never" type="button" aria-pressed="${AD.isNever(s.id)}">${AD.isNever(s.id) ? t("nevered") : t("never")}</button>
+        <a class="btn sm ai" href="${AD.askAiUrl(s)}" target="_blank" rel="noopener" title="${t("askAiT")}">${icon("i-spark")} ${t("askAi")}</a></div>
+      ${s.lyrics ? `<pre class="lyrics">${esc(s.lyrics)}</pre>` : `<p class="hint">${t("lyricsNA")}</p>`}
+      <p class="src">${s.source.includes("geetabitan") ? `${t("srcGb").replace("geetabitan.com", "")}<a href="${esc(s.source)}" target="_blank" rel="noopener">geetabitan.com</a>` : `${t("source")}: <a href="${esc(s.source)}" target="_blank" rel="noopener">${t("srcWs")}</a>`}</p>
+    </div>
+    <aside>
+      <dl class="facts">${facts.map(([k, v]) => `<dt>${t(k)}</dt><dd>${v}</dd>`).join("")}</dl>
+      <div class="sec-h"><h2 style="font-size:1.25rem">${t("recordings")}</h2>${AD.hasRec(s) ? `<span class="hint">${t("recN", s.videos.length)}</span>` : ""}</div>
+      ${vids}
+    </aside>
+  </article>
+  <section class="sec" aria-labelledby="h-rel"><div class="sec-h"><h2 id="h-rel">${t("moreLike")}</h2><span class="hint">${t("moreLikeHint")}</span>${(s.moods || []).length ? `<button class="btn sm more" id="pl" type="button">${icon("i-play")} ${t("playLike")}</button>` : ""}</div><div id="rel"></div>${doodle()}</section>`;
+  const rel = AD.relatedSongs(s); if (rel.length) $("#rel").append(songList(rel, { toggle: false }));
+  $$("[data-v]", view).forEach((b) => b.onclick = () => { player.play(s, s.videos[+b.dataset.v]); AD.go("#/jukebox"); });
+  $("#s-like").onclick = () => { AD.toggleList("likes", s.id, !AD.isLiked(s.id)); renderSong(id); };
+  $("#s-never").onclick = () => { AD.toggleList("never", s.id, !AD.isNever(s.id)); renderSong(id); };
+  const pl = $("#pl"); if (pl) pl.onclick = () => { player.setFilters({ moods: s.moods }); player.start(); AD.go("#/jukebox"); };
+}
+
+/* ---------- jukebox ---------- */
+let stageVid = null, showFilters = false;
+function renderJukebox() {
+  $("#jb-date").innerHTML = bnToday();
+  const c = player.current, stage = $("#stage");
+  if (!c) { stageVid = null; stage.innerHTML = `<div class="empty"><p>${player.pool().length ? t("pressPlay") : t("noPool")}</p>${player.pool().length ? "" : `<button class="btn" id="st-clear" type="button">${t("clearAll")}</button>`}</div>`; const sc = $("#st-clear"); if (sc) sc.onclick = player.clearFilters; }
+  else if (player.playing) { if (stageVid !== c.video.id + state.premium) { stageVid = c.video.id + state.premium; stage.innerHTML = `<iframe src="${AD.ytEmbed(c.video)}" title="YouTube" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`; } }
+  else { stageVid = null; stage.innerHTML = `<img src="${AD.thumb(c.video)}" alt=""><div class="paused"><button type="button" id="st-play" aria-label="${t("resume")}">▶</button></div>`; $("#st-play").onclick = player.toggle; }
+  $("#seek").style.visibility = c ? "visible" : "hidden"; renderProgress();
+  $("#ctls").innerHTML = `<button class="btn ic" type="button" id="j-prev" aria-label="${t("prev")}"${player.history.length ? "" : " disabled"}>${icon("i-prev")}</button>
+    <button class="big" type="button" id="j-pp" aria-label="${!c ? t("play") : player.playing ? t("pause") : t("resume")}"${!c && !player.pool().length ? " disabled" : ""}>${icon(c && player.playing ? "i-pause" : "i-play")}</button>
+    <button class="btn ic" type="button" id="j-next" aria-label="${t("next")}"${c ? "" : " disabled"}>${icon("i-next")}</button>
+    <button class="btn" type="button" id="j-like" aria-pressed="${!!(c && AD.isLiked(c.song.id))}"${c ? "" : " disabled"}>${icon(c && AD.isLiked(c.song.id) ? "i-heart-f" : "i-heart")} ${c && AD.isLiked(c.song.id) ? t("liked") : t("like")}</button>
+    <button class="btn" type="button" id="j-never"${c ? "" : " disabled"}>${t("never")}</button>
+    ${c ? `<a class="btn ai" href="${AD.askAiUrl(c.song)}" target="_blank" rel="noopener" title="${t("askAiT")}">${icon("i-spark")} ${t("askAi")}</a><a class="btn" href="${AD.ytWatch(c.video)}" target="_blank" rel="noopener">${icon("i-yt")} ${t("openYt")}</a>` : ""}`;
+  $("#j-prev").onclick = player.prev; $("#j-pp").onclick = player.toggle; $("#j-next").onclick = player.next; $("#j-like").onclick = player.likeCurrent; $("#j-never").onclick = player.neverCurrent;
+  $("#next").innerHTML = c && player.upNext ? `${t("upNext")}: <a href="${songHref(player.upNext.song)}">${esc(AD.title(player.upNext.song))}</a>` : "";
+  const now = $("#now");
+  now.innerHTML = !c ? `<p class="hint">${t("nowPlaying")} —</p>` : `<span class="pg">${t("nowPlaying")}</span><h2><a href="${songHref(c.song)}">${esc(AD.title(c.song))}</a></h2>${AD.title2(c.song) ? `<p class="t2">${esc(AD.title2(c.song))}</p>` : ""}
+    <p class="meta">${[nameOf("parjay", c.song.parjay), nameOf("season", c.song.season), nameOf("raag", c.song.raag), nameOf("taal", c.song.taal)].filter(Boolean).map(esc).join(" · ")}</p>
+    <p class="meta">${(c.video.singers || []).length ? `${t("singer")}: <b>${esc(c.video.singers.map((x) => nameOf("singer", x)).join(", "))}</b>` : `<span class="hint">${esc(c.video.t)} — ${esc(c.video.ch)}</span>`}</p>
+    <div class="chips">${(c.song.moods || []).map((m) => `<a class="chip" href="#/list/mood/${enc(m)}">${esc(nameOf("mood", m))}</a>`).join("")}</div>
+    ${c.song.lyrics ? `<div class="jl"><pre class="lyrics">${esc(c.song.lyrics)}</pre></div>` : ""}`;
+  renderFilterBar(); renderQueue();
+}
+function renderFilterBar() {
+  const chips = player.activeChips(), n = player.pool().length;
+  $("#fbar").innerHTML = `<span class="cnt">${t("toPlay", n)}</span><div class="act">${chips.length ? chips.map(([k, v, l]) => `<button class="chip x" type="button" data-k="${k}" data-v="${esc(v)}" aria-label="${t("remove")} ${esc(l)}">${esc(l)}</button>`).join("") + `<button class="chip" type="button" id="f-clear">${t("clearAll")}</button>` : `<span class="hint">${t("allRec")}</span>`}</div>
+    <button class="btn sm" type="button" id="f-edit" aria-expanded="${showFilters}">${showFilters ? t("done") : t("editFilters")}</button>`;
+  $$("#fbar [data-k]").forEach((b) => b.onclick = () => player.toggleFilter(b.dataset.k, b.dataset.v));
+  const fc = $("#f-clear"); if (fc) fc.onclick = player.clearFilters;
+  $("#f-edit").onclick = () => { showFilters = !showFilters; renderFilterBar(); };
+  $("#filters").hidden = !showFilters; if (showFilters) renderFilters();
+}
+let findRaag = "", findSinger = "";
+function renderFilters() {
+  const F = player.F, pills = (key, values, kind) => `<div class="chips">${values.map((v) => { const n = player.countWith(key, v), onn = Array.isArray(F[key]) ? F[key].includes(v) : F[key] === v; return `<button type="button" class="chip" data-fk="${key}" data-fv="${esc(v)}" aria-pressed="${onn}"${n || onn ? "" : " disabled"}>${esc(nameOf(kind, v))} <small>${num(n)}</small></button>`; }).join("")}</div>`;
+  const withRec = D.SONGS.filter(AD.hasRec);
+  const raags = [...new Set(withRec.map((s) => s.raag).filter(Boolean))].sort(), singers = [...new Set(withRec.flatMap(AD.singersOf))].sort();
+  const top = (names, q, key) => AD.findNames(names, q).filter((v) => player.countWith(key, v) || F[key] === v).slice(0, q ? 20 : 12);
+  $("#filters").innerHTML = `<fieldset><legend>${t("mood")}</legend>${pills("moods", Object.keys(D.META.moods), "mood")}</fieldset>
+    <fieldset><legend>${t("season")}</legend>${pills("seasons", AD.SEASON_ORDER, "season")}</fieldset>
+    <fieldset><legend>${t("parjay")}</legend>${pills("parjays", AD.groupsOf("parjay").map(([v]) => v), "parjay")}</fieldset>
+    <fieldset><legend>${t("raag")}</legend><div class="find"><svg aria-hidden="true"><use href="#i-search"/></svg><input id="fr" type="search" value="${esc(findRaag)}" placeholder="${t("typeFind")}" aria-label="${t("raag")}"></div>${pills("raag", top(raags, findRaag, "raag"), "raag")}</fieldset>
+    <fieldset><legend>${t("singer")}</legend><div class="find"><svg aria-hidden="true"><use href="#i-search"/></svg><input id="fs" type="search" value="${esc(findSinger)}" placeholder="${t("typeFind")}" aria-label="${t("singer")}"></div>${pills("singer", top(singers, findSinger, "singer"), "singer")}
+      <label class="tog" style="margin-top:8px"><input type="checkbox" id="fl"${F.likedOnly ? " checked" : ""}> ${t("likedOnly")}</label></fieldset>`;
+  $$("#filters [data-fk]").forEach((b) => b.onclick = () => player.toggleFilter(b.dataset.fk, b.dataset.fv));
+  $("#fr").oninput = (e) => { findRaag = e.target.value; renderFilters(); $("#fr").focus(); $("#fr").setSelectionRange(99, 99); };
+  $("#fs").oninput = (e) => { findSinger = e.target.value; renderFilters(); $("#fs").focus(); $("#fs").setSelectionRange(99, 99); };
+  $("#fl").onchange = () => player.toggleFilter("likedOnly");
+}
+function renderQueue() {
+  const list = player.queue(), pl = player.playlist;
+  $("#qh").textContent = pl ? `${t("yourPlaylist")}: ${pl.label || ""}` : t("inSelection");
+  $("#qn").textContent = pl ? `${num(Math.min(pl.idx + 1, list.length))} / ${num(list.length)} · ${t("thenMore")}` : t("songsCount", list.length);
+  const shown = player.queueAll ? list : list.slice(0, 25);
+  $("#queue").innerHTML = shown.map((s, i) => { const sg = AD.singersOf(s).map((x) => nameOf("singer", x)); const isNow = s === player.current?.song, isNext = s === player.upNext?.song;
+    return `<li class="${isNow ? "now" : ""}"><span class="num">${num(i + 1)}</span><button class="btn ic sm" type="button" data-pid="${esc(s.id)}" aria-label="${t("play")} ${esc(AD.title(s))}">${icon("i-play")}</button>
+      <div><a class="t" href="${songHref(s)}">${esc(AD.title(s))}${AD.isLiked(s.id) ? ` <span class="lk">♥</span>` : ""}${isNow ? `<span class="tag">${t("nowPlaying")}</span>` : isNext ? `<span class="tag">${t("upNext")}</span>` : ""}</a>
+      <span class="s">${sg.length ? sg.map((x) => x === nameOf("singer", player.F.singer) ? `<b>${esc(x)}</b>` : esc(x)).join(", ") : t("unknownSinger")}</span></div>
+      <div class="ex"><a class="btn ic sm ai" href="${AD.askAiUrl(s)}" target="_blank" rel="noopener" title="${t("askAi")}" aria-label="${t("askAi")}">${icon("i-spark")}</a><a class="btn ic sm" href="${AD.ytWatch(s.videos[0])}" target="_blank" rel="noopener" title="${t("openYt")}" aria-label="${t("openYt")}">${icon("i-yt")}</a></div></li>`; }).join("") || `<li class="hint" style="display:block;padding:10px 4px">${t("noPool")}</li>`;
+  $$("#queue [data-pid]").forEach((b) => b.onclick = () => player.play(D.BY_ID.get(b.dataset.pid)));
+  const qm = $("#qmore"); qm.hidden = list.length <= 25; qm.textContent = player.queueAll ? t("showFewer") : t("showAll", list.length); qm.onclick = () => { player.queueAll = !player.queueAll; renderQueue(); };
+}
+
+/* ---------- mine ---------- */
+function renderMine() {
+  const view = $("#view"), likes = state.likes.map((id) => D.BY_ID.get(id)).filter(Boolean), never = state.never.map((id) => D.BY_ID.get(id)).filter(Boolean), recent = state.recent.slice().reverse().slice(0, 12).map((id) => D.BY_ID.get(id)).filter(Boolean);
+  view.innerHTML = `<div class="dateline">${bnToday()}</div><div class="list-h" style="margin-top:12px"><h1>${t("mineH")}</h1></div>
+    <div class="sheet acct"><span class="avatar ${state.signedIn ? "in" : ""}" aria-hidden="true">${state.signedIn ? "Y" : "S"}</span><div><p><b>${state.signedIn ? esc(state.email) : t("notSigned")}</b></p><p class="hint">${state.signedIn ? t("syncedAs", state.email) : t("localOnly")}</p></div>
+      ${state.signedIn ? `<button class="btn sm" id="m-out" type="button">${t("signOut")}</button>` : `<button class="btn" id="m-in" type="button">${icon("i-g")} ${t("signIn")}</button>`}</div>
+    <section class="sec"><div class="sec-h"><h2>${t("likedSongs")}</h2><span class="hint">${t("songsCount", likes.length)}</span>${likes.some(AD.hasRec) ? `<button class="btn sm more" id="m-play" type="button">${icon("i-play")} ${t("playAll")}</button>` : ""}</div><div id="m-likes"></div></section>
+    <section class="sec"><div class="sec-h"><h2>${t("recentH")}</h2></div><div id="m-recent"></div></section>
+    <section class="sec"><div class="sec-h"><h2>${t("hiddenSongs")}</h2><span class="hint">${t("songsCount", never.length)}</span></div><ul class="rows" id="m-never">${never.map((s) => `<li><a href="${songHref(s)}"><span class="t">${esc(AD.title(s))}</span><span class="m"><button class="btn sm" type="button" data-un="${esc(s.id)}">${t("remove")}</button></span></a></li>`).join("") || `<li class="div">${t("none")}</li>`}</ul></section>`;
+  if (likes.length) $("#m-likes").append(songList(likes, { toggle: false })); else $("#m-likes").innerHTML = `<div class="sheet empty"><b>${t("noneLiked")}</b><p>${t("noneLikedHint")}</p></div>`;
+  if (recent.length) $("#m-recent").append(songList(recent, { toggle: false, recFirst: false })); else $("#m-recent").innerHTML = `<p class="hint">${t("none")}</p>`;
+  const mi = $("#m-in"); if (mi) mi.onclick = () => { AD.signIn(); renderMine(); };
+  const mo = $("#m-out"); if (mo) mo.onclick = () => { AD.signOut(); renderMine(); };
+  const mp = $("#m-play"); if (mp) mp.onclick = () => { player.setFilters({ likedOnly: true }); player.start(); AD.go("#/jukebox"); };
+  $$("[data-un]", view).forEach((b) => b.onclick = (e) => { e.preventDefault(); AD.toggleList("never", b.dataset.un, false); renderMine(); });
+}
+
+/* ---------- router ---------- */
+function route() {
+  cur = AD.parseHash(); const p = cur.page, parts = cur.parts;
+  document.body.dataset.page = p;
+  $("#jukebox").hidden = p !== "jukebox"; $("#view").hidden = p === "jukebox";
+  renderNav(); renderResume(); renderBar();
+  if (p === "jukebox") { renderJukebox(); window.scrollTo(0, 0); return; }
+  if (p === "song") renderSong(parts[1]);
+  else if (p === "browse") renderBrowse(parts[1]);
+  else if (p === "list" && parts[1] === "parjay") renderList("parjay", parts[2], parts[3] || "");
+  else if (p === "list") renderList(parts[1], parts.slice(2).join("/"));
+  else if (p === "mine") renderMine();
+  else renderHome();
+  if (p !== "home") { window.scrollTo(0, 0); $("#view").focus({ preventScroll: true }); }
+}
+AD.load().then((d) => {
+  D = d;
+  $("#lang").onclick = () => AD.setLang(state.lang === "bn" ? "en" : "bn");
+  $("#theme").onclick = AD.toggleTheme;
+  $("#acct").onclick = (e) => { e.stopPropagation(); const p = $("#pop"); p.hidden = !p.hidden; $("#acct").setAttribute("aria-expanded", String(!p.hidden)); if (!p.hidden) renderPop(); };
+  document.addEventListener("click", (e) => { if (!$("#pop").hidden && !e.target.closest("#pop")) { $("#pop").hidden = true; $("#acct").setAttribute("aria-expanded", "false"); } });
+  on("lang", () => { renderPop(); route(); });
+  on("account", () => { renderNav(); if (!$("#pop").hidden) renderPop(); });
+  on("player", () => { renderBar(); renderResume(); if (cur.page === "jukebox") renderJukebox(); });
+  on("progress", renderProgress);
+  on("filters", () => { if (cur.page === "jukebox") { renderFilterBar(); renderQueue(); } });
+  on("prefs", () => { renderBar(); if (cur.page === "jukebox") renderJukebox(); });
+  window.addEventListener("hashchange", route); route();
+});
+})();
+</script>
+</body>
+</html>
