@@ -44,11 +44,22 @@ progress line on every page, the "Welcome back — continue?" prompt, and the ac
   ২২শে শ্রাবণ, নববর্ষ). Terracotta sidebar on desktop, terracotta band plus bottom tabs on the phone. Dark mode is night under the chhatim.
   The most distinctive identity and the one that reads as "this place" at a glance.
 
+- **D · শান্ত রাঙামাটি — Rangamati, softened** (added after feedback on C: "the stark redness and the overwhelming iconography"
+  were too much; "Rabindranath was soft and aesthetic"). Rice-paper cream and warm grey-black ink; the laterite red becomes a dusty
+  clay accent (#b5695a) used only for hairlines, small labels, the active state and one primary button — no red blocks, no red
+  sidebar. Ornament is reduced to one single-weight line-drawn alpona as the brand mark and a hairline alpona divider in two
+  places; moods are quiet text labels with a tiny leaf glyph; the running vine border, the kantha stitches and the filled
+  medallions are gone. A's ruled manuscript leaf (Tiro Bangla, soft rules, a faint clay margin line) carries the lyrics on the
+  song page and in the jukebox. B's season idea is reduced to a pale watercolour-like wash behind the Bengali date in the home
+  banner (and under a song's own season), with no illustrated scene. Titles are Tiro Bangla at regular weight, with generous
+  space; a light top bar on desktop, bottom tabs on the phone; dark mode is soft night ink with the same clay line.
+  Screenshots: `d-{home,song,jukebox}-{phone,desktop}.png`, `d-home-dark-desktop.png`.
+
 ## Recommendation
 
-**C · রাঙামাটি**, with two things borrowed: A's ruled manuscript sheet (Tiro Bangla, 32 px baseline rules, the red margin)
-for the lyrics on the song page and in the jukebox, and B's season scene/date treatment inside C's terracotta home panel so the
-page still changes with the Bengali year.
+**D · শান্ত রাঙামাটি** — it is C's Santiniketan identity with the owner's feedback applied: the clay line, the single
+line-drawn alpona, A's ruled lyric leaf and B's season wash are already combined in it. (The original recommendation was C
+with A's lyric sheet and B's season scene; D is that combination with the colour and ornament turned down.)
 
 Why: C is the only concept whose identity cannot be mistaken for another site — the alpona medallions give the twelve moods
 (and, later, parjays and seasons) a visual vocabulary the site currently lacks, the terracotta/cream pairing keeps long

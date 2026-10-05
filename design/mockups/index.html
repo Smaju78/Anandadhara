@@ -36,6 +36,11 @@ a.card:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
 .c .nm{font-family:"Noto Serif Bengali",serif;font-weight:800}
 .c::before{content:"";position:absolute;right:14px;top:12px;width:96px;height:96px;border-radius:50%;border:1.5px solid rgba(251,243,228,.9);background:radial-gradient(circle,#fbf3e4 0 6px,transparent 7px),repeating-conic-gradient(from 0deg,rgba(251,243,228,.9) 0 6deg,transparent 6deg 45deg)}
 .c::after{content:"";position:absolute;left:0;right:0;top:0;height:10px;background:repeating-linear-gradient(90deg,rgba(251,243,228,.8) 0 8px,transparent 8px 14px)}
+.d{background:radial-gradient(60% 90% at 85% 20%,#e0e9ee,transparent 70%),#f7f2e8;color:#2b2622;background-image:radial-gradient(60% 90% at 85% 20%,#e0e9ee,transparent 70%),repeating-linear-gradient(transparent 0 27px,#e6ddcf 27px 28px)}
+.d .nm{font-family:"Tiro Bangla",serif;font-weight:400}
+.d::before{content:"";position:absolute;right:20px;top:18px;width:54px;height:54px;border-radius:50%;border:1px solid #b5695a;background:radial-gradient(circle,#b5695a 0 2px,transparent 3px)}
+.d::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:#b5695a;opacity:.5}
+@media (min-width:760px){.grid{grid-template-columns:repeat(2,1fr)}}
 .body{padding:16px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
 .body h2{margin:0;font-size:1.15rem;font-weight:700}
 .body h2 span{color:var(--ink3);font-weight:500;font-size:.9rem;margin-left:6px}
@@ -49,7 +54,7 @@ ul{margin:8px 0 0;padding-left:20px}
 </head>
 <body>
 <div class="wrap">
-  <h1>আনন্দধারা · design concepts<small>Three directions for the Rabindrasangeet site, each rooted in Tagore and Santiniketan. Pick one, or mix.</small></h1>
+  <h1>আনন্দধারা · design concepts<small>Four directions for the Rabindrasangeet site, each rooted in Tagore and Santiniketan (D is C softened after feedback). Pick one, or mix.</small></h1>
   <p class="lead">Each mockup is a click-through prototype over the real <code>docs/songs.json</code> and <code>docs/feelings.json</code>: Listen (feelings box, season, moods, well-known songs), song page (Bengali lyrics, facts, recordings, Ask AI, More like this), the jukebox (player, controls, filters, playlist with singers), Browse with type-to-find, and Mine. Every concept also places the upcoming features: বাংলা/English switch, a persistent player bar with a progress line, the “Welcome back — continue?” prompt, the account menu with Google sign-in and “Watch without ads (YouTube Premium)”, and “Open in YouTube” on every recording. Resize to a phone width: each has a phone and a desktop layout, and light and dark modes (☾).</p>
 
   <div class="grid">
@@ -75,6 +80,14 @@ ul{margin:8px 0 0;padding-left:20px}
         <h2>C · Rangamati <span>Santiniketan’s red earth and alpona</span></h2>
         <p>Laterite terracotta, rice-paste white, khoai ochre, sal green and kantha indigo; Noto Serif Bengali 800 for display. Every mood, season, song and the brand gets a generated alpona medallion (rotational symmetry seeded from its name), a running alpona vine borders the terracotta band, kantha running-stitch rules divide sections, and songs are numbered like a songbook. The home panel knows Santiniketan’s days (Poush Mela, ২৫শে বৈশাখ, ২২শে শ্রাবণ, নববর্ষ). A terracotta sidebar on desktop, a terracotta band plus bottom tabs on the phone, a terracotta player bar. Dark mode is night under the chhatim.</p>
         <div class="go">Open C →</div>
+      </div>
+    </a>
+    <a class="card" href="d.html">
+      <div class="sw d"><div><small>Concept D</small><span class="nm">শান্ত রাঙামাটি</span></div></div>
+      <div class="body">
+        <h2>D · Rangamati, softened <span>rice paper, soft ink, a dusty clay line</span></h2>
+        <p>C after the feedback that it was too red and too ornamented. Rice-paper cream and warm grey-black ink; the laterite becomes a dusty clay accent used only for hairlines, small labels, the active state and one primary button. One single-weight line-drawn alpona as the mark and a hairline alpona divider in two places; moods are quiet text labels with a tiny leaf glyph; no medallions, vine borders or stitches. A’s ruled manuscript leaf carries the lyrics on the song page and in the jukebox; the current ritu is a pale watercolour wash behind the Bengali date in the home banner, no illustrated scene. Tiro Bangla titles at regular weight, generous space. Top bar on desktop, bottom tabs on the phone. Dark mode is soft night ink.</p>
+        <div class="go">Open D →</div>
       </div>
     </a>
   </div>
