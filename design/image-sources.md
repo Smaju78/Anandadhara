@@ -12,16 +12,14 @@ wide and recompressed (JPEG) to stay under ~150 KB each; nothing else was change
 | woman-face.jpg | Rabindranath Tagore Woman Face.jpg | https://commons.wikimedia.org/wiki/File:Rabindranath_Tagore_Woman_Face.jpg | Rabindranath Tagore, before 1941 (NGMA) | PD-Art (PD-old-auto), PD-old-80, CC-PD-Mark | "song of the day" card |
 | two-figures01.jpg | Rabindranath Tagore Two Figures01.jpg | https://commons.wikimedia.org/wiki/File:Rabindranath_Tagore_Two_Figures01.jpg | Rabindranath Tagore, before 1941 (NGMA) | PD-Art (PD-old-auto), PD-old-80, CC-PD-Mark | prem tile |
 | man-and-woman.jpg | Rabindranath Tagore Man and Woman.jpg | https://commons.wikimedia.org/wiki/File:Rabindranath_Tagore_Man_and_Woman.jpg | Rabindranath Tagore, before 1941 (NGMA) | PD-Art (PD-old-auto), PD-old-80, CC-PD-Mark | sahas tile |
+| vase.jpg | Rabindranath Tagore Vase.jpg | https://commons.wikimedia.org/wiki/File:Rabindranath_Tagore_Vase.jpg | Rabindranath Tagore, before 1941 (NGMA) | PD-Art (PD-old-auto), PD-old-80, CC-PD-Mark | shanti tile |
+| head-study-geometric.jpg | Rabindranath Tagore Head Study (Geometric).jpg | https://commons.wikimedia.org/wiki/File:Rabindranath_Tagore_Head_Study_(Geometric).jpg | Rabindranath Tagore, 1928–29 (NGMA) | PD-Art (PD-old-auto-expired), PD-old-80-expired, CC-PD-Mark | bishad tile |
 | untitled-dacing-girl.jpg | Rabindranath Tagore Untitled Dacing Girl.jpg | https://commons.wikimedia.org/wiki/File:Rabindranath_Tagore_Untitled_Dacing_Girl.jpg | Rabindranath Tagore | PD-Art (PD-old-auto), PD-old-80, CC-PD-Mark | ananda tile |
 | seven-figures.jpg | Rabindranath Tagore Seven Figures.jpg | https://commons.wikimedia.org/wiki/File:Rabindranath_Tagore_Seven_Figures.jpg | Rabindranath Tagore, before 1941 (NGMA) | PD-Art (PD-old-auto), PD-old-80, CC-PD-Mark | utsav tile; empty jukebox stage |
 | veiled-woman.jpg | Rabindranath Tagore Veiled Woman.jpg | https://commons.wikimedia.org/wiki/File:Rabindranath_Tagore_Veiled_Woman.jpg | Rabindranath Tagore, before 1941 (NGMA) | PD-Art (PD-old-auto), PD-old-80, CC-PD-Mark | smriti tile |
 | ra-tha-seal-initials.jpg | Rabindranath Tagore Ra-Tha seal initials.jpg | https://commons.wikimedia.org/wiki/File:Rabindranath_Tagore_Ra-Tha_seal_initials.jpg | Rabindranath Tagore ("Ra-Tha" wooden seal) | PD-Art (PD-old), CC-PD-Mark | footer / account card accent |
 | tagore-manuscript6-c.jpg | Tagore manuscript6 c.jpg | https://commons.wikimedia.org/wiki/File:Tagore_manuscript6_c.jpg | Rabindranath Tagore (manuscript page with doodles) | PD-India, PD-old | song page header texture |
 | tagore-handwriting-bengali.jpg | Tagore handwriting Bengali.jpg | https://commons.wikimedia.org/wiki/File:Tagore_handwriting_Bengali.jpg | Rabindranath Tagore (handwritten Bengali) | PD-India, PD-1996 | jukebox lyrics leaf texture |
-
-Two further candidates (File:Rabindranath Tagore Vase.jpg and File:Rabindranath Tagore Head Study (Geometric).jpg, both
-public domain) could not be downloaded from Wikimedia during this session (the server returned an error page), so the shanti
-and bishad tiles use plain colour; they can be added later.
 
 Files marked "NGMA" are reproductions of paintings held by the National Gallery of Modern Art, New Delhi, uploaded to
 Commons as faithful reproductions of two-dimensional public-domain works (PD-Art). The licence templates were read

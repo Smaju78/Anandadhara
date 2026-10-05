@@ -454,8 +454,8 @@ const songHref = (s) => `#/song/${enc(s.id)}`;
 const seasonName = (k) => state.lang === "bn" ? AD.SEASONS[k].bn : k;
 const SW = { Grishma: "#c6922e", Barsha: "#2f3f6e", Sharat: "#3f6a8c", Hemanta: "#a67a1c", Sheet: "#7a5a3c", Basanta: "#8e2f3c" };
 /* Tagore's palette, one colour (and, where it fits, one painting) per mood */
-const MOODC = { prem: ["#9b4455", "#5f2531", "two-figures01"], viraha: ["#3a4a7a", "#232d52", "bird-fantastic"], bishad: ["#555a66", "#2f333c", null], ananda: ["#c6922e", "#8a5f14", "untitled-dacing-girl"],
-  shanti: ["#7f957a", "#4f6650", null], bhakti: ["#c98a2b", "#8a5612", null], "prakriti-bhava": ["#5f7a3a", "#394d20", "landscape-by-1937"], utsav: ["#b4472b", "#762b17", "seven-figures"],
+const MOODC = { prem: ["#9b4455", "#5f2531", "two-figures01"], viraha: ["#3a4a7a", "#232d52", "bird-fantastic"], bishad: ["#555a66", "#2f333c", "head-study-geometric"], ananda: ["#c6922e", "#8a5f14", "untitled-dacing-girl"],
+  shanti: ["#7f957a", "#4f6650", "vase"], bhakti: ["#c98a2b", "#8a5612", null], "prakriti-bhava": ["#5f7a3a", "#394d20", "landscape-by-1937"], utsav: ["#b4472b", "#762b17", "seven-figures"],
   deshprem: ["#8e2f3c", "#561a23", null], sahas: ["#a65a31", "#6b371a", "man-and-woman"], smriti: ["#7a5a3c", "#4e3826", "veiled-woman"], kautuk: ["#3f7d7a", "#265452", null] };
 const setSeason = (k) => { document.documentElement.dataset.season = k; };
 const curSeason = () => previewSeason || AD.currentSeason();

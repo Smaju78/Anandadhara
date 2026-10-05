@@ -67,7 +67,7 @@ progress line on every page, the "Welcome back — continue?" prompt, and the ac
   has a faint manuscript-page texture and the lyrics sit on A's ruled leaf; the jukebox lyric leaf has a faint handwriting
   texture; the empty jukebox stage shows "Seven Figures". One fine line-drawn alpona is the mark, sits quietly in the banner
   corner and is the divider; no filled medallions. Tiro Bangla titles at regular weight. Dark mode keeps the palette at night
-  (deep umber paper, lighter sienna accent). Images: 11 Tagore works from Wikimedia Commons, all public domain, downscaled to
+  (deep umber paper, lighter sienna accent). Images: 13 Tagore works from Wikimedia Commons, all public domain, downscaled to
   ≤560 px and under 150 KB each, listed with Commons URLs and licence templates in `design/image-sources.md`.
   Screenshots: `e-{home,song,jukebox}-{phone,desktop}.png`, `e-home-dark-desktop.png`.
 
