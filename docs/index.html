@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Noto+Serif+Bengali:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600&family=Alegreya:ital,wght@0,400;0,500;1,400&display=swap">
-<link rel="stylesheet" href="style.css?v=9">
+<link rel="stylesheet" href="style.css?v=10">
 </head>
 <body data-page="home">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -77,9 +77,9 @@
       </div>
       <div class="jb-controls">
         <button id="jb-like" class="rnd" type="button" disabled aria-pressed="false" data-i18n-aria="like" data-i18n-title="likeT"></button>
-        <button id="jb-prev" class="rnd" type="button" disabled data-i18n-aria="prev"></button>
+        <button id="jb-prev" class="rnd" type="button" disabled data-i18n-aria="prev"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 5v14L9 12zM5 5h3v14H5z"/></svg></button>
         <button id="jb-play" class="big" type="button" data-i18n-aria="play"></button>
-        <button id="jb-skip" class="rnd" type="button" disabled data-i18n-aria="next"></button>
+        <button id="jb-skip" class="rnd" type="button" disabled data-i18n-aria="next"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 5v14l10-7zM16 5h3v14h-3z"/></svg></button>
         <button id="jb-edit" class="rnd" type="button" aria-expanded="false" aria-controls="sheet" data-i18n-aria="filters"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg></button>
       </div>
       <div class="jb-acts" id="jb-acts"></div>
@@ -111,7 +111,7 @@
   <img class="thumb" id="mini-thumb" src="" alt="">
   <a class="meta" id="mini-title" href="#/jukebox"><b id="mini-main"></b><span id="mini-sub"></span></a>
   <span class="time" id="mini-time"></span>
-  <a class="btn icon sm ghost yt" id="mini-yt" href="https://www.youtube.com/" target="_blank" rel="noopener" data-i18n-aria="openYt" data-i18n-title="openYtT"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8.5C3 6.6 4.6 5 6.5 5h11C19.4 5 21 6.6 21 8.5v7c0 1.9-1.6 3.5-3.5 3.5h-11C4.6 19 3 17.4 3 15.5z"/><path d="M10 9v6l5-3z" fill="currentColor" stroke="none"/></svg></a>
+  <a class="btn icon sm ghost yt" id="mini-yt" href="https://www.youtube.com/" target="_blank" rel="noopener" data-i18n-aria="openYt" data-i18n-title="openYtT"><svg class="yt-ico" viewBox="0 0 28 20" aria-hidden="true"><path fill="#FF0000" d="M27.4 3.1A3.5 3.5 0 0 0 25 .6C22.8 0 14 0 14 0S5.2 0 3 .6A3.5 3.5 0 0 0 .6 3.1C0 5.3 0 10 0 10s0 4.7.6 6.9A3.5 3.5 0 0 0 3 19.4c2.2.6 11 .6 11 .6s8.8 0 11-.6a3.5 3.5 0 0 0 2.4-2.5C28 14.7 28 10 28 10s0-4.7-.6-6.9z"/><path fill="#FFFFFF" d="M11.2 14.3 18.5 10l-7.3-4.3z"/></svg></a>
   <div class="ctl">
     <button class="likeb" type="button" id="mini-like" aria-pressed="false" data-i18n-aria="like"></button>
     <button class="pp" type="button" id="mini-play" data-i18n-aria="play"></button>
@@ -142,7 +142,7 @@
   <div class="dlg-btns"><button class="btn sm" type="button" id="resume-yes"></button><button class="btn ghost sm" type="button" id="resume-no"></button></div>
 </dialog>
 
-<script src="app.js?v=13"></script>
+<script src="app.js?v=14"></script>
 <script type="module" src="sync.js?v=1"></script>
 </body>
 </html>
