@@ -1,4 +1,7 @@
 @echo off
+rem Use the saved GitHub sign-in (Smaju78) and never wait for a click; a failed push shows in the log.
+set GCM_INTERACTIVE=never
+set GIT_TERMINAL_PROMPT=0
 rem Daily YouTube run (scheduled task):
 rem   1. monthly stats refresh when due, resumable matching, rebuild docs/songs.json (in WSL)
 rem   2. commit and push docs/songs.json so the GitHub Pages site shows the new recordings
